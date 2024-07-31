@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "test_app",
-    "slug": "test_app",
+    "name": "jiujitsumeter",
+    "slug": "jiujitsumeter",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "orientation": "default",
+    "icon": "./assets/images/logo.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
@@ -17,9 +17,10 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/logo.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.bestcodes.jiujitsumeter"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +32,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e41de5de-2eba-4979-9747-6f6501062b69"
+      }
     }
   }
 }
