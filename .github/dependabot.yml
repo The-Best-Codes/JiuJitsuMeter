@@ -1,21 +1,21 @@
 version: 2
 updates:
-  # Update npm dependencies
+  # Update npm dependencies (including Expo SDK)
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 10
-    
-  # Update Expo SDK
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 1
-    allow:
+    groups:
+      expo-sdk:
+        patterns:
+          - "expo"
+          - "expo-*"
+    ignore:
       - dependency-name: "expo"
+        update-types: ["version-update:semver-major"]
       - dependency-name: "expo-*"
+        update-types: ["version-update:semver-major"]
 
   # Update GitHub Actions
   - package-ecosystem: "github-actions"
