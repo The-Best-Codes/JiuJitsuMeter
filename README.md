@@ -1,50 +1,43 @@
-# Welcome to your Expo app 👋
+**Privacy Policy**
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Effective Date:** July 31, 2024 at 5:00 PM, CDT.
 
-## Get started
+**1. Introduction**
 
-1. Install dependencies
+Welcome to JiuJitsuMeter! We are committed to protecting your privacy. This Privacy Policy explains how we handle the information collected through our app.
 
-   ```bash
-   npm install
-   ```
+**2. Information Collection**
 
-2. Start the app
+JiuJitsuMeter does not collect any personal information from its users. The app utilizes local storage on your device to save data related to your JiuJitsu class attendance.
 
-   ```bash
-    npx expo start
-   ```
+**3. Use of Information**
 
-In the output, you'll find options to open the app in a
+Since we do not collect any personal information, there is no personal information usage to disclose.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+**4. Data Storage and Security**
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+All data related to your JiuJitsu class attendance is stored locally on your device. We do not have access to this data, and it is not transmitted to any servers.
 
-## Get a fresh project
+**5. User Rights**
 
-When you're ready, run:
+You can delete all data stored by JiuJitsuMeter by simply removing the app from your device. This action will remove all stored data permanently.
 
-```bash
-npm run reset-project
-```
+**6. Cookies and Tracking**
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+JiuJitsuMeter does not use cookies or any other tracking technologies.
 
-## Learn more
+**7. Third-Party Services**
 
-To learn more about developing your project with Expo, look at the following resources:
+We do not use any third-party services that collect personal information.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+**8. Children’s Privacy**
 
-## Join the community
+JiuJitsuMeter is designed to be used by individuals of all ages, including children. All data stays on the user's device, ensuring that children's privacy is protected.
 
-Join our community of developers creating universal apps.
+**9. Policy Updates**
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+We may update this Privacy Policy from time to time. Whenever we make changes to the policy, we will notify users through an alert in the app. Please review these updates carefully.
+
+**10. Contact Us**
+
+If you have any questions or concerns about this Privacy Policy, please contact us at best-codes@proton.me.
