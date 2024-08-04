@@ -179,8 +179,8 @@ const ExplorePage: React.FC = () => {
   const theme = {
     backgroundColor: colorScheme === "dark" ? "#121212" : "#f0f8ff",
     textColor: colorScheme === "dark" ? "#ffffff" : "#000000",
-    primaryColor: colorScheme === "dark" ? "#bb86fc" : "#1e90ff",
-    secondaryColor: colorScheme === "dark" ? "#3700b3" : "#b0c4de",
+    primaryColor: colorScheme === "dark" ? "#1e90ff" : "#1e90ff",
+    secondaryColor: colorScheme === "dark" ? "#5f5f5f" : "#3e464f",
   };
 
   return (
@@ -191,7 +191,9 @@ const ExplorePage: React.FC = () => {
       }
     >
       <View style={styles.header}>
-        <Text style={styles.title}>Class Distribution</Text>
+        <Text style={[styles.title, { color: theme.textColor }]}>
+          Class Distribution
+        </Text>
         <TouchableOpacity onPress={onRefresh}>
           <Ionicons name="refresh" size={24} color={theme.textColor} />
         </TouchableOpacity>
@@ -270,7 +272,16 @@ const ExplorePage: React.FC = () => {
       </Text>
       <ScrollView contentContainerStyle={{ paddingBottom: 100 }}>
         {classes.map((classItem) => (
-          <View key={classItem.id} style={styles.classItem}>
+          <View
+            key={classItem.id}
+            style={[
+              styles.classItem,
+              {
+                backgroundColor: theme.backgroundColor,
+                shadowColor: colorScheme === "dark" ? "#ffffff" : "#000000",
+              },
+            ]}
+          >
             <View style={styles.classHeader}>
               <Text
                 style={[

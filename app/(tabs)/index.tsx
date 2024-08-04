@@ -439,8 +439,8 @@ export default function ClassScheduler() {
   const theme = {
     backgroundColor: colorScheme === "dark" ? "#121212" : "#f0f8ff",
     textColor: colorScheme === "dark" ? "#ffffff" : "#000000",
-    primaryColor: colorScheme === "dark" ? "#bb86fc" : "#1e90ff",
-    secondaryColor: colorScheme === "dark" ? "#3700b3" : "#b0c4de",
+    primaryColor: colorScheme === "dark" ? "#1e90ff" : "#1e90ff",
+    secondaryColor: colorScheme === "dark" ? "#5f5f5f" : "#3e464f",
   };
 
   return (
@@ -570,7 +570,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   addButton: {
-    backgroundColor: "#4CAF50",
+    backgroundColor: "#1e90ff",
     padding: 10,
     borderRadius: 5,
     marginLeft: 10,
