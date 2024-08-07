@@ -1,33 +1,35 @@
 import { Tabs } from "expo-router";
 import React from "react";
+import { Text } from "react-native";
 
 import { TabBarIcon } from "@/components/navigation/TabBarIcon";
-import { Colors } from "@/constants/Colors";
-import { useColorScheme } from "@/hooks/useColorScheme";
+import { useTheme } from "@/styles/theme";
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
+  const theme = useTheme();
 
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
+        tabBarActiveTintColor: theme.colors.primary,
         headerShown: false,
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
-          title: "New",
+          tabBarLabel: ({ focused, color }) =>
+            focused ? <Text style={{ color }}>New</Text> : null,
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? "add" : "add-outline"} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="stats"
         options={{
-          title: "Stats",
+          tabBarLabel: ({ focused, color }) =>
+            focused ? <Text style={{ color }}>Stats</Text> : null,
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "bar-chart" : "bar-chart-outline"}

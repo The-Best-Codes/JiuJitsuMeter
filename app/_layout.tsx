@@ -9,9 +9,8 @@ import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import "react-native-reanimated";
-import { View, Text } from "react-native";
-
-import { useColorScheme } from "@/hooks/useColorScheme";
+import { View, Text, useColorScheme } from "react-native";
+import { TransitionPresets } from "@react-navigation/stack";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -57,7 +56,20 @@ export default function RootLayout() {
         <ThemeProvider
           value={colorScheme === "dark" ? DarkTheme : DefaultTheme}
         >
-          <Stack>
+          <Stack
+            screenOptions={{
+              ...TransitionPresets.SlideFromRightIOS,
+              // Uncomment below for a fade transition instead
+              // cardStyleInterpolator: ({ current: { progress } }) => ({
+              //   cardStyle: {
+              //     opacity: progress.interpolate({
+              //       inputRange: [0, 1],
+              //       outputRange: [0, 1],
+              //     }),
+              //   },
+              // }),
+            }}
+          >
             <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
             <Stack.Screen name="+not-found" />
           </Stack>
