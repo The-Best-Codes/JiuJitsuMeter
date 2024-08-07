@@ -8,9 +8,7 @@ import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import "react-native-reanimated";
 import { View, Text, useColorScheme } from "react-native";
-import { TransitionPresets } from "@react-navigation/stack";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -18,7 +16,7 @@ SplashScreen.preventAutoHideAsync();
 export default function RootLayout() {
   const colorScheme = useColorScheme();
   const [loaded, error] = useFonts({
-    SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
+    Inter: require("../assets/fonts/Inter-VariableFont_opsz,wght.ttf"),
   });
   const [errorState, setErrorState] = useState<Error | null>(null);
 
@@ -56,20 +54,7 @@ export default function RootLayout() {
         <ThemeProvider
           value={colorScheme === "dark" ? DarkTheme : DefaultTheme}
         >
-          <Stack
-            screenOptions={{
-              ...TransitionPresets.SlideFromRightIOS,
-              // Uncomment below for a fade transition instead
-              // cardStyleInterpolator: ({ current: { progress } }) => ({
-              //   cardStyle: {
-              //     opacity: progress.interpolate({
-              //       inputRange: [0, 1],
-              //       outputRange: [0, 1],
-              //     }),
-              //   },
-              // }),
-            }}
-          >
+          <Stack>
             <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
             <Stack.Screen name="+not-found" />
           </Stack>
