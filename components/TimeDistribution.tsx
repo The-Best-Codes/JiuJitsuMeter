@@ -1,20 +1,44 @@
 import React from "react";
-import { View, Dimensions } from "react-native";
+import { View, Dimensions, ScrollView } from "react-native";
 import { Text, useTheme } from "react-native-paper";
-import { PieChart } from "react-native-chart-kit";
-import { ClassItem } from "@/types";
-import { getStats } from "@/utils/statsUtils";
+import { BarChart } from "react-native-chart-kit";
+import { ClassLog } from "@/types";
 
 interface Props {
-  classes: ClassItem[];
+  classLogs: ClassLog[];
 }
 
-const TimeDistribution: React.FC<Props> = ({ classes }) => {
+const TimeDistribution: React.FC<Props> = ({ classLogs }) => {
   const theme = useTheme();
-  const timeData = getStats(classes, "selectedTime");
-
   const screenWidth = Dimensions.get("window").width;
-  const chartWidth = screenWidth * 0.9;
+  const chartWidth = Math.max(1000, screenWidth * 2);
+
+  const getTimeStats = () => {
+    const stats = Array(24).fill(0);
+    classLogs.forEach((log) => {
+      const hour = new Date(log.time || Date.now()).getHours();
+      stats[hour]++;
+    });
+    return stats;
+  };
+
+  const timeData = getTimeStats();
+
+  const formatLabel = (hour: number) => {
+    const period = hour < 12 ? "AM" : "PM";
+    const formattedHour = hour % 12 === 0 ? 12 : hour % 12;
+    return `${formattedHour} ${period}`;
+  };
+
+  const data = {
+    labels: Array.from({ length: 24 }, (_, i) => formatLabel(i)),
+    datasets: [
+      {
+        data: timeData,
+        color: (opacity = 1) => `rgba(0, 100, 200, ${opacity})`,
+      },
+    ],
+  };
 
   return (
     <View>
@@ -28,21 +52,42 @@ const TimeDistribution: React.FC<Props> = ({ classes }) => {
       >
         Time Distribution
       </Text>
-      {timeData.length > 0 ? (
-        <PieChart
-          data={timeData}
-          width={chartWidth}
-          height={200}
-          chartConfig={{
-            backgroundColor: theme.colors.background,
-            backgroundGradientFrom: theme.colors.background,
-            backgroundGradientTo: theme.colors.background,
-            color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
-          }}
-          accessor="count"
-          backgroundColor="transparent"
-          paddingLeft="15"
-        />
+      {classLogs.length > 0 ? (
+        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+          <BarChart
+            data={data}
+            width={chartWidth}
+            height={220}
+            yAxisLabel=""
+            yAxisSuffix=""
+            chartConfig={{
+              backgroundColor: theme.colors.background,
+              backgroundGradientFrom: theme.colors.background,
+              backgroundGradientTo: theme.colors.background,
+              decimalPlaces: 0,
+              color: (opacity = 1) => `rgba(0, 100, 200, ${opacity})`,
+              labelColor: (opacity = 1) => theme.colors.onBackground,
+              style: {
+                borderRadius: 16,
+              },
+              propsForDots: {
+                r: "6",
+                strokeWidth: "2",
+                stroke: "#ffa726",
+              },
+              propsForLabels: {
+                fontSize: 10,
+              },
+            }}
+            style={{
+              marginVertical: 8,
+              marginEnd: 16,
+              borderRadius: 16,
+            }}
+            showValuesOnTopOfBars={true}
+            fromZero={true}
+          />
+        </ScrollView>
       ) : (
         <Text>No time data available</Text>
       )}

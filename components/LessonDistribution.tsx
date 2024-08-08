@@ -2,19 +2,36 @@ import React from "react";
 import { View, Dimensions } from "react-native";
 import { Text, useTheme } from "react-native-paper";
 import { PieChart } from "react-native-chart-kit";
-import { ClassItem } from "@/types";
-import { getStats } from "@/utils/statsUtils";
+import { ClassLog, Class } from "@/types";
 
 interface Props {
-  classes: ClassItem[];
+  classLogs: ClassLog[];
+  classes: Class[];
 }
 
-const LessonDistribution: React.FC<Props> = ({ classes }) => {
+const LessonDistribution: React.FC<Props> = ({ classLogs, classes }) => {
   const theme = useTheme();
-  const lessonData = getStats(classes, "selectedLesson");
-
   const screenWidth = Dimensions.get("window").width;
   const chartWidth = screenWidth * 0.9;
+
+  const getLessonStats = () => {
+    const stats: { [key: string]: number } = {};
+    classLogs.forEach((log) => {
+      const classItem = classes.find((c) => c.id === log.classId);
+      const lessonName =
+        classItem?.data.find((l) => l.id === log.lessonId)?.name || "Unknown";
+      stats[lessonName] = (stats[lessonName] || 0) + 1;
+    });
+    return Object.entries(stats).map(([name, count]) => ({
+      name,
+      count,
+      color: `#${Math.floor(Math.random() * 16777215)
+        .toString(16)
+        .padStart(6, "0")}`,
+    }));
+  };
+
+  const lessonData = getLessonStats();
 
   return (
     <View>

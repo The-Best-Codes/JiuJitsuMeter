@@ -68,9 +68,9 @@ const ExplorePage: React.FC = () => {
         <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
       }
     >
-{/*       <ClassDistribution classLogs={classLogs} classes={classes} />
+      <ClassDistribution classLogs={classLogs} classes={classes} />
       <LessonDistribution classLogs={classLogs} classes={classes} />
-      <TimeDistribution classLogs={classLogs} /> */}
+      <TimeDistribution classLogs={classLogs} />
       <ClassList
         classes={classes}
         classLogs={classLogs}

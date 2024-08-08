@@ -1,15 +1,30 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { initialClasses } from "@/utils/constants";
-
 import { Class, Lesson, ClassLog } from "@/types";
 
 // Load custom classes
 export const loadCustomClasses = async (): Promise<Class[]> => {
   try {
     const customClassesData = await AsyncStorage.getItem("customClasses");
-    const customClasses = customClassesData
-      ? JSON.parse(customClassesData)
-      : [];
+    if (!customClassesData) {
+      return [...initialClasses];
+    }
+
+    let customClasses: Class[];
+    try {
+      customClasses = JSON.parse(customClassesData);
+      if (!Array.isArray(customClasses)) {
+        throw new Error("Stored data is not an array");
+      }
+    } catch (parseError) {
+      console.warn(
+        "Invalid data format in storage. Clearing customClasses.",
+        parseError
+      );
+      await AsyncStorage.removeItem("customClasses");
+      return [...initialClasses];
+    }
+
     return [...initialClasses, ...customClasses];
   } catch (error) {
     console.error("Error loading custom classes:", error);
@@ -20,13 +35,16 @@ export const loadCustomClasses = async (): Promise<Class[]> => {
 // Add custom class
 export const addCustomClass = async (className: string): Promise<Class> => {
   try {
-    const classes = await loadCustomClasses();
+    const customClassesData = await AsyncStorage.getItem("customClasses");
+    const customClasses = customClassesData
+      ? JSON.parse(customClassesData)
+      : [];
     const newClass: Class = {
       id: `custom_${Date.now()}`,
       class: className,
       data: [],
     };
-    const updatedClasses = [...classes, newClass];
+    const updatedClasses = [...customClasses, newClass];
     await AsyncStorage.setItem("customClasses", JSON.stringify(updatedClasses));
     return newClass;
   } catch (error) {
@@ -41,8 +59,10 @@ export const editCustomClass = async (
   newClassName: string
 ): Promise<void> => {
   try {
-    const classes = await loadCustomClasses();
-    const updatedClasses = classes.map((c) =>
+    const customClassesData = await AsyncStorage.getItem("customClasses");
+    if (!customClassesData) return;
+    const customClasses = JSON.parse(customClassesData);
+    const updatedClasses = customClasses.map((c: Class) =>
       c.id === id ? { ...c, class: newClassName } : c
     );
     await AsyncStorage.setItem("customClasses", JSON.stringify(updatedClasses));
@@ -55,8 +75,10 @@ export const editCustomClass = async (
 // Delete custom class
 export const deleteCustomClass = async (id: string): Promise<void> => {
   try {
-    const classes = await loadCustomClasses();
-    const updatedClasses = classes.filter((c) => c.id !== id);
+    const customClassesData = await AsyncStorage.getItem("customClasses");
+    if (!customClassesData) return;
+    const customClasses = JSON.parse(customClassesData);
+    const updatedClasses = customClasses.filter((c: Class) => c.id !== id);
     await AsyncStorage.setItem("customClasses", JSON.stringify(updatedClasses));
   } catch (error) {
     console.error("Error deleting custom class:", error);
@@ -70,16 +92,18 @@ export const addCustomLesson = async (
   lessonName: string
 ): Promise<Lesson> => {
   try {
-    const classes = await loadCustomClasses();
-    const classIndex = classes.findIndex((c) => c.id === classId);
+    const customClassesData = await AsyncStorage.getItem("customClasses");
+    if (!customClassesData) throw new Error("No custom classes found");
+    const customClasses = JSON.parse(customClassesData);
+    const classIndex = customClasses.findIndex((c: Class) => c.id === classId);
     if (classIndex === -1) throw new Error("Class not found");
 
     const newLesson: Lesson = {
       id: `lesson_${Date.now()}`,
       name: lessonName,
     };
-    classes[classIndex].data.push(newLesson);
-    await AsyncStorage.setItem("customClasses", JSON.stringify(classes));
+    customClasses[classIndex].data.push(newLesson);
+    await AsyncStorage.setItem("customClasses", JSON.stringify(customClasses));
     return newLesson;
   } catch (error) {
     console.error("Error adding custom lesson:", error);

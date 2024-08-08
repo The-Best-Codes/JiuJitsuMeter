@@ -61,80 +61,82 @@ const ClassList: React.FC<Props> = ({
       >
         Your Classes
       </Title>
-      {classLogs.map((classLog, index) => {
-        const { className, lessonName } = getClassAndLessonNames(
-          classLog.classId,
-          classLog.lessonId
-        );
-        return (
-          <Card
-            key={classLog.id}
-            style={{
-              marginBottom: index !== classLogs.length - 1 ? 16 : 32,
-              backgroundColor: theme.colors.secondaryContainer,
-            }}
-          >
-            <Card.Content>
-              <View
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "flex-start",
-                  justifyContent: "space-between",
-                  marginBottom: 8,
-                }}
-              >
-                <Title
-                  numberOfLines={2}
+      {classLogs &&
+        classLogs.length > 0 &&
+        classLogs.reverse().map((classLog, index) => {
+          const { className, lessonName } = getClassAndLessonNames(
+            classLog.classId,
+            classLog.lessonId
+          );
+          return (
+            <Card
+              key={classLog.id}
+              style={{
+                marginBottom: index !== classLogs.length - 1 ? 16 : 32,
+                backgroundColor: theme.colors.secondaryContainer,
+              }}
+            >
+              <Card.Content>
+                <View
                   style={{
-                    color: theme.colors.onBackground,
-                    flex: 1,
-                    marginRight: 8,
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "flex-start",
+                    justifyContent: "space-between",
+                    marginBottom: 8,
                   }}
                 >
-                  {`${className}`} &middot; {`${lessonName}`}
-                </Title>
-                <View style={{ flexDirection: "row" }}>
-                  <IconButton
-                    icon="pencil"
-                    iconColor={theme.colors.onPrimary}
-                    onPress={() => onEditClassLog(classLog)}
+                  <Title
+                    numberOfLines={2}
                     style={{
-                      marginTop: -4,
-                      marginRight: 4,
-                      backgroundColor: theme.colors.primary,
+                      color: theme.colors.onBackground,
+                      flex: 1,
+                      marginRight: 8,
                     }}
-                  />
-                  <IconButton
-                    icon="delete"
-                    iconColor={theme.colors.onError}
-                    onPress={() =>
-                      confirmDelete(classLog.id, className, lessonName)
-                    }
-                    style={{
-                      marginTop: -4,
-                      marginRight: -4,
-                      backgroundColor: theme.colors.error,
-                    }}
-                  />
+                  >
+                    {`${className}`} &middot; {`${lessonName}`}
+                  </Title>
+                  <View style={{ flexDirection: "row" }}>
+                    <IconButton
+                      icon="pencil"
+                      iconColor={theme.colors.onPrimary}
+                      onPress={() => onEditClassLog(classLog)}
+                      style={{
+                        marginTop: -4,
+                        marginRight: 4,
+                        backgroundColor: theme.colors.primary,
+                      }}
+                    />
+                    <IconButton
+                      icon="delete"
+                      iconColor={theme.colors.onError}
+                      onPress={() =>
+                        confirmDelete(classLog.id, className, lessonName)
+                      }
+                      style={{
+                        marginTop: -4,
+                        marginRight: -4,
+                        backgroundColor: theme.colors.error,
+                      }}
+                    />
+                  </View>
                 </View>
-              </View>
-              <Paragraph
-                style={{ color: theme.colors.onBackground, marginBottom: 8 }}
-              >
-                {`${formatDate(classLog.date as any)} at ${formatTime(
-                  classLog.time as any
-                )} · ${formatMDY(classLog.date as any)}`}
-              </Paragraph>
-              {classLog.note && (
-                <Paragraph style={{ color: theme.colors.onBackground }}>
-                  {classLog.note}
+                <Paragraph
+                  style={{ color: theme.colors.onBackground, marginBottom: 8 }}
+                >
+                  {`${formatDate(classLog.date as any)} at ${formatTime(
+                    classLog.time as any
+                  )} · ${formatMDY(classLog.date as any)}`}
                 </Paragraph>
-              )}
-            </Card.Content>
-          </Card>
-        );
-      })}
+                {classLog.note && (
+                  <Paragraph style={{ color: theme.colors.onBackground }}>
+                    {classLog.note}
+                  </Paragraph>
+                )}
+              </Card.Content>
+            </Card>
+          );
+        })}
     </ScrollView>
   );
 };
