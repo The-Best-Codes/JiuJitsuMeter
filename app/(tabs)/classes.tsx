@@ -58,7 +58,39 @@ const ClassesScreen = () => {
 
   const loadClasses = async () => {
     const customClasses = await loadCustomClasses();
-    setClasses([...initialClasses, ...customClasses]);
+    const classMap: { [id: string]: Class } = {};
+
+    // Add initial classes to the map
+    initialClasses.forEach((initialClass: Class) => {
+      classMap[initialClass.id] = { ...initialClass };
+    });
+
+    // Add custom classes to the map, merging lessons if class already exists
+    customClasses.forEach((customClass) => {
+      if (classMap[customClass.id]) {
+        const existingClass = classMap[customClass.id];
+        const existingLessonIds = new Set(
+          existingClass.data.map((lesson) => lesson.id)
+        );
+
+        const mergedLessons = [
+          ...existingClass.data,
+          ...customClass.data.filter(
+            (lesson) => !existingLessonIds.has(lesson.id)
+          ),
+        ];
+
+        classMap[customClass.id] = {
+          ...existingClass,
+          data: mergedLessons,
+        };
+      } else {
+        classMap[customClass.id] = { ...customClass };
+      }
+    });
+
+    const mergedClasses = Object.values(classMap);
+    setClasses(mergedClasses);
   };
 
   const isNameUnique = (

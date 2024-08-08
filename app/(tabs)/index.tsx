@@ -24,12 +24,45 @@ export default function App() {
 
   const theme = useTheme();
 
-  useEffect(() => {
-    loadCustomClasses().then((customClasses) => {
-      if (customClasses) {
-        setClasses([...initialClasses, ...customClasses]);
+  const loadClasses = async () => {
+    const customClasses = await loadCustomClasses();
+    const classMap: { [id: string]: Class } = {};
+
+    // Add initial classes to the map
+    initialClasses.forEach((initialClass: Class) => {
+      classMap[initialClass.id] = { ...initialClass };
+    });
+
+    // Add custom classes to the map, merging lessons if class already exists
+    customClasses.forEach((customClass) => {
+      if (classMap[customClass.id]) {
+        const existingClass = classMap[customClass.id];
+        const existingLessonIds = new Set(
+          existingClass.data.map((lesson) => lesson.id)
+        );
+
+        const mergedLessons = [
+          ...existingClass.data,
+          ...customClass.data.filter(
+            (lesson) => !existingLessonIds.has(lesson.id)
+          ),
+        ];
+
+        classMap[customClass.id] = {
+          ...existingClass,
+          data: mergedLessons,
+        };
+      } else {
+        classMap[customClass.id] = { ...customClass };
       }
     });
+
+    const mergedClasses = Object.values(classMap);
+    setClasses(mergedClasses);
+  };
+
+  useEffect(() => {
+    loadClasses();
   }, []);
 
   const handleSaveClass = async () => {
@@ -62,11 +95,7 @@ export default function App() {
     setSelectedTime(null);
     setNote("");
     setStep(1);
-    loadCustomClasses().then((customClasses) => {
-      if (customClasses) {
-        setClasses([...initialClasses, ...customClasses]);
-      }
-    });
+    loadClasses();
   };
 
   const handleClassSelect = (classId: string) => {
