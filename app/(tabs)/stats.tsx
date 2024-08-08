@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { RefreshControl, ScrollView } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import { useTheme } from "@/styles/theme";
 import ClassDistribution from "@/components/ClassDistribution";
 import LessonDistribution from "@/components/LessonDistribution";
@@ -13,10 +14,27 @@ const ExplorePage: React.FC = () => {
   const [refreshing, setRefreshing] = useState(false);
   const theme = useTheme();
 
+  const navigation: any = useNavigation();
+
   const loadClasses = useCallback(async () => {
     const fetchedClasses = await fetchClasses();
     setClasses(fetchedClasses);
   }, []);
+
+  const handleEditClassSave = async () => {
+    await loadClasses();
+    console.log("Class updated successfully (callback function)");
+    navigation.goBack();
+  };
+
+  const handleEditClass = (classItem: ClassItem) => {
+    navigation.navigate("EditClass", {
+      classItem,
+    });
+    navigation.setOptions({
+      onSave: handleEditClassSave,
+    });
+  };
 
   useEffect(() => {
     loadClasses();
@@ -50,7 +68,11 @@ const ExplorePage: React.FC = () => {
       <ClassDistribution classes={classes} />
       <LessonDistribution classes={classes} />
       <TimeDistribution classes={classes} />
-      <ClassList classes={classes} onDeleteClass={handleDeleteClass} />
+      <ClassList
+        classes={classes}
+        onDeleteClass={handleDeleteClass}
+        onEditClass={handleEditClass}
+      />
     </ScrollView>
   );
 };

@@ -47,3 +47,15 @@ export const deleteClass = async (id: string): Promise<void> => {
     console.error("Error deleting class:", error);
   }
 };
+
+export const updateClass = async (updatedClass: ClassItem): Promise<void> => {
+  try {
+    const classes = await fetchClasses();
+    const updatedClasses = classes.map((classItem) =>
+      classItem.id === updatedClass.id ? updatedClass : classItem
+    );
+    await AsyncStorage.setItem("classes", JSON.stringify(updatedClasses));
+  } catch (error) {
+    console.error("Error updating class:", error);
+  }
+};
