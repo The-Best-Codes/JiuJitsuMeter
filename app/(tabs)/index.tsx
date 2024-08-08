@@ -27,7 +27,7 @@ export default function App() {
   useEffect(() => {
     loadCustomClasses().then((customClasses) => {
       if (customClasses) {
-        setClasses(customClasses);
+        setClasses([...initialClasses, ...customClasses]);
       }
     });
   }, []);
@@ -62,6 +62,11 @@ export default function App() {
     setSelectedTime(null);
     setNote("");
     setStep(1);
+    loadCustomClasses().then((customClasses) => {
+      if (customClasses) {
+        setClasses([...initialClasses, ...customClasses]);
+      }
+    });
   };
 
   const handleClassSelect = (classId: string) => {

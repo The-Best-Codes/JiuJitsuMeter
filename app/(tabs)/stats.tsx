@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { RefreshControl, ScrollView } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useTheme } from "@/styles/theme";
+import { initialClasses } from "@/utils/constants";
 import ClassDistribution from "@/components/ClassDistribution";
 import LessonDistribution from "@/components/LessonDistribution";
 import TimeDistribution from "@/components/TimeDistribution";
@@ -14,7 +15,7 @@ import {
 } from "@/utils/storage";
 
 const ExplorePage: React.FC = () => {
-  const [classes, setClasses] = useState<Class[]>([]);
+  const [classes, setClasses] = useState<Class[]>(initialClasses);
   const [classLogs, setClassLogs] = useState<ClassLog[]>([]);
   const [refreshing, setRefreshing] = useState(false);
   const theme = useTheme();
@@ -24,7 +25,7 @@ const ExplorePage: React.FC = () => {
   const loadData = useCallback(async () => {
     const fetchedClasses = await loadCustomClasses();
     const fetchedClassLogs = await fetchClassLogs();
-    setClasses(fetchedClasses);
+    setClasses([...initialClasses, ...fetchedClasses]);
     setClassLogs(fetchedClassLogs);
   }, []);
 

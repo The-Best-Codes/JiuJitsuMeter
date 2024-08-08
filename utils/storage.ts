@@ -2,12 +2,22 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { initialClasses } from "@/utils/constants";
 import { Class, Lesson, ClassLog } from "@/types";
 
+// Reset all classes to initial state
+export const resetClasses = async (): Promise<void> => {
+  try {
+    await AsyncStorage.setItem("customClasses", JSON.stringify([]));
+  } catch (error) {
+    console.error("Error resetting classes:", error);
+    throw error;
+  }
+};
+
 // Load custom classes
 export const loadCustomClasses = async (): Promise<Class[]> => {
   try {
     const customClassesData = await AsyncStorage.getItem("customClasses");
     if (!customClassesData) {
-      return [...initialClasses];
+      return [];
     }
 
     let customClasses: Class[];
@@ -22,13 +32,13 @@ export const loadCustomClasses = async (): Promise<Class[]> => {
         parseError
       );
       await AsyncStorage.removeItem("customClasses");
-      return [...initialClasses];
+      return [];
     }
 
-    return [...initialClasses, ...customClasses];
+    return customClasses;
   } catch (error) {
     console.error("Error loading custom classes:", error);
-    return [...initialClasses];
+    return [];
   }
 };
 
@@ -92,18 +102,24 @@ export const addCustomLesson = async (
   lessonName: string
 ): Promise<Lesson> => {
   try {
-    const customClassesData = await AsyncStorage.getItem("customClasses");
-    if (!customClassesData) throw new Error("No custom classes found");
-    const customClasses = JSON.parse(customClassesData);
-    const classIndex = customClasses.findIndex((c: Class) => c.id === classId);
+    const customClasses = await loadCustomClasses();
+    const allClasses = [...initialClasses, ...customClasses];
+    const classIndex = allClasses.findIndex((c: Class) => c.id === classId);
     if (classIndex === -1) throw new Error("Class not found");
 
     const newLesson: Lesson = {
       id: `lesson_${Date.now()}`,
       name: lessonName,
     };
-    customClasses[classIndex].data.push(newLesson);
-    await AsyncStorage.setItem("customClasses", JSON.stringify(customClasses));
+    allClasses[classIndex].data.push(newLesson);
+
+    const updatedCustomClasses = allClasses.filter(
+      (c) => !initialClasses.some((ic: Class) => ic.id === c.id)
+    );
+    await AsyncStorage.setItem(
+      "customClasses",
+      JSON.stringify(updatedCustomClasses)
+    );
     return newLesson;
   } catch (error) {
     console.error("Error adding custom lesson:", error);
@@ -118,17 +134,25 @@ export const editCustomLesson = async (
   newLessonName: string
 ): Promise<void> => {
   try {
-    const classes = await loadCustomClasses();
-    const classIndex = classes.findIndex((c) => c.id === classId);
+    const customClasses = await loadCustomClasses();
+    const allClasses = [...initialClasses, ...customClasses];
+    const classIndex = allClasses.findIndex((c) => c.id === classId);
     if (classIndex === -1) throw new Error("Class not found");
 
-    const lessonIndex = classes[classIndex].data.findIndex(
-      (l) => l.id === lessonId
+    const lessonIndex = allClasses[classIndex].data.findIndex(
+      (l: Lesson) => l.id === lessonId
     );
     if (lessonIndex === -1) throw new Error("Lesson not found");
 
-    classes[classIndex].data[lessonIndex].name = newLessonName;
-    await AsyncStorage.setItem("customClasses", JSON.stringify(classes));
+    allClasses[classIndex].data[lessonIndex].name = newLessonName;
+
+    const updatedCustomClasses = allClasses.filter(
+      (c) => !initialClasses.some((ic: Class) => ic.id === c.id)
+    );
+    await AsyncStorage.setItem(
+      "customClasses",
+      JSON.stringify(updatedCustomClasses)
+    );
   } catch (error) {
     console.error("Error editing custom lesson:", error);
     throw error;
@@ -141,14 +165,22 @@ export const deleteCustomLesson = async (
   lessonId: string
 ): Promise<void> => {
   try {
-    const classes = await loadCustomClasses();
-    const classIndex = classes.findIndex((c) => c.id === classId);
+    const customClasses = await loadCustomClasses();
+    const allClasses = [...initialClasses, ...customClasses];
+    const classIndex = allClasses.findIndex((c) => c.id === classId);
     if (classIndex === -1) throw new Error("Class not found");
 
-    classes[classIndex].data = classes[classIndex].data.filter(
-      (l) => l.id !== lessonId
+    allClasses[classIndex].data = allClasses[classIndex].data.filter(
+      (l: Lesson) => l.id !== lessonId
     );
-    await AsyncStorage.setItem("customClasses", JSON.stringify(classes));
+
+    const updatedCustomClasses = allClasses.filter(
+      (c) => !initialClasses.some((ic: Class) => ic.id === c.id)
+    );
+    await AsyncStorage.setItem(
+      "customClasses",
+      JSON.stringify(updatedCustomClasses)
+    );
   } catch (error) {
     console.error("Error deleting custom lesson:", error);
     throw error;

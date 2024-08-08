@@ -14,7 +14,7 @@ export const initialClasses: any = [
       },
       {
         name: "Positional Control - Mount (GU 3) | Body Fold Takedown (GU 14)",
-        id: "position_control-combatives",
+        id: "position_control_-body_fold-combatives",
       },
       {
         name: "Take the Back + R.N.C. - Mount (GU 4 + 5) | Clinch (Conservative Opponent) (GU 15)",
@@ -54,7 +54,7 @@ export const initialClasses: any = [
       },
       {
         name: "Straight Armbar - Guard (GU 19) | Clinch (Aggressive Opponent) (GU 7)",
-        id: "straight_armbar-combatives",
+        id: "straight_armbar_-clinch-combatives",
       },
       {
         name: "Double Ankle Sweep - Guard (GU 20) | Guillotine Choke (Gaurd Pull) (GU 23)",

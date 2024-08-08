@@ -63,7 +63,7 @@ const ClassList: React.FC<Props> = ({
       </Title>
       {classLogs &&
         classLogs.length > 0 &&
-        classLogs.reverse().map((classLog, index) => {
+        classLogs.map((classLog, index) => {
           const { className, lessonName } = getClassAndLessonNames(
             classLog.classId,
             classLog.lessonId
