@@ -11,7 +11,11 @@ interface Props {
   onEditClass: (classItem: ClassItem) => void; // Add this line
 }
 
-const ClassList: React.FC<Props> = ({ classes, onDeleteClass, onEditClass }) => {
+const ClassList: React.FC<Props> = ({
+  classes,
+  onDeleteClass,
+  onEditClass,
+}) => {
   const theme = useTheme();
 
   const confirmDelete = (id: string, className: string) => {
@@ -76,6 +80,7 @@ const ClassList: React.FC<Props> = ({ classes, onDeleteClass, onEditClass }) => 
               <View style={{ flexDirection: "row" }}>
                 <IconButton
                   icon="pencil"
+                  iconColor={theme.colors.onPrimary}
                   onPress={() => onEditClass(classItem)}
                   style={{
                     marginTop: -8,
@@ -85,6 +90,7 @@ const ClassList: React.FC<Props> = ({ classes, onDeleteClass, onEditClass }) => 
                 />
                 <IconButton
                   icon="delete"
+                  iconColor={theme.colors.onError}
                   onPress={() =>
                     confirmDelete(
                       classItem.id,
