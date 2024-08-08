@@ -9,6 +9,7 @@ import LessonPicker from "@/components/LessonPicker";
 import DateTimePicker from "@/components/DateTimePicker";
 import NoteInput from "@/components/NoteInput";
 import { useTheme } from "@/styles/theme";
+import { initialClasses } from "@/utils/constants";
 
 const EditClass: React.FC = () => {
   const route = useRoute();
@@ -31,10 +32,45 @@ const EditClass: React.FC = () => {
 
   const theme = useTheme();
 
-  useEffect(() => {
-    loadCustomClasses().then((loadedClasses) => {
-      setClasses(loadedClasses);
+  const loadClasses = async () => {
+    const customClasses = await loadCustomClasses();
+    const classMap: { [id: string]: Class } = {};
+
+    // Add initial classes to the map
+    initialClasses.forEach((initialClass: Class) => {
+      classMap[initialClass.id] = { ...initialClass };
     });
+
+    // Add custom classes to the map, merging lessons if class already exists
+    customClasses.forEach((customClass) => {
+      if (classMap[customClass.id]) {
+        const existingClass = classMap[customClass.id];
+        const existingLessonIds = new Set(
+          existingClass.data.map((lesson) => lesson.id)
+        );
+
+        const mergedLessons = [
+          ...existingClass.data,
+          ...customClass.data.filter(
+            (lesson) => !existingLessonIds.has(lesson.id)
+          ),
+        ];
+
+        classMap[customClass.id] = {
+          ...existingClass,
+          data: mergedLessons,
+        };
+      } else {
+        classMap[customClass.id] = { ...customClass };
+      }
+    });
+
+    const mergedClasses = Object.values(classMap);
+    setClasses(mergedClasses);
+  };
+
+  useEffect(() => {
+    loadClasses();
   }, []);
 
   useLayoutEffect(() => {
