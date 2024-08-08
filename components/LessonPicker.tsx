@@ -2,8 +2,17 @@ import React, { useState } from "react";
 import { View } from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import { TextInput, Button } from "react-native-paper";
-import { saveCustomClasses } from "@/utils/storage";
+import { Class, Lesson } from "@/types";
+import { addCustomLesson } from "@/utils/storage";
 import { useTheme } from "@/styles/theme";
+
+interface LessonPickerProps {
+  classes: Class[];
+  selectedClass: string;
+  selectedLesson: string;
+  onSelectLesson: (lessonId: string) => void;
+  setClasses: React.Dispatch<React.SetStateAction<Class[]>>;
+}
 
 export default function LessonPicker({
   classes,
@@ -11,27 +20,34 @@ export default function LessonPicker({
   selectedLesson,
   onSelectLesson,
   setClasses,
-}: any) {
+}: LessonPickerProps) {
   const [newLessonName, setNewLessonName] = useState("");
   const [showNewLessonInput, setShowNewLessonInput] = useState(false);
 
   const theme = useTheme();
 
-  const handleAddNewLesson = () => {
+  const selectedClassObject = classes.find((c) => c.id === selectedClass);
+
+  const handleAddNewLesson = async () => {
     if (
       newLessonName.trim() &&
       selectedClass &&
-      !classes[selectedClass].includes(newLessonName)
+      selectedClassObject &&
+      !selectedClassObject.data.some((lesson) => lesson.name === newLessonName)
     ) {
-      const updatedClasses = {
-        ...classes,
-        [selectedClass]: [...classes[selectedClass], newLessonName],
-      };
-      setClasses(updatedClasses);
-      saveCustomClasses(updatedClasses);
-      onSelectLesson(newLessonName);
-      setNewLessonName("");
-      setShowNewLessonInput(false);
+      try {
+        const newLesson = await addCustomLesson(selectedClass, newLessonName);
+        setClasses((prevClasses) =>
+          prevClasses.map((c) =>
+            c.id === selectedClass ? { ...c, data: [...c.data, newLesson] } : c
+          )
+        );
+        onSelectLesson(newLesson.id);
+        setNewLessonName("");
+        setShowNewLessonInput(false);
+      } catch (error) {
+        console.error("Error adding new lesson:", error);
+      }
     }
   };
 
@@ -54,9 +70,13 @@ export default function LessonPicker({
         }}
       >
         <Picker.Item label="Select a lesson" value="" />
-        {classes[selectedClass] &&
-          classes[selectedClass].map((lesson: string) => (
-            <Picker.Item key={lesson} label={lesson} value={lesson} />
+        {selectedClassObject &&
+          selectedClassObject.data.map((lesson: Lesson) => (
+            <Picker.Item
+              key={lesson.id}
+              label={lesson.name}
+              value={lesson.id}
+            />
           ))}
         <Picker.Item label="Add new lesson" value="add_new_lesson" />
       </Picker>
@@ -75,11 +95,11 @@ export default function LessonPicker({
             value={newLessonName}
             style={{ flex: 1 }}
             onChangeText={setNewLessonName}
-            label={"Enter new lesson name"}
+            label="Enter new lesson name"
             mode="outlined"
           />
           <Button
-            icon={"plus"}
+            icon="plus"
             mode="contained"
             style={{
               display: "flex",
@@ -88,6 +108,13 @@ export default function LessonPicker({
               marginTop: 8,
               height: "auto",
             }}
+            disabled={
+              !newLessonName.trim() ||
+              (selectedClassObject &&
+                selectedClassObject.data.some(
+                  (lesson) => lesson.name === newLessonName
+                ))
+            }
             onPress={handleAddNewLesson}
           >
             Add

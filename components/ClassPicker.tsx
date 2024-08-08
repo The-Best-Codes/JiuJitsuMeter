@@ -2,28 +2,39 @@ import React, { useState } from "react";
 import { View } from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import { TextInput, Button } from "react-native-paper";
-import { saveCustomClasses } from "@/utils/storage";
+import { Class } from "@/types";
+import { addCustomClass } from "@/utils/storage";
 import { useTheme } from "@/styles/theme";
+
+interface ClassPickerProps {
+  classes: Class[];
+  selectedClass: string;
+  onSelectClass: (classId: string) => void;
+  setClasses: React.Dispatch<React.SetStateAction<Class[]>>;
+}
 
 export default function ClassPicker({
   classes,
   selectedClass,
   onSelectClass,
   setClasses,
-}: any) {
+}: ClassPickerProps) {
   const [newClassName, setNewClassName] = useState("");
   const [showNewClassInput, setShowNewClassInput] = useState(false);
 
   const theme = useTheme();
 
-  const handleAddNewClass = () => {
-    if (newClassName.trim() && !classes[newClassName]) {
-      const updatedClasses = { ...classes, [newClassName]: [] };
-      setClasses(updatedClasses);
-      saveCustomClasses(updatedClasses);
-      onSelectClass(newClassName);
-      setNewClassName("");
-      setShowNewClassInput(false);
+  const handleAddNewClass = async () => {
+    if (newClassName.trim() && !classes.some((c) => c.class === newClassName)) {
+      try {
+        const newClass = await addCustomClass(newClassName);
+        setClasses((prevClasses) => [...prevClasses, newClass]);
+        onSelectClass(newClass.id);
+        setNewClassName("");
+        setShowNewClassInput(false);
+      } catch (error) {
+        console.error("Error adding new class:", error);
+      }
     }
   };
 
@@ -46,8 +57,12 @@ export default function ClassPicker({
         }}
       >
         <Picker.Item label="Select a class" value="" />
-        {Object.keys(classes).map((className) => (
-          <Picker.Item key={className} label={className} value={className} />
+        {classes.map((classItem) => (
+          <Picker.Item
+            key={classItem.id}
+            label={classItem.class}
+            value={classItem.id}
+          />
         ))}
         <Picker.Item label="Add new class" value="add_new_class" />
       </Picker>
@@ -66,11 +81,11 @@ export default function ClassPicker({
             value={newClassName}
             style={{ flex: 1 }}
             onChangeText={setNewClassName}
-            label={"Enter new class name"}
+            label="Enter new class name"
             mode="outlined"
           />
           <Button
-            icon={"plus"}
+            icon="plus"
             style={{
               display: "flex",
               justifyContent: "center",
@@ -79,6 +94,10 @@ export default function ClassPicker({
               height: "auto",
             }}
             mode="contained"
+            disabled={
+              !newClassName.trim() ||
+              classes.some((c) => c.class === newClassName)
+            }
             onPress={handleAddNewClass}
           >
             Add

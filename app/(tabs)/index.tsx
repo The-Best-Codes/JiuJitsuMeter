@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { View, ScrollView, Alert } from "react-native";
+import { View, ScrollView, RefreshControl, Alert } from "react-native";
 import { Provider as PaperProvider, Button, Text } from "react-native-paper";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import "react-native-get-random-values";
 import { v4 as uuidv4 } from "uuid";
 import ClassPicker from "@/components/ClassPicker";
@@ -10,24 +9,25 @@ import DateTimePicker from "@/components/DateTimePicker";
 import NoteInput from "@/components/NoteInput";
 import { useTheme } from "@/styles/theme";
 import { initialClasses } from "@/utils/constants";
-import { loadCustomClasses, saveCustomClasses } from "@/utils/storage";
+import { Class, Lesson } from "@/types";
+import { loadCustomClasses, saveClassLog } from "@/utils/storage";
 
 export default function App() {
-  const [classes, setClasses] = useState(initialClasses);
-  const [selectedClass, setSelectedClass] = useState("");
-  const [selectedLesson, setSelectedLesson] = useState("");
-  const [selectedDate, setSelectedDate] = useState(null);
-  const [selectedTime, setSelectedTime] = useState(null);
-  const [note, setNote] = useState("");
-  const [isSaving, setIsSaving] = useState(false);
-  const [step, setStep] = useState(1);
+  const [classes, setClasses] = useState<Class[]>(initialClasses);
+  const [selectedClass, setSelectedClass] = useState<string>("");
+  const [selectedLesson, setSelectedLesson] = useState<string>("");
+  const [selectedDate, setSelectedDate] = useState<Date | null>(null);
+  const [selectedTime, setSelectedTime] = useState<Date | null>(null);
+  const [note, setNote] = useState<string>("");
+  const [isSaving, setIsSaving] = useState<boolean>(false);
+  const [step, setStep] = useState<number>(1);
 
   const theme = useTheme();
 
   useEffect(() => {
     loadCustomClasses().then((customClasses) => {
       if (customClasses) {
-        setClasses({ ...initialClasses, ...customClasses });
+        setClasses(customClasses);
       }
     });
   }, []);
@@ -35,19 +35,16 @@ export default function App() {
   const handleSaveClass = async () => {
     setIsSaving(true);
     try {
-      const classesData = await AsyncStorage.getItem("classes");
-      const currentClasses = classesData ? JSON.parse(classesData) : [];
-
-      currentClasses.unshift({
+      const classLog = {
         id: uuidv4(),
-        selectedClass,
-        selectedLesson,
-        selectedDate,
-        selectedTime,
+        classId: selectedClass,
+        lessonId: selectedLesson,
+        date: selectedDate,
+        time: selectedTime,
         note,
-      });
+      };
 
-      await AsyncStorage.setItem("classes", JSON.stringify(currentClasses));
+      await saveClassLog(classLog);
       Alert.alert("Success", "Class saved successfully!");
       resetForm();
     } catch (error) {
@@ -67,9 +64,9 @@ export default function App() {
     setStep(1);
   };
 
-  const handleClassSelect = (className: string) => {
-    if (className && className !== "add_new_class") {
-      setSelectedClass(className);
+  const handleClassSelect = (classId: string) => {
+    if (classId && classId !== "add_new_class") {
+      setSelectedClass(classId);
       setStep(2);
     } else {
       setSelectedClass("");
@@ -77,9 +74,9 @@ export default function App() {
     }
   };
 
-  const handleLessonSelect = (lesson: string) => {
-    if (lesson) {
-      setSelectedLesson(lesson);
+  const handleLessonSelect = (lessonId: string) => {
+    if (lessonId) {
+      setSelectedLesson(lessonId);
       setStep(3);
     } else {
       setSelectedLesson("");
@@ -87,7 +84,7 @@ export default function App() {
     }
   };
 
-  const handleDateTimeSelect = (date: any, time: any) => {
+  const handleDateTimeSelect = (date: Date, time: Date) => {
     setSelectedDate(date);
     setSelectedTime(time);
     setStep(4);
@@ -108,7 +105,12 @@ export default function App() {
   return (
     <PaperProvider theme={theme}>
       <View style={{ flex: 1 }}>
-        <ScrollView contentContainerStyle={{ padding: 20 }}>
+        <ScrollView
+          contentContainerStyle={{ padding: 20 }}
+          refreshControl={
+            <RefreshControl refreshing={isSaving} onRefresh={resetForm} />
+          }
+        >
           <Text
             style={{
               fontSize: 28,

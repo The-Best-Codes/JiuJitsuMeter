@@ -6,48 +6,55 @@ import ClassDistribution from "@/components/ClassDistribution";
 import LessonDistribution from "@/components/LessonDistribution";
 import TimeDistribution from "@/components/TimeDistribution";
 import ClassList from "@/components/ClassList";
-import { fetchClasses, deleteClass } from "@/utils/storage";
-import { ClassItem } from "@/types";
+import { Class, ClassLog } from "@/types";
+import {
+  loadCustomClasses,
+  fetchClassLogs,
+  deleteClassLog,
+} from "@/utils/storage";
 
 const ExplorePage: React.FC = () => {
-  const [classes, setClasses] = useState<ClassItem[]>([]);
+  const [classes, setClasses] = useState<Class[]>([]);
+  const [classLogs, setClassLogs] = useState<ClassLog[]>([]);
   const [refreshing, setRefreshing] = useState(false);
   const theme = useTheme();
 
   const navigation: any = useNavigation();
 
-  const loadClasses = useCallback(async () => {
-    const fetchedClasses = await fetchClasses();
+  const loadData = useCallback(async () => {
+    const fetchedClasses = await loadCustomClasses();
+    const fetchedClassLogs = await fetchClassLogs();
     setClasses(fetchedClasses);
+    setClassLogs(fetchedClassLogs);
   }, []);
 
-  const handleEditClassSave = async () => {
-    await loadClasses();
+  const handleEditClassLogSave = async () => {
+    await loadData();
   };
 
-  const handleEditClass = (classItem: ClassItem) => {
-    navigation.navigate("EditClass", {
-      classItem,
-      onSave: handleEditClassSave,
+  const handleEditClassLog = (classLog: ClassLog) => {
+    navigation.navigate("EditClassLog", {
+      classLog,
+      onSave: handleEditClassLogSave,
     });
   };
 
   useEffect(() => {
-    loadClasses();
-  }, [loadClasses]);
+    loadData();
+  }, [loadData]);
 
   const onRefresh = useCallback(async () => {
     setRefreshing(true);
-    await loadClasses();
+    await loadData();
     setRefreshing(false);
-  }, [loadClasses]);
+  }, [loadData]);
 
-  const handleDeleteClass = useCallback(
+  const handleDeleteClassLog = useCallback(
     async (id: string) => {
-      await deleteClass(id);
-      await loadClasses();
+      await deleteClassLog(id);
+      await loadData();
     },
-    [loadClasses]
+    [loadData]
   );
 
   return (
@@ -61,13 +68,14 @@ const ExplorePage: React.FC = () => {
         <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
       }
     >
-      <ClassDistribution classes={classes} />
-      <LessonDistribution classes={classes} />
-      <TimeDistribution classes={classes} />
+{/*       <ClassDistribution classLogs={classLogs} classes={classes} />
+      <LessonDistribution classLogs={classLogs} classes={classes} />
+      <TimeDistribution classLogs={classLogs} /> */}
       <ClassList
         classes={classes}
-        onDeleteClass={handleDeleteClass}
-        onEditClass={handleEditClass}
+        classLogs={classLogs}
+        onDeleteClassLog={handleDeleteClassLog}
+        onEditClassLog={handleEditClassLog}
       />
     </ScrollView>
   );
