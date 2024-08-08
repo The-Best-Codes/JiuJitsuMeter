@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import { View, ScrollView, Alert } from "react-native";
 import { Provider as PaperProvider, Button, Text } from "react-native-paper";
 import { useRoute, useNavigation } from "@react-navigation/native";
@@ -15,10 +15,10 @@ import { loadCustomClasses } from "@/utils/storage";
 const EditClass: React.FC = () => {
   const route = useRoute();
   const navigation = useNavigation();
-  const { classItem } = route.params as { classItem: ClassItem };
-  const { onSave }: any = navigation
-    .getState()
-    ?.routes.find((route) => route.name === "EditClass")?.params;
+  const { classItem, onSave } = route.params as {
+    classItem: ClassItem;
+    onSave: () => void;
+  };
 
   const [classes, setClasses] = useState(initialClasses);
   const [editedClass, setEditedClass] = useState<ClassItem>({
@@ -45,12 +45,21 @@ const EditClass: React.FC = () => {
     });
   }, []);
 
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      title: `Edit ${classItem.selectedClass} Class`,
+    });
+  }, [navigation, classItem.selectedClass]);
+
   const handleSave = async () => {
     setIsSaving(true);
     try {
       await updateClass(editedClass);
       Alert.alert("Success", "Class updated successfully!");
-      if (onSave) onSave(editedClass);
+      if (onSave) {
+        onSave(); // Call the callback function
+      }
+      navigation.goBack(); // Navigate back after successful update
     } catch (error) {
       console.error("Error updating class:", error);
       Alert.alert("Error", "Failed to update class. Please try again.");

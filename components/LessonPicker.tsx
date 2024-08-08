@@ -18,7 +18,11 @@ export default function LessonPicker({
   const theme = useTheme();
 
   const handleAddNewLesson = () => {
-    if (newLessonName.trim() && selectedClass) {
+    if (
+      newLessonName.trim() &&
+      selectedClass &&
+      !classes[selectedClass].includes(newLessonName)
+    ) {
       const updatedClasses = {
         ...classes,
         [selectedClass]: [...classes[selectedClass], newLessonName],

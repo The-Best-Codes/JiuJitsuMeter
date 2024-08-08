@@ -23,15 +23,11 @@ const ExplorePage: React.FC = () => {
 
   const handleEditClassSave = async () => {
     await loadClasses();
-    console.log("Class updated successfully (callback function)");
-    navigation.goBack();
   };
 
   const handleEditClass = (classItem: ClassItem) => {
     navigation.navigate("EditClass", {
       classItem,
-    });
-    navigation.setOptions({
       onSave: handleEditClassSave,
     });
   };

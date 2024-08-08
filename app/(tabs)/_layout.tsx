@@ -65,6 +65,29 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="classes"
+        options={{
+          tabBarLabel: ({ focused, color }) => null,
+          tabBarIcon: ({ color, focused }) => (
+            <View
+              style={{
+                alignItems: "center",
+                justifyContent: "center",
+                width: 40,
+              }}
+            >
+              <TabBarIcon
+                name={focused ? "save" : "save-outline"}
+                color={color}
+              />
+              {focused && (
+                <Text style={{ color, fontSize: 12, marginTop: 2 }}>Saved</Text>
+              )}
+            </View>
+          ),
+        }}
+      />
     </Tabs>
   );
 }
