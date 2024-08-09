@@ -15,7 +15,6 @@ import {
 import { ClassLog, Class } from "@/types";
 import { formatDate, formatTime, formatMDY } from "@/utils/dateUtils";
 import { useTheme } from "@/styles/theme";
-import { initialClasses } from "@/utils/constants";
 
 interface Props {
   classes: Class[];
@@ -135,37 +134,18 @@ const ClassList: React.FC<Props> = ({
           style={styles.searchBar}
         />
         <View style={styles.sortContainer}>
-          <Menu
-            visible={menuVisible}
-            onDismiss={() => setMenuVisible(false)}
-            anchor={
-              <Button
-                onPress={() => setMenuVisible(true)}
-                mode="outlined"
-                icon="sort"
-              >
-                Sort by: {sortBy}
-              </Button>
-            }
+          <Button
+            onPress={() => setSortBy(sortBy === "class" ? "date" : "class")}
+            icon="sort"
+            style={{ borderColor: theme.colors.primary, borderWidth: 1 }}
           >
-            <Menu.Item
-              onPress={() => {
-                setSortBy("date");
-                setMenuVisible(false);
-              }}
-              title="Date"
-            />
-            <Menu.Item
-              onPress={() => {
-                setSortBy("class");
-                setMenuVisible(false);
-              }}
-              title="Class"
-            />
-          </Menu>
+            Sort by: {sortBy}
+          </Button>
+
           <IconButton
             icon={sortOrder === "asc" ? "sort-ascending" : "sort-descending"}
             onPress={() => setSortOrder(sortOrder === "asc" ? "desc" : "asc")}
+            mode="contained"
           />
         </View>
         <ScrollView>
@@ -188,7 +168,6 @@ const ClassList: React.FC<Props> = ({
                   <Card.Content>
                     <View style={styles.cardHeader}>
                       <Title
-                        numberOfLines={2}
                         style={[
                           styles.cardTitle,
                           { color: theme.colors.onBackground },
