@@ -30,16 +30,17 @@ const ExplorePage: React.FC = () => {
     setClassLogs(fetchedClassLogs);
   }, []);
 
-  const handleEditClassLogSave = async () => {
+  const handleEditClassLogSave = useCallback(async () => {
     await loadData();
-  };
+  }, [loadData]);
 
-  const handleEditClassLog = (classLog: ClassLog) => {
-    navigation.navigate("EditClassLog", {
-      classLog,
-      onSave: handleEditClassLogSave,
-    });
-  };
+  const handleEditClassLog = useCallback(
+    (classLog: ClassLog) => {
+      navigation.navigate("EditClassLog", { classLog });
+      navigation.setParams({ onSave: handleEditClassLogSave });
+    },
+    [navigation, handleEditClassLogSave]
+  );
 
   useEffect(() => {
     loadData();
