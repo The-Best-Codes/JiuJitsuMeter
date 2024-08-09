@@ -13,6 +13,7 @@ import {
   fetchClassLogs,
   deleteClassLog,
 } from "@/utils/storage";
+import { Divider, Provider as PaperProvider } from "react-native-paper";
 
 const ExplorePage: React.FC = () => {
   const [classes, setClasses] = useState<Class[]>(initialClasses);
@@ -59,26 +60,30 @@ const ExplorePage: React.FC = () => {
   );
 
   return (
-    <ScrollView
-      style={{
-        backgroundColor: theme.colors.background,
-        padding: 20,
-        marginTop: 16,
-      }}
-      refreshControl={
-        <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
-      }
-    >
-      <ClassDistribution classLogs={classLogs} classes={classes} />
-      <LessonDistribution classLogs={classLogs} classes={classes} />
-      <TimeDistribution classLogs={classLogs} />
-      <ClassList
-        classes={classes}
-        classLogs={classLogs}
-        onDeleteClassLog={handleDeleteClassLog}
-        onEditClassLog={handleEditClassLog}
-      />
-    </ScrollView>
+    <PaperProvider theme={theme}>
+      <ScrollView
+        style={{
+          backgroundColor: theme.colors.background,
+          padding: 20,
+          marginTop: 16,
+        }}
+        refreshControl={
+          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+        }
+      >
+        <ClassDistribution classLogs={classLogs} classes={classes} />
+        <Divider style={{ marginVertical: 20 }} />
+        <LessonDistribution classLogs={classLogs} classes={classes} />
+        <Divider style={{ marginVertical: 20 }} />
+        <TimeDistribution classLogs={classLogs} />
+        <ClassList
+          classes={classes}
+          classLogs={classLogs}
+          onDeleteClassLog={handleDeleteClassLog}
+          onEditClassLog={handleEditClassLog}
+        />
+      </ScrollView>
+    </PaperProvider>
   );
 };
 

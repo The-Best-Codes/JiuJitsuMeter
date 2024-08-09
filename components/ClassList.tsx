@@ -8,6 +8,8 @@ import {
   Searchbar,
   Menu,
   Button,
+  Divider,
+  Text,
   Provider as PaperProvider,
 } from "react-native-paper";
 import { ClassLog, Class } from "@/types";
@@ -120,7 +122,11 @@ const ClassList: React.FC<Props> = ({
 
   return (
     <PaperProvider theme={theme}>
+      <Divider style={{ marginTop: 64, marginBottom: 16 }} />
       <View style={styles.container}>
+        <Text style={{ fontSize: 24, fontWeight: "bold", marginBottom: 32 }}>
+          Class Logs
+        </Text>
         <Searchbar
           placeholder="Search classes"
           onChangeText={setSearchQuery}

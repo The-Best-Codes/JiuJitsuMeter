@@ -1,6 +1,7 @@
 import React from "react";
-import { View, Dimensions } from "react-native";
-import { Text, useTheme } from "react-native-paper";
+import { View, Dimensions, ScrollView } from "react-native";
+import { Text, Provider as PaperProvider } from "react-native-paper";
+import { useTheme } from "@/styles/theme";
 import { PieChart } from "react-native-chart-kit";
 import { ClassLog, Class } from "@/types";
 
@@ -12,7 +13,7 @@ interface Props {
 const LessonDistribution: React.FC<Props> = ({ classLogs, classes }) => {
   const theme = useTheme();
   const screenWidth = Dimensions.get("window").width;
-  const chartWidth = screenWidth * 0.9;
+  const chartWidth = screenWidth * 1;
 
   const getLessonStats = () => {
     const stats: { [key: string]: number } = {};
@@ -46,20 +47,25 @@ const LessonDistribution: React.FC<Props> = ({ classLogs, classes }) => {
         Lesson Distribution
       </Text>
       {lessonData.length > 0 ? (
-        <PieChart
-          data={lessonData}
-          width={chartWidth}
-          height={200}
-          chartConfig={{
-            backgroundColor: theme.colors.background,
-            backgroundGradientFrom: theme.colors.background,
-            backgroundGradientTo: theme.colors.background,
-            color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
-          }}
-          accessor="count"
-          backgroundColor="transparent"
-          paddingLeft="15"
-        />
+        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+          <PieChart
+            data={lessonData}
+            width={chartWidth}
+            height={200}
+            chartConfig={{
+              backgroundColor: theme.colors.background,
+              backgroundGradientFrom: theme.colors.background,
+              backgroundGradientTo: theme.colors.background,
+              color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
+            }}
+            accessor="count"
+            backgroundColor="#ffffff"
+            style={{
+              borderRadius: 16,
+            }}
+            paddingLeft={(0 - chartWidth / 15) as any}
+          />
+        </ScrollView>
       ) : (
         <Text>No lesson data available</Text>
       )}
