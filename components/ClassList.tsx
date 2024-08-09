@@ -15,6 +15,7 @@ import {
 import { ClassLog, Class } from "@/types";
 import { formatDate, formatTime, formatMDY } from "@/utils/dateUtils";
 import { useTheme } from "@/styles/theme";
+import { initialClasses } from "@/utils/constants";
 
 interface Props {
   classes: Class[];
