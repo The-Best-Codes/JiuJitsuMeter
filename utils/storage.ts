@@ -31,7 +31,13 @@ export const loadCustomClasses = async (): Promise<Class[]> => {
         "Invalid data format in storage. Clearing customClasses.",
         parseError
       );
-      await AsyncStorage.removeItem("customClasses");
+      const customClasses = JSON.parse(customClassesData);
+      await AsyncStorage.setItem(
+        "customClassesBackup",
+        JSON.stringify(customClasses)
+      );
+
+      await AsyncStorage.setItem("customClasses", JSON.stringify([]));
       return [];
     }
 

@@ -154,7 +154,7 @@ export default function App() {
               textAlign: "center",
             }}
           >
-            Save a Class
+            Save a Lesson
           </Text>
           <ClassPicker
             classes={classes}
@@ -188,7 +188,7 @@ export default function App() {
             onPress={handleSaveClass}
             disabled={!isFormValid || isSaving}
           >
-            {isSaving ? "Saving..." : "Save Class"}
+            {isSaving ? "Saving..." : "Save Lesson"}
           </Button>
         </View>
       </View>

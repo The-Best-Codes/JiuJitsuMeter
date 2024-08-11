@@ -55,11 +55,34 @@ export default function TabLayout() {
               }}
             >
               <TabBarIcon
-                name={focused ? "bar-chart" : "bar-chart-outline"}
+                name={focused ? "stats-chart" : "stats-chart-outline"}
                 color={color}
               />
               {focused && (
-                <Text style={{ color, fontSize: 12, marginTop: 2 }}>Stats</Text>
+                <Text style={{ color, fontSize: 12, marginTop: 2 }}>Saved</Text>
+              )}
+            </View>
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="levels"
+        options={{
+          tabBarLabel: ({ focused, color }) => null,
+          tabBarIcon: ({ color, focused }) => (
+            <View
+              style={{
+                alignItems: "center",
+                justifyContent: "center",
+                width: 40,
+              }}
+            >
+              <TabBarIcon
+                name={focused ? "trophy" : "trophy-outline"}
+                color={color}
+              />
+              {focused && (
+                <Text style={{ color, fontSize: 12, marginTop: 2 }}>Level</Text>
               )}
             </View>
           ),
@@ -78,11 +101,11 @@ export default function TabLayout() {
               }}
             >
               <TabBarIcon
-                name={focused ? "save" : "save-outline"}
+                name={focused ? "settings" : "settings-outline"}
                 color={color}
               />
               {focused && (
-                <Text style={{ color, fontSize: 12, marginTop: 2 }}>Saved</Text>
+                <Text style={{ color, fontSize: 12, marginTop: 2 }}>Tools</Text>
               )}
             </View>
           ),

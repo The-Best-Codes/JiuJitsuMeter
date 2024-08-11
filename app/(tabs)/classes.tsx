@@ -15,6 +15,7 @@ import {
   Dialog,
   Portal,
   Paragraph,
+  Text,
   Provider as PaperProvider,
 } from "react-native-paper";
 import { useTheme } from "@/styles/theme";
@@ -243,6 +244,9 @@ const ClassesScreen = () => {
   return (
     <PaperProvider theme={theme}>
       <View style={styles.container}>
+        <Text style={{ fontSize: 24, fontWeight: "bold", marginBottom: 10 }}>
+          Manage Custom Classes
+        </Text>
         <ScrollView
           refreshControl={
             <RefreshControl refreshing={false} onRefresh={loadClasses} />
@@ -339,14 +343,14 @@ const ClassesScreen = () => {
               </View>
             </List.Accordion>
           ))}
-          <Button
+          {/* <Button
             icon={"refresh"}
             mode="contained"
             onPress={() => confirmResetAllClasses()}
             style={{ marginVertical: 32, backgroundColor: theme.colors.error }}
           >
             Reset All Classes
-          </Button>
+          </Button> */}
         </ScrollView>
 
         <FAB
