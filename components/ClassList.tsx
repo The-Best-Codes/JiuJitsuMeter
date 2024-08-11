@@ -2,16 +2,15 @@ import React, { useState, useMemo } from "react";
 import { View, ScrollView, Alert, StyleSheet } from "react-native";
 import {
   Card,
-  Title,
   Paragraph,
   IconButton,
   Searchbar,
-  Menu,
   Button,
   Divider,
   Text,
   Provider as PaperProvider,
 } from "react-native-paper";
+import ExpandableText from "@/components/ExpandableText";
 import { ClassLog, Class } from "@/types";
 import { formatDate, formatTime, formatMDY } from "@/utils/dateUtils";
 import { useTheme } from "@/styles/theme";
@@ -33,7 +32,6 @@ const ClassList: React.FC<Props> = ({
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState("date");
   const [sortOrder, setSortOrder] = useState("desc");
-  const [menuVisible, setMenuVisible] = useState(false);
 
   const getClassAndLessonNames = (classId: string, lessonId: string) => {
     try {
@@ -167,14 +165,16 @@ const ClassList: React.FC<Props> = ({
                 >
                   <Card.Content>
                     <View style={styles.cardHeader}>
-                      <Title
-                        style={[
-                          styles.cardTitle,
-                          { color: theme.colors.onBackground },
-                        ]}
-                      >
-                        {`${className}`} &middot; {`${lessonName}`}
-                      </Title>
+                      <View style={styles.titleContainer}>
+                        <ExpandableText
+                          text={`${className} · ${lessonName}`}
+                          maxLines={2}
+                          style={[
+                            styles.cardTitle,
+                            { color: theme.colors.onBackground },
+                          ]}
+                        />
+                      </View>
                       <View style={styles.cardActions}>
                         <IconButton
                           icon="pencil"
@@ -249,16 +249,20 @@ const styles = StyleSheet.create({
   },
   cardHeader: {
     flexDirection: "row",
-    alignItems: "flex-start",
     justifyContent: "space-between",
     marginBottom: 8,
   },
-  cardTitle: {
+  titleContainer: {
     flex: 1,
     marginRight: 8,
   },
+  cardTitle: {
+    fontSize: 24,
+    fontWeight: "bold",
+  },
   cardActions: {
     flexDirection: "row",
+    alignItems: "flex-start",
   },
   actionButton: {
     marginTop: -4,
