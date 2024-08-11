@@ -21,10 +21,12 @@ export default function App() {
   const [note, setNote] = useState<string>("");
   const [isSaving, setIsSaving] = useState<boolean>(false);
   const [step, setStep] = useState<number>(1);
+  const [isRefreshing, setIsRefreshing] = useState<boolean>(true);
 
   const theme = useTheme();
 
   const loadClasses = async () => {
+    setIsRefreshing(true);
     const customClasses = await loadCustomClasses();
     const classMap: { [id: string]: Class } = {};
 
@@ -59,6 +61,7 @@ export default function App() {
 
     const mergedClasses = Object.values(classMap);
     setClasses(mergedClasses);
+    setIsRefreshing(false);
   };
 
   useEffect(() => {
@@ -142,7 +145,7 @@ export default function App() {
         <ScrollView
           contentContainerStyle={{ padding: 20 }}
           refreshControl={
-            <RefreshControl refreshing={isSaving} onRefresh={resetForm} />
+            <RefreshControl refreshing={isRefreshing} onRefresh={resetForm} />
           }
         >
           <Text

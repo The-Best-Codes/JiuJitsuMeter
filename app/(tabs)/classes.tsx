@@ -36,6 +36,7 @@ import { initialClasses } from "@/utils/constants";
 const ClassesScreen = () => {
   const theme = useTheme();
   const navigation = useNavigation();
+  const [refreshing, setRefreshing] = useState(true);
   const [classes, setClasses] = useState<Class[]>(initialClasses);
   const [isAddingClass, setIsAddingClass] = useState(false);
   const [newClassName, setNewClassName] = useState("");
@@ -58,6 +59,7 @@ const ClassesScreen = () => {
   }, []);
 
   const loadClasses = async () => {
+    setRefreshing(true);
     const customClasses = await loadCustomClasses();
     const classMap: { [id: string]: Class } = {};
 
@@ -92,6 +94,7 @@ const ClassesScreen = () => {
 
     const mergedClasses = Object.values(classMap);
     setClasses(mergedClasses);
+    setRefreshing(false);
   };
 
   const isNameUnique = (
@@ -249,7 +252,7 @@ const ClassesScreen = () => {
         </Text>
         <ScrollView
           refreshControl={
-            <RefreshControl refreshing={false} onRefresh={loadClasses} />
+            <RefreshControl refreshing={refreshing} onRefresh={loadClasses} />
           }
         >
           {classes.map((classItem) => (

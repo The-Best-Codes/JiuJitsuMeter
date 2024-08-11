@@ -18,7 +18,7 @@ import { Divider, Provider as PaperProvider } from "react-native-paper";
 const ExplorePage: React.FC = () => {
   const [classes, setClasses] = useState<Class[]>(initialClasses);
   const [classLogs, setClassLogs] = useState<ClassLog[]>([]);
-  const [refreshing, setRefreshing] = useState(false);
+  const [refreshing, setRefreshing] = useState(true);
   const theme = useTheme();
 
   const navigation: any = useNavigation();
@@ -30,6 +30,7 @@ const ExplorePage: React.FC = () => {
   }, []);
 
   const loadClasses = async () => {
+    setRefreshing(true);
     const customClasses = await loadCustomClasses();
     const classMap: { [id: string]: Class } = {};
 
@@ -64,6 +65,7 @@ const ExplorePage: React.FC = () => {
 
     const mergedClasses = Object.values(classMap);
     setClasses(mergedClasses);
+    setRefreshing(false);
   };
 
   const handleEditClassLogSave = useCallback(async () => {
@@ -83,9 +85,7 @@ const ExplorePage: React.FC = () => {
   }, [loadData]);
 
   const onRefresh = useCallback(async () => {
-    setRefreshing(true);
     await loadData();
-    setRefreshing(false);
   }, [loadData]);
 
   const handleDeleteClassLog = useCallback(

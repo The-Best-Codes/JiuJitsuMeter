@@ -19,9 +19,14 @@ interface Achievement {
   id: number;
   title: string;
   description: string;
+  xp: number;
+  repeatable?: { limit?: number };
   requirement: {
-    type: "classes" | "lessons" | "logs" | "level";
+    type: "classes" | "lessons" | "logs" | "level" | "time" | "date";
     count: number;
+    before?: string;
+    after?: string;
+    on?: string[];
   };
 }
 
@@ -32,134 +37,195 @@ const LevelsScreen = () => {
   const [experience, setExperience] = useState(0);
   const [classCount, setClassCount] = useState(0);
   const [lessonCount, setLessonCount] = useState(0);
-  const [unlockedAchievements, setUnlockedAchievements] = useState<any[]>([]);
+  const [unlockedAchievements, setUnlockedAchievements] = useState<
+    Achievement[]
+  >([]);
+  const [totalCustomClasses, setTotalCustomClasses] = useState(0);
+  const [totalCustomLessons, setTotalCustomLessons] = useState(0);
+  const [loggedLessonsCount, setLoggedLessonsCount] = useState(0);
+  const [classLogs, setClassLogs] = useState<ClassLog[]>([]);
 
-  const allAchievements = [
+  const allAchievements: Achievement[] = [
     {
       id: 1,
       title: "Class Creator",
       description: "Create your first custom class",
+      xp: 20,
       requirement: { type: "classes", count: 1 },
     },
     {
       id: 2,
       title: "Class Enthusiast",
       description: "Create 5 custom classes",
+      xp: 50,
       requirement: { type: "classes", count: 5 },
     },
     {
       id: 3,
       title: "Class Master",
       description: "Create 10 custom classes",
+      xp: 100,
       requirement: { type: "classes", count: 10 },
     },
     {
       id: 4,
       title: "Lesson Learner",
       description: "Add your first custom lesson",
+      xp: 10,
       requirement: { type: "lessons", count: 1 },
     },
     {
       id: 5,
       title: "Lesson Lover",
       description: "Add 10 custom lessons",
+      xp: 30,
       requirement: { type: "lessons", count: 10 },
     },
     {
       id: 6,
       title: "Lesson Legend",
       description: "Add 50 custom lessons",
+      xp: 100,
       requirement: { type: "lessons", count: 50 },
     },
     {
       id: 7,
       title: "First Step",
       description: "Log your first class",
+      xp: 5,
       requirement: { type: "logs", count: 1 },
     },
     {
       id: 8,
       title: "Consistent Learner",
       description: "Log 10 lessons",
+      xp: 25,
       requirement: { type: "logs", count: 10 },
     },
     {
       id: 9,
       title: "Dedicated Student",
       description: "Log 50 lessons",
+      xp: 75,
       requirement: { type: "logs", count: 50 },
     },
     {
       id: 10,
       title: "Knowledge Seeker",
       description: "Log 100 lessons",
+      xp: 150,
       requirement: { type: "logs", count: 100 },
     },
     {
       id: 11,
       title: "Level Up!",
       description: "Reach level 5",
+      xp: 50,
       requirement: { type: "level", count: 5 },
     },
     {
       id: 12,
       title: "Double Digits",
       description: "Reach level 10",
+      xp: 150,
       requirement: { type: "level", count: 10 },
     },
     {
       id: 13,
-      title: "Quarter Century",
-      description: "Reach level 25",
-      requirement: { type: "level", count: 25 },
+      title: "Level Leader",
+      description: "Reach level 15",
+      xp: 200,
+      requirement: { type: "level", count: 15 },
     },
     {
       id: 14,
-      title: "Halfway There",
-      description: "Reach level 50",
-      requirement: { type: "level", count: 50 },
+      title: "Level Master",
+      description: "Reach level 20",
+      xp: 500,
+      requirement: { type: "level", count: 20 },
     },
     {
       id: 15,
-      title: "Centurion",
-      description: "Reach level 100",
-      requirement: { type: "level", count: 100 },
+      title: "Craziness!",
+      description: "Reach level 25",
+      xp: 1000,
+      requirement: { type: "level", count: 25 },
     },
     {
       id: 16,
-      title: "Unbeatable",
-      description: "Reach level 200",
-      requirement: { type: "level", count: 200 },
-    },
-    {
-      id: 17,
-      title: "Grandmaster",
-      description: "Reach level 500",
-      requirement: { type: "level", count: 500 },
-    },
-    {
-      id: 18,
-      title: "Ultimate",
-      description: "Reach level 1000",
-      requirement: { type: "level", count: 1000 },
-    },
-    {
-      id: 19,
       title: "Early Bird",
       description: "Log a lesson before 8 AM",
+      xp: 15,
+      repeatable: { limit: 10 },
       requirement: { type: "time", count: 1, before: "8" },
     },
     {
-      id: 20,
+      id: 17,
       title: "Night Owl",
-      description: "Log a lesson after 8 PM",
-      requirement: { type: "time", count: 1, after: "20" },
+      description: "Log a lesson after 7 PM",
+      xp: 15,
+      repeatable: { limit: 10 },
+      requirement: { type: "time", count: 1, after: "19" },
+    },
+    {
+      id: 18,
+      title: "Weekend Warrior",
+      description: "Log a lesson on Saturday or Sunday",
+      xp: 20,
+      repeatable: { limit: 10 },
+      requirement: { type: "date", count: 1, on: ["saturday", "sunday"] },
+    },
+    {
+      id: 19,
+      title: "Streak Master",
+      description: "Log lessons for 7 consecutive days",
+      xp: 50,
+      repeatable: {},
+      requirement: { type: "logs", count: 7 },
+    },
+    {
+      id: 20,
+      title: "Subject Explorer",
+      description: "Log lessons in 5 different classes",
+      xp: 30,
+      requirement: { type: "classes", count: 5 },
     },
     {
       id: 21,
-      title: "Weekend Warrior",
-      description: "Log a lesson on Saturday or Sunday",
-      requirement: { type: "date", count: 1, on: ["saturday", "sunday"] },
+      title: "Speed Learner",
+      description: "Complete 3 lessons in a day",
+      xp: 25,
+      repeatable: { limit: 10 },
+      requirement: { type: "logs", count: 3 },
+    },
+    {
+      id: 22,
+      title: "Lightning Learner",
+      description: "Complete 5 lessons in a day",
+      xp: 40,
+      repeatable: { limit: 10 },
+      requirement: { type: "logs", count: 5 },
+    },
+    {
+      id: 23,
+      title: "Lifelong Learner",
+      description: "Log lessons for 30 consecutive days",
+      xp: 200,
+      requirement: { type: "logs", count: 30 },
+    },
+    {
+      id: 24,
+      title: "Jack of All Trades",
+      description: "Log lessons in 5 different classes",
+      xp: 75,
+      requirement: { type: "classes", count: 10 },
+    },
+    {
+      id: 25,
+      title: "Master of All",
+      description: "Log lessons in 10 different classes",
+      xp: 150,
+      requirement: { type: "classes", count: 20 },
     },
   ];
 
@@ -167,8 +233,30 @@ const LevelsScreen = () => {
     loadData();
   }, []);
 
+  useEffect(() => {
+    if (!refreshing) {
+      updateAchievements(
+        totalCustomClasses,
+        totalCustomLessons,
+        loggedLessonsCount,
+        classLogs
+      );
+    }
+  }, [
+    refreshing,
+    totalCustomClasses,
+    totalCustomLessons,
+    loggedLessonsCount,
+    classLogs,
+  ]);
+
   const loadData = async () => {
     setRefreshing(true);
+    setLevel(0);
+    setExperience(0);
+    setClassCount(0);
+    setLessonCount(0);
+    setUnlockedAchievements([]);
     const classLogs: ClassLog[] = await fetchClassLogs();
     const customClasses: Class[] = await loadCustomClasses();
 
@@ -213,14 +301,9 @@ const LevelsScreen = () => {
 
     const mergedClasses = Object.values(classMap);
 
-    const totalClasses = mergedClasses.length;
     const totalCustomClasses = mergedClasses.filter(
       (cls) => cls.isCustom
     ).length;
-    const totalLessons = mergedClasses.reduce(
-      (sum, cls) => sum + cls.data.length,
-      0
-    );
     const totalCustomLessons = mergedClasses.reduce(
       (sum, cls) =>
         sum +
@@ -231,29 +314,40 @@ const LevelsScreen = () => {
     );
     const loggedLessonsCount = classLogs.length;
 
-    // Calculate XP
-    const loggedLessonsXP = loggedLessonsCount * 10;
-    const customClassesXP = totalCustomClasses * 10;
-    const customLessonsXP = totalCustomLessons * 5;
-    const totalExperience = loggedLessonsXP + customClassesXP + customLessonsXP;
-
     // Calculate unique classes logged
     const uniqueClassesLogged = new Set(classLogs.map((log) => log.classId))
       .size;
 
+    setTotalCustomClasses(totalCustomClasses);
+    setTotalCustomLessons(totalCustomLessons);
+    setLoggedLessonsCount(loggedLessonsCount);
+    setClassLogs(classLogs);
+
     setClassCount(uniqueClassesLogged);
     setLessonCount(loggedLessonsCount);
-    setExperience(totalExperience);
-    setLevel(Math.floor(totalExperience / 100) + 1);
-
-    updateAchievements(
-      totalCustomClasses,
-      totalCustomLessons,
-      loggedLessonsCount,
-      classLogs
-    );
-
     setRefreshing(false);
+  };
+
+  const calculateLevelProgress = (xp: number) => {
+    let level = 1;
+    let xpRequired = 10;
+    let totalXpRequired = xpRequired;
+
+    while (xp >= xpRequired) {
+      xp -= xpRequired;
+      level++;
+      xpRequired += 5;
+      totalXpRequired += xpRequired;
+    }
+
+    const progressInCurrentLevel = xpRequired - (totalXpRequired - experience);
+    const totalProgressRequiredInCurrentLevel = xpRequired;
+
+    return {
+      level,
+      progressInCurrentLevel,
+      totalProgressRequiredInCurrentLevel,
+    };
   };
 
   const updateAchievements = (
@@ -275,7 +369,13 @@ const LevelsScreen = () => {
         case "time":
           return classLogs.some((log: any) => {
             const logTime = new Date(log.time).getHours();
-            return logTime < parseInt(achievement.requirement.before as string);
+            if (achievement.requirement.before) {
+              return logTime < parseInt(achievement.requirement.before);
+            }
+            if (achievement.requirement.after) {
+              return logTime > parseInt(achievement.requirement.after);
+            }
+            return false;
           });
         case "date":
           return classLogs.some((log: any) => {
@@ -289,21 +389,51 @@ const LevelsScreen = () => {
               friday: 5,
               saturday: 6,
             };
-            const requiredDays = (achievement as any).requirement.on.map(
+            const requiredDays = achievement.requirement.on?.map(
               (day: string) => (daysOfWeek as any)[day.toLowerCase()]
             );
-            return requiredDays.includes(logDate);
+            return requiredDays?.includes(logDate);
           });
         default:
           return false;
       }
     });
 
+    // Calculate XP from logged lessons
+    let totalXP = loggedLessons * 10; // Each logged lesson is worth 10 XP
+
+    // Add XP from achievements
+    newUnlockedAchievements.forEach((achievement) => {
+      const existingAchievement = unlockedAchievements.find(
+        (a) => a.id === achievement.id
+      );
+      if (!existingAchievement) {
+        totalXP += achievement.xp;
+      } else if (achievement.repeatable) {
+        const timesUnlocked = (existingAchievement as any).timesUnlocked || 1;
+        if (
+          !achievement.repeatable.limit ||
+          timesUnlocked < achievement.repeatable.limit
+        ) {
+          totalXP += achievement.xp;
+          (achievement as any).timesUnlocked = timesUnlocked + 1;
+        }
+      }
+    });
+
+    setExperience(totalXP);
+    const { level } = calculateLevelProgress(totalXP);
+    setLevel(level);
     setUnlockedAchievements(newUnlockedAchievements);
   };
 
-  const experienceToNextLevel = level * 100 - experience;
-  const progressToNextLevel = 1 - experienceToNextLevel / 100;
+  const { progressInCurrentLevel, totalProgressRequiredInCurrentLevel } =
+    calculateLevelProgress(experience);
+
+  const experienceToNextLevel =
+    totalProgressRequiredInCurrentLevel - progressInCurrentLevel;
+  const progressToNextLevel =
+    progressInCurrentLevel / totalProgressRequiredInCurrentLevel;
 
   return (
     <PaperProvider theme={theme}>
@@ -322,7 +452,8 @@ const LevelsScreen = () => {
               style={styles.progressBar}
             />
             <Text style={styles.experienceText}>
-              {experienceToNextLevel} XP to next level
+              {progressInCurrentLevel}/{totalProgressRequiredInCurrentLevel}{" "}
+              &middot; {experienceToNextLevel} XP to next level
             </Text>
           </Card.Content>
         </Card>
@@ -366,14 +497,17 @@ const LevelsScreen = () => {
           <Card.Content>
             <Text style={styles.achievementsTitle}>Achievements</Text>
             {allAchievements.map((achievement) => {
-              const isUnlocked = unlockedAchievements.some(
-                (a: any) => a.id === achievement.id
+              const unlockedAchievement = unlockedAchievements.find(
+                (a) => a.id === achievement.id
               );
+              const isUnlocked = !!unlockedAchievement;
+              const timesUnlocked =
+                (unlockedAchievement as any)?.timesUnlocked || 1;
               return (
                 <List.Item
                   key={achievement.id}
                   title={achievement.title}
-                  description={achievement.description}
+                  description={`${achievement.description} (+${achievement.xp} XP)`}
                   contentStyle={{ height: "auto" }}
                   left={() => (
                     <Avatar.Icon
@@ -389,7 +523,11 @@ const LevelsScreen = () => {
                         opacity: isUnlocked ? 1 : 0.5,
                       }}
                     >
-                      {isUnlocked ? "Unlocked" : "Locked"}
+                      {isUnlocked
+                        ? `Unlocked ${
+                            achievement.repeatable ? `x${timesUnlocked}` : ""
+                          } (+${achievement.xp * (timesUnlocked || 1)} XP)`
+                        : "Locked"}
                     </Button>
                   )}
                   style={{ opacity: isUnlocked ? 1 : 0.5 }}
