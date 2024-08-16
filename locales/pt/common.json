@@ -1,7 +1,7 @@
 {
   "navigation": {
     "back": "Voltar",
-    "backToHome": "Voltar para a Página Inicial",
+    "backToHome": "Voltar para Casa",
     "close": "Fechar"
   },
   "actions": {
@@ -9,14 +9,14 @@
     "edit": "Alterar",
     "delete": "Excluir",
     "save": "Guardar",
-    "change": "Change",
-    "refresh": "Refresh",
-    "clear": "Clear"
+    "change": "Alterar",
+    "refresh": "Atualizar",
+    "clear": "Limpar"
   },
   "status": {
     "success": "Sucesso",
     "error": "Erro",
-    "warning": "Alerta",
+    "warning": "Aviso",
     "info": "Informação"
   },
   "confirmations": {
@@ -33,19 +33,19 @@
   "classes": {
     "classes": "Classes",
     "lessons": "Aulas",
-    "classSaveSuccess": "Classe salva com sucesso!",
-    "classSaveFailed": "Falha ao salvar classe. Por favor, tente novamente.",
-    "resetAllClasses": "Redefinir Todas as Classes",
-    "resetAllClassesConfirm": "Tem certeza que deseja redefinir todas as classes?",
-    "classEmptyError": "O nome da classe não pode estar vazio.",
-    "classSameNameError": "Classe com mesmo nome já existe."
+    "classSaveSuccess": "Aula salva com sucesso!",
+    "classSaveFailed": "Falha ao salvar aula. Por favor, tente novamente.",
+    "resetAllClasses": "Redefinir Todas as Aulas",
+    "resetAllClassesConfirm": "Tem certeza que deseja redefinir todas as aulas?",
+    "classEmptyError": "O nome da aula não pode estar vazio.",
+    "classSameNameError": "Aula com mesmo nome já existe."
   },
   "lessons": {
     "saveALesson": "Salvar uma Aula",
     "saveLesson": "Salvar Aula",
     "lessonSameNameError": "Aula com mesmo nome já existe nesta classe.",
-    "editLessonLog": "Editar Registro da Aula",
-    "updateLessonLog": "Atualizar Registro da Aula"
+    "editLessonLog": "Editar Registro de Aula",
+    "updateLessonLog": "Atualizar Registro de Aula"
   },
   "stats": {
     "xpToNextLevel": "XP para próximo nível",
@@ -55,8 +55,8 @@
     "totalXp": "XP Total",
     "totalClasses": "Total de Classes",
     "totalLessons": "Total de Aulas",
-    "totalXpRequired": "XP Total Necessária",
-    "totalXpRequiredToNextLevel": "XP Total Necessária para Próximo Nível"
+    "totalXpRequired": "Total de XP Necessário",
+    "totalXpRequiredToNextLevel": "Total de XP Necessário para Próximo Nível"
   },
   "progress": {
     "unlocked": "Desbloqueado",
