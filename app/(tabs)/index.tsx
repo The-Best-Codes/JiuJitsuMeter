@@ -11,6 +11,7 @@ import { useTheme } from "@/styles/theme";
 import { initialClasses } from "@/utils/constants";
 import { Class, Lesson } from "@/types";
 import { loadCustomClasses, saveClassLog } from "@/utils/storage";
+import i18n from "@/i18n";
 
 export default function App() {
   const [classes, setClasses] = useState<Class[]>(initialClasses);
@@ -81,11 +82,11 @@ export default function App() {
       };
 
       await saveClassLog(classLog);
-      Alert.alert("Success", "Class saved successfully!");
+      Alert.alert(i18n.t("status.success"), i18n.t("classes.classSaveSuccess"));
       resetForm();
     } catch (error) {
       console.error("Error saving class:", error);
-      Alert.alert("Error", "Failed to save class. Please try again.");
+      Alert.alert(i18n.t("status.error"), i18n.t("classes.classSaveFailed"));
     } finally {
       setIsSaving(false);
     }
@@ -157,7 +158,7 @@ export default function App() {
               textAlign: "center",
             }}
           >
-            Save a Lesson
+            {i18n.t("lessons.saveALesson")}
           </Text>
           <ClassPicker
             classes={classes}
@@ -191,7 +192,9 @@ export default function App() {
             onPress={handleSaveClass}
             disabled={!isFormValid || isSaving}
           >
-            {isSaving ? "Saving..." : "Save Lesson"}
+            {isSaving
+              ? i18n.t("feedback.saving-ellipsis")
+              : i18n.t("lessons.saveLesson")}
           </Button>
         </View>
       </View>

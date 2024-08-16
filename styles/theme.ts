@@ -1,4 +1,6 @@
 import { useColorScheme } from "@/hooks/useColorScheme";
+import { useEffect, useState } from "react";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const lightTheme = {
   colors: {

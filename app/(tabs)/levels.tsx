@@ -14,6 +14,7 @@ import { fetchClassLogs, loadCustomClasses } from "@/utils/storage";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { initialClasses } from "@/utils/constants";
 import { ClassLog, Class, Lesson } from "@/types";
+import i18n from "@/i18n";
 
 interface Achievement {
   id: number;
@@ -445,7 +446,9 @@ const LevelsScreen = () => {
       >
         <Card style={styles.levelCard}>
           <Card.Content>
-            <Text style={styles.levelText}>Level {level}</Text>
+            <Text style={styles.levelText}>
+              {i18n.t("stats.level")} {level}
+            </Text>
             <ProgressBar
               progress={progressToNextLevel}
               color={theme.colors.primary}
@@ -453,14 +456,14 @@ const LevelsScreen = () => {
             />
             <Text style={styles.experienceText}>
               {progressInCurrentLevel}/{totalProgressRequiredInCurrentLevel}{" "}
-              &middot; {experienceToNextLevel} XP to next level
+              &middot; {experienceToNextLevel} {i18n.t("stats.xpToNextLevel")}
             </Text>
           </Card.Content>
         </Card>
 
         <Card style={styles.statsCard}>
           <Card.Content>
-            <Text style={styles.statsTitle}>Your Stats</Text>
+            <Text style={styles.statsTitle}>{i18n.t("stats.yourStats")}</Text>
             <View style={styles.statsRow}>
               <View style={styles.statItem}>
                 <MaterialCommunityIcons
@@ -469,7 +472,9 @@ const LevelsScreen = () => {
                   color={theme.colors.primary}
                 />
                 <Text style={styles.statValue}>{classCount}</Text>
-                <Text style={styles.statLabel}>Classes</Text>
+                <Text style={styles.statLabel}>
+                  {i18n.t("classes.classes")}
+                </Text>
               </View>
               <View style={styles.statItem}>
                 <MaterialCommunityIcons
@@ -478,7 +483,9 @@ const LevelsScreen = () => {
                   color={theme.colors.primary}
                 />
                 <Text style={styles.statValue}>{lessonCount}</Text>
-                <Text style={styles.statLabel}>Lessons</Text>
+                <Text style={styles.statLabel}>
+                  {i18n.t("classes.lessons")}
+                </Text>
               </View>
               <View style={styles.statItem}>
                 <MaterialCommunityIcons
@@ -487,7 +494,7 @@ const LevelsScreen = () => {
                   color={theme.colors.primary}
                 />
                 <Text style={styles.statValue}>{experience}</Text>
-                <Text style={styles.statLabel}>Total XP</Text>
+                <Text style={styles.statLabel}>{i18n.t("stats.totalXp")}</Text>
               </View>
             </View>
           </Card.Content>
@@ -524,10 +531,10 @@ const LevelsScreen = () => {
                       }}
                     >
                       {isUnlocked
-                        ? `Unlocked ${
+                        ? `${i18n.t("progress.unlocked")} ${
                             achievement.repeatable ? `x${timesUnlocked}` : ""
                           } (+${achievement.xp * (timesUnlocked || 1)} XP)`
-                        : "Locked"}
+                        : i18n.t("progress.locked")}
                     </Button>
                   )}
                   style={{ opacity: isUnlocked ? 1 : 0.5 }}

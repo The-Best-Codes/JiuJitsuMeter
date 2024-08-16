@@ -89,7 +89,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="classes"
+        name="settings"
         options={{
           tabBarLabel: ({ focused, color }) => null,
           tabBarIcon: ({ color, focused }) => (

@@ -32,6 +32,7 @@ import {
 } from "@/utils/storage";
 import { Class, Lesson } from "@/types";
 import { initialClasses } from "@/utils/constants";
+import i18n from "@/i18n";
 
 const ClassesScreen = () => {
   const theme = useTheme();
@@ -57,6 +58,12 @@ const ClassesScreen = () => {
   useEffect(() => {
     loadClasses();
   }, []);
+
+  useEffect(() => {
+    navigation.setOptions({
+      title: "Edit Custom Classes",
+    });
+  }, [navigation]);
 
   const loadClasses = async () => {
     setRefreshing(true);
@@ -115,15 +122,15 @@ const ClassesScreen = () => {
 
   const confirmResetAllClasses = () => {
     Alert.alert(
-      "Reset All Classes",
-      "Are you sure you want to reset all classes?",
+      i18n.t("classes.resetAllClasses"),
+      i18n.t("classes.resetAllClassesConfirm"),
       [
         {
-          text: "Cancel",
+          text: i18n.t("confirmations.cancel"),
           style: "cancel",
         },
         {
-          text: "Reset",
+          text: i18n.t("confirmations.yes"),
           style: "destructive",
           onPress: async () => {
             await resetClasses();
@@ -136,11 +143,11 @@ const ClassesScreen = () => {
 
   const handleAddClass = async () => {
     if (!newClassName.trim()) {
-      setError("Class name cannot be empty");
+      setError(i18n.t("classes.classEmptyError"));
       return;
     }
     if (!isNameUnique(newClassName, "class")) {
-      setError("A class with this name already exists");
+      setError(i18n.t("classes.classSameNameError"));
       return;
     }
     await addCustomClass(newClassName);
@@ -153,7 +160,7 @@ const ClassesScreen = () => {
   const handleEditClass = async () => {
     if (editingClass && newClassName.trim()) {
       if (!isNameUnique(newClassName, "class")) {
-        setError("A class with this name already exists");
+        setError(i18n.t("classes.classSameNameError"));
         return;
       }
       await editCustomClass(editingClass.id, newClassName);
@@ -175,7 +182,7 @@ const ClassesScreen = () => {
   const handleAddLesson = async () => {
     if (isAddingLesson && newLessonName.trim()) {
       if (!isNameUnique(newLessonName, "lesson", isAddingLesson as any)) {
-        setError("A lesson with this name already exists in this class");
+        setError(i18n.t("lessons.lessonSameNameError"));
         return;
       }
       await addCustomLesson(isAddingLesson as any, newLessonName);
@@ -189,7 +196,7 @@ const ClassesScreen = () => {
   const handleEditLesson = async () => {
     if (editingLesson && newLessonName.trim()) {
       if (!isNameUnique(newLessonName, "lesson", editingLesson.classId)) {
-        setError("A lesson with this name already exists in this class");
+        setError(i18n.t("lessons.lessonSameNameError"));
         return;
       }
       await editCustomLesson(
@@ -315,7 +322,7 @@ const ClassesScreen = () => {
                   mode="contained"
                   onPress={() => setIsAddingLesson(classItem.id)}
                 >
-                  Add
+                  {i18n.t("actions.add")}
                 </Button>
                 {isCustomClass(classItem.id) && (
                   <>
@@ -327,7 +334,7 @@ const ClassesScreen = () => {
                         setNewClassName(classItem.class);
                       }}
                     >
-                      Edit
+                      {i18n.t("actions.edit")}
                     </Button>
                     <Button
                       icon={"delete"}
@@ -339,7 +346,7 @@ const ClassesScreen = () => {
                         })
                       }
                     >
-                      Delete
+                      {i18n.t("actions.delete")}
                     </Button>
                   </>
                 )}
@@ -386,9 +393,9 @@ const ClassesScreen = () => {
                   setError(null);
                 }}
               >
-                Cancel
+                {i18n.t("confirmations.cancel")}
               </Button>
-              <Button onPress={handleAddClass}>Add</Button>
+              <Button onPress={handleAddClass}>{i18n.t("actions.add")}</Button>
             </Dialog.Actions>
           </Dialog>
 
@@ -415,9 +422,11 @@ const ClassesScreen = () => {
                   setError(null);
                 }}
               >
-                Cancel
+                {i18n.t("confirmations.cancel")}
               </Button>
-              <Button onPress={handleEditClass}>Save</Button>
+              <Button onPress={handleEditClass}>
+                {i18n.t("actions.save")}
+              </Button>
             </Dialog.Actions>
           </Dialog>
 
@@ -444,9 +453,9 @@ const ClassesScreen = () => {
                   setError(null);
                 }}
               >
-                Cancel
+                {i18n.t("confirmations.cancel")}
               </Button>
-              <Button onPress={handleAddLesson}>Add</Button>
+              <Button onPress={handleAddLesson}>{i18n.t("actions.add")}</Button>
             </Dialog.Actions>
           </Dialog>
 
@@ -473,9 +482,11 @@ const ClassesScreen = () => {
                   setError(null);
                 }}
               >
-                Cancel
+                {i18n.t("confirmations.cancel")}
               </Button>
-              <Button onPress={handleEditLesson}>Save</Button>
+              <Button onPress={handleEditLesson}>
+                {i18n.t("actions.save")}
+              </Button>
             </Dialog.Actions>
           </Dialog>
 
@@ -491,7 +502,7 @@ const ClassesScreen = () => {
             </Dialog.Content>
             <Dialog.Actions>
               <Button onPress={() => setDeleteConfirmation(null)}>
-                Cancel
+                {i18n.t("confirmations.cancel")}
               </Button>
               <Button
                 onPress={
@@ -500,7 +511,7 @@ const ClassesScreen = () => {
                     : handleDeleteLesson
                 }
               >
-                Delete
+                {i18n.t("actions.delete")}
               </Button>
             </Dialog.Actions>
           </Dialog>
