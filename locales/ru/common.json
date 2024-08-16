@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Назад",
-    "backToHome": "Назад на Главную",
-    "close": "Закрыть"
+    "back": "Back",
+    "backToHome": "Back to Home",
+    "close": "Close"
   },
   "actions": {
-    "add": "Добавить",
-    "edit": "Редактировать",
-    "delete": "Удалить",
-    "save": "Сохранить",
-    "change": "Изменить",
-    "refresh": "Обновить",
-    "clear": "Очистить"
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "change": "Change",
+    "refresh": "Refresh",
+    "clear": "Clear"
   },
   "status": {
-    "success": "Успех",
-    "error": "Ошибка",
-    "warning": "Предупреждение",
-    "info": "Информация"
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info"
   },
   "confirmations": {
-    "yes": "Да",
-    "no": "Нет",
+    "yes": "Yes",
+    "no": "No",
     "ok": "OK",
-    "cancel": "Отмена"
+    "cancel": "Cancel"
   },
   "feedback": {
-    "saved": "Сохранено",
-    "loading-ellipsis": "Загрузка...",
-    "saving-ellipsis": "Сохранение..."
+    "saved": "Saved",
+    "loading-ellipsis": "Loading...",
+    "saving-ellipsis": "Saving..."
   },
   "classes": {
-    "classes": "Классы",
-    "lessons": "Уроки",
-    "classSaveSuccess": "Класс успешно сохранен!",
-    "classSaveFailed": "Не удалось сохранить класс. Пожалуйста, попробуйте снова.",
-    "resetAllClasses": "Сбросить все классы",
-    "resetAllClassesConfirm": "Вы уверены, что хотите сбросить все классы?",
-    "classEmptyError": "Имя класса не может быть пустым.",
-    "classSameNameError": "Класс с таким именем уже существует."
+    "classes": "Classes",
+    "lessons": "Lessons",
+    "classSaveSuccess": "Class saved successfully!",
+    "classSaveFailed": "Failed to save class. Please try again.",
+    "resetAllClasses": "Reset All Classes",
+    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
+    "classEmptyError": "Class name cannot be empty.",
+    "classSameNameError": "Class with same name already exists."
   },
   "lessons": {
-    "saveALesson": "Сохранить урок",
-    "saveLesson": "Сохранить урок",
-    "lessonSameNameError": "Урок с таким названием уже существует в этом классе.",
-    "editLessonLog": "Редактировать журнал уроков",
-    "updateLessonLog": "Обновить журнал уроков"
+    "saveALesson": "Save a Lesson",
+    "saveLesson": "Save Lesson",
+    "lessonSameNameError": "Lesson with same name already exists in this class.",
+    "editLessonLog": "Edit Lesson Log",
+    "updateLessonLog": "Update Lesson Log"
   },
   "stats": {
-    "xpToNextLevel": "Очки опыта до следующего уровня",
-    "level": "Уровень",
-    "xp": "Очки опыта",
-    "yourStats": "Ваши показатели",
-    "totalXp": "Всего очков опыта",
-    "totalClasses": "Всего классов",
-    "totalLessons": "Всего уроков",
-    "totalXpRequired": "Всего очков опыта необходимо",
-    "totalXpRequiredToNextLevel": "Всего очков опыта необходимо до следующего уровня"
+    "xpToNextLevel": "XP to next level",
+    "level": "Level",
+    "xp": "XP",
+    "yourStats": "Your Stats",
+    "totalXp": "Total XP",
+    "totalClasses": "Total Classes",
+    "totalLessons": "Total Lessons",
+    "totalXpRequired": "Total XP Required",
+    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
   },
   "progress": {
-    "unlocked": "Разблокировано",
-    "locked": "Заблокировано"
+    "unlocked": "Unlocked",
+    "locked": "Locked"
   },
   "settings": {
-    "tools": "Инструменты",
-    "settings": "Настройки",
-    "logout": "Выход",
-    "changePassword": "Изменить пароль",
-    "changeLanguage": "Изменить язык",
-    "changeTheme": "Изменить тему",
-    "changeFontSize": "Изменить размер шрифта",
-    "changeFont": "Изменить шрифт",
-    "changeFontColor": "Изменить цвет шрифта",
-    "changeBackgroundColor": "Изменить цвет фона",
-    "changeBackgroundImage": "Изменить фоновое изображение",
-    "changeBackgroundBlur": "Изменить размытие фона"
+    "tools": "Tools",
+    "settings": "Settings",
+    "logout": "Logout",
+    "changePassword": "Change Password",
+    "changeLanguage": "Change Language",
+    "changeTheme": "Change Theme",
+    "changeFontSize": "Change Font Size",
+    "changeFont": "Change Font",
+    "changeFontColor": "Change Font Color",
+    "changeBackgroundColor": "Change Background Color",
+    "changeBackgroundImage": "Change Background Image",
+    "changeBackgroundBlur": "Change Background Blur"
   }
 }
