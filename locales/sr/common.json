@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "close": "Close"
+    "back": "Назад",
+    "backToHome": "Назад на Почетну",
+    "close": "Затвори"
   },
   "actions": {
-    "add": "Add",
-    "edit": "Edit",
-    "delete": "Delete",
-    "save": "Save",
-    "change": "Change",
-    "refresh": "Refresh",
-    "clear": "Clear"
+    "add": "Додај",
+    "edit": "Уреди",
+    "delete": "Избриши",
+    "save": "Сачувај",
+    "change": "Промени",
+    "refresh": "Освежи",
+    "clear": "Обриши"
   },
   "status": {
-    "success": "Success",
-    "error": "Error",
-    "warning": "Warning",
-    "info": "Info"
+    "success": "Сукцес",
+    "error": "Грешка",
+    "warning": "Упозорење",
+    "info": "Инфо"
   },
   "confirmations": {
-    "yes": "Yes",
-    "no": "No",
-    "ok": "OK",
-    "cancel": "Cancel"
+    "yes": "Да",
+    "no": "Не",
+    "ok": "ОК",
+    "cancel": "Откажи"
   },
   "feedback": {
-    "saved": "Saved",
-    "loading-ellipsis": "Loading...",
-    "saving-ellipsis": "Saving..."
+    "saved": "Сачувано",
+    "loading-ellipsis": "Учитавање...",
+    "saving-ellipsis": "Чување..."
   },
   "classes": {
-    "classes": "Classes",
-    "lessons": "Lessons",
-    "classSaveSuccess": "Class saved successfully!",
-    "classSaveFailed": "Failed to save class. Please try again.",
-    "resetAllClasses": "Reset All Classes",
-    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
-    "classEmptyError": "Class name cannot be empty.",
-    "classSameNameError": "Class with same name already exists."
+    "classes": "Часови",
+    "lessons": "Лекције",
+    "classSaveSuccess": "Час је успешно сачуван!",
+    "classSaveFailed": "Неуспешно сачување часа. Молимо покушајте поново.",
+    "resetAllClasses": "Ресетуј све часове",
+    "resetAllClassesConfirm": "Да ли сте сигурни да желите да ресетујете све часове?",
+    "classEmptyError": "Назив часа не може бити празан.",
+    "classSameNameError": "Час са истим називом већ постоји."
   },
   "lessons": {
-    "saveALesson": "Save a Lesson",
-    "saveLesson": "Save Lesson",
-    "lessonSameNameError": "Lesson with same name already exists in this class.",
-    "editLessonLog": "Edit Lesson Log",
-    "updateLessonLog": "Update Lesson Log"
+    "saveALesson": "Сачувај лекцију",
+    "saveLesson": "Сачувај лекцију",
+    "lessonSameNameError": "Лекција са истим називом већ постоји у овом часу.",
+    "editLessonLog": "Уреди дневник лекције",
+    "updateLessonLog": "Ажурирај дневник лекције"
   },
   "stats": {
-    "xpToNextLevel": "XP to next level",
-    "level": "Level",
+    "xpToNextLevel": "XP до следећег нивоа",
+    "level": "Ниво",
     "xp": "XP",
-    "yourStats": "Your Stats",
-    "totalXp": "Total XP",
-    "totalClasses": "Total Classes",
-    "totalLessons": "Total Lessons",
-    "totalXpRequired": "Total XP Required",
-    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
+    "yourStats": "Твоји статистике",
+    "totalXp": "Укупно XP",
+    "totalClasses": "Укупно часова",
+    "totalLessons": "Укупно лекција",
+    "totalXpRequired": "Укупно XP потребно",
+    "totalXpRequiredToNextLevel": "Укупно XP потребно до следећег нивоа"
   },
   "progress": {
-    "unlocked": "Unlocked",
-    "locked": "Locked"
+    "unlocked": "Откључано",
+    "locked": "Закључано"
   },
   "settings": {
-    "tools": "Tools",
-    "settings": "Settings",
-    "logout": "Logout",
-    "changePassword": "Change Password",
-    "changeLanguage": "Change Language",
-    "changeTheme": "Change Theme",
-    "changeFontSize": "Change Font Size",
-    "changeFont": "Change Font",
-    "changeFontColor": "Change Font Color",
-    "changeBackgroundColor": "Change Background Color",
-    "changeBackgroundImage": "Change Background Image",
-    "changeBackgroundBlur": "Change Background Blur"
+    "tools": "Алатке",
+    "settings": "Подешавања",
+    "logout": "Одјави се",
+    "changePassword": "Промени Лозинку",
+    "changeLanguage": "Промени Језик",
+    "changeTheme": "Промени Тему",
+    "changeFontSize": "Промени Величину Фонта",
+    "changeFont": "Промени Фонт",
+    "changeFontColor": "Промени Боју Фонта",
+    "changeBackgroundColor": "Промени Боју Позадине",
+    "changeBackgroundImage": "Промени Слику Позадине",
+    "changeBackgroundBlur": "Промени Замагљење Позадине"
   }
 }
