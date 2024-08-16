@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "close": "Close"
+    "back": "Назад",
+    "backToHome": "Назад до дому",
+    "close": "Закрити"
   },
   "actions": {
-    "add": "Add",
-    "edit": "Edit",
-    "delete": "Delete",
-    "save": "Save",
+    "add": "Додати",
+    "edit": "Редагувати",
+    "delete": "Видалити",
+    "save": "Зберегти",
     "change": "Change",
-    "refresh": "Refresh",
-    "clear": "Clear"
+    "refresh": "Оновити",
+    "clear": "Очистити"
   },
   "status": {
-    "success": "Success",
-    "error": "Error",
-    "warning": "Warning",
-    "info": "Info"
+    "success": "Збережено",
+    "error": "Помилка",
+    "warning": "Увага",
+    "info": "Інформація"
   },
   "confirmations": {
-    "yes": "Yes",
+    "yes": "Так",
     "no": "No",
     "ok": "OK",
-    "cancel": "Cancel"
+    "cancel": "Відмінити"
   },
   "feedback": {
-    "saved": "Saved",
-    "loading-ellipsis": "Loading...",
-    "saving-ellipsis": "Saving..."
+    "saved": "Збережено",
+    "loading-ellipsis": "Завантаження...",
+    "saving-ellipsis": "Збереження..."
   },
   "classes": {
     "classes": "Classes",
     "lessons": "Lessons",
-    "classSaveSuccess": "Class saved successfully!",
-    "classSaveFailed": "Failed to save class. Please try again.",
-    "resetAllClasses": "Reset All Classes",
-    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
-    "classEmptyError": "Class name cannot be empty.",
-    "classSameNameError": "Class with same name already exists."
+    "classSaveSuccess": "Успішно збережено клас!",
+    "classSaveFailed": "Не вдалося зберегти клас. Будь ласка, спробуйте ще раз.",
+    "resetAllClasses": "Скинути всі класи",
+    "resetAllClassesConfirm": "Ви впевнені, що хочете скинути всі класи?",
+    "classEmptyError": "Назва класу не може бути порожньою.",
+    "classSameNameError": "Клас з такою назвою вже існує."
   },
   "lessons": {
-    "saveALesson": "Save a Lesson",
-    "saveLesson": "Save Lesson",
-    "lessonSameNameError": "Lesson with same name already exists in this class.",
-    "editLessonLog": "Edit Lesson Log",
-    "updateLessonLog": "Update Lesson Log"
+    "saveALesson": "Зберегти урок",
+    "saveLesson": "Зберегти урок",
+    "lessonSameNameError": "Урок з такою назвою вже існує у цьому класі.",
+    "editLessonLog": "Редагувати журнал уроку",
+    "updateLessonLog": "Оновити журнал уроку"
   },
   "stats": {
-    "xpToNextLevel": "XP to next level",
-    "level": "Level",
+    "xpToNextLevel": "XP до наступного рівня",
+    "level": "Рівень",
     "xp": "XP",
-    "yourStats": "Your Stats",
-    "totalXp": "Total XP",
-    "totalClasses": "Total Classes",
-    "totalLessons": "Total Lessons",
-    "totalXpRequired": "Total XP Required",
-    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
+    "yourStats": "Ваші статистичні дані",
+    "totalXp": "Загальний XP",
+    "totalClasses": "Загальна кількість класів",
+    "totalLessons": "Загальна кількість уроків",
+    "totalXpRequired": "Загальний XP для досягнення",
+    "totalXpRequiredToNextLevel": "Загальний XP, необхідний для наступного рівня"
   },
   "progress": {
-    "unlocked": "Unlocked",
-    "locked": "Locked"
+    "unlocked": "Розблокований",
+    "locked": "Заблокований"
   },
   "settings": {
-    "tools": "Tools",
-    "settings": "Settings",
-    "logout": "Logout",
-    "changePassword": "Change Password",
-    "changeLanguage": "Change Language",
-    "changeTheme": "Change Theme",
-    "changeFontSize": "Change Font Size",
-    "changeFont": "Change Font",
-    "changeFontColor": "Change Font Color",
-    "changeBackgroundColor": "Change Background Color",
-    "changeBackgroundImage": "Change Background Image",
-    "changeBackgroundBlur": "Change Background Blur"
+    "tools": "Інструменти",
+    "settings": "Налаштування",
+    "logout": "Вийти",
+    "changePassword": "Змінити пароль",
+    "changeLanguage": "Змінити мову",
+    "changeTheme": "Змінити тему",
+    "changeFontSize": "Змінити розмір шрифту",
+    "changeFont": "Змінити шрифт",
+    "changeFontColor": "Змінити колір шрифту",
+    "changeBackgroundColor": "Змінити колір фону",
+    "changeBackgroundImage": "Змінити зображення фону",
+    "changeBackgroundBlur": "Змінити розмиття фону"
   }
 }
