@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "close": "Close"
+    "back": "العودة",
+    "backToHome": "العودة إلى الصفحة الرئيسية",
+    "close": "إغلاق"
   },
   "actions": {
-    "add": "Add",
-    "edit": "Edit",
-    "delete": "Delete",
-    "save": "Save",
-    "change": "Change",
-    "refresh": "Refresh",
-    "clear": "Clear"
+    "add": "إضافة",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "save": "حفظ",
+    "change": "تغيير",
+    "refresh": "تحديث",
+    "clear": "مسح"
   },
   "status": {
-    "success": "Success",
-    "error": "Error",
-    "warning": "Warning",
-    "info": "Info"
+    "success": "نجاح",
+    "error": "خطأ",
+    "warning": "تحذير",
+    "info": "معلومات"
   },
   "confirmations": {
-    "yes": "Yes",
-    "no": "No",
-    "ok": "OK",
-    "cancel": "Cancel"
+    "yes": "نعم",
+    "no": "لا",
+    "ok": "حسناً",
+    "cancel": "إلغاء"
   },
   "feedback": {
-    "saved": "Saved",
-    "loading-ellipsis": "Loading...",
-    "saving-ellipsis": "Saving..."
+    "saved": "تم الحفظ",
+    "loading-ellipsis": "جار التحميل...",
+    "saving-ellipsis": "جار الحفظ..."
   },
   "classes": {
-    "classes": "Classes",
-    "lessons": "Lessons",
-    "classSaveSuccess": "Class saved successfully!",
-    "classSaveFailed": "Failed to save class. Please try again.",
-    "resetAllClasses": "Reset All Classes",
-    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
-    "classEmptyError": "Class name cannot be empty.",
-    "classSameNameError": "Class with same name already exists."
+    "classes": "الصفوف",
+    "lessons": "الدروس",
+    "classSaveSuccess": "تم حفظ الصف بنجاح!",
+    "classSaveFailed": "فشل حفظ الصف. الرجاء المحاولة مرة أخرى.",
+    "resetAllClasses": "إعادة تعيين جميع الصفوف",
+    "resetAllClassesConfirm": "هل أنت متأكد أنك تريد إعادة تعيين جميع الصفوف؟",
+    "classEmptyError": "اسم الصف لا يمكن أن يكون فارغاً.",
+    "classSameNameError": "الصف بنفس الاسم موجود بالفعل."
   },
   "lessons": {
-    "saveALesson": "Save a Lesson",
-    "saveLesson": "Save Lesson",
-    "lessonSameNameError": "Lesson with same name already exists in this class.",
-    "editLessonLog": "Edit Lesson Log",
-    "updateLessonLog": "Update Lesson Log"
+    "saveALesson": "حفظ درس",
+    "saveLesson": "حفظ الدرس",
+    "lessonSameNameError": "الدرس بنفس الاسم موجود بالفعل في هذا الصف.",
+    "editLessonLog": "تعديل سجل الدرس",
+    "updateLessonLog": "تحديث سجل الدرس"
   },
   "stats": {
-    "xpToNextLevel": "XP to next level",
-    "level": "Level",
-    "xp": "XP",
-    "yourStats": "Your Stats",
-    "totalXp": "Total XP",
-    "totalClasses": "Total Classes",
-    "totalLessons": "Total Lessons",
-    "totalXpRequired": "Total XP Required",
-    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
+    "xpToNextLevel": "نقاط التجربة إلى المستوى التالي",
+    "level": "المستوى",
+    "xp": "نقاط التجربة",
+    "yourStats": "إحصائياتك",
+    "totalXp": "مجموع نقاط التجربة",
+    "totalClasses": "إجمالي الصفوف",
+    "totalLessons": "إجمالي الدروس",
+    "totalXpRequired": "مجموع نقاط التجربة المطلوبة",
+    "totalXpRequiredToNextLevel": "مجموع نقاط التجربة المطلوبة للوصول للمستوى التالي"
   },
   "progress": {
-    "unlocked": "Unlocked",
-    "locked": "Locked"
+    "unlocked": "مفتوح",
+    "locked": "مقفل"
   },
   "settings": {
-    "tools": "Tools",
-    "settings": "Settings",
-    "logout": "Logout",
-    "changePassword": "Change Password",
-    "changeLanguage": "Change Language",
-    "changeTheme": "Change Theme",
-    "changeFontSize": "Change Font Size",
-    "changeFont": "Change Font",
-    "changeFontColor": "Change Font Color",
-    "changeBackgroundColor": "Change Background Color",
-    "changeBackgroundImage": "Change Background Image",
-    "changeBackgroundBlur": "Change Background Blur"
+    "tools": "أدوات",
+    "settings": "الإعدادات",
+    "logout": "تسجيل الخروج",
+    "changePassword": "تغيير كلمة المرور",
+    "changeLanguage": "تغيير اللغة",
+    "changeTheme": "تغيير السمة",
+    "changeFontSize": "تغيير حجم الخط",
+    "changeFont": "تغيير الخط",
+    "changeFontColor": "تغيير لون الخط",
+    "changeBackgroundColor": "تغيير لون الخلفية",
+    "changeBackgroundImage": "تغيير صورة الخلفية",
+    "changeBackgroundBlur": "تغيير ضبابية الخلفية"
   }
 }
