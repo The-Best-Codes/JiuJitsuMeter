@@ -2,7 +2,7 @@
   "name": "jiujitsumeter",
   "description": "Easily keep track of your JiuJitsu classes, progress, and more.",
   "main": "expo-router/entry",
-  "version": "1.5.8",
+  "version": "1.5.9",
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
