@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "close": "Close"
+    "back": "Tilbage",
+    "backToHome": "Tilbage til Start",
+    "close": "Luk"
   },
   "actions": {
-    "add": "Add",
-    "edit": "Edit",
-    "delete": "Delete",
-    "save": "Save",
-    "change": "Change",
-    "refresh": "Refresh",
-    "clear": "Clear"
+    "add": "Tilføj",
+    "edit": "Rediger",
+    "delete": "Slet",
+    "save": "Gem",
+    "change": "Ændre",
+    "refresh": "Opdater",
+    "clear": "Ryd"
   },
   "status": {
     "success": "Success",
-    "error": "Error",
-    "warning": "Warning",
+    "error": "Fejl",
+    "warning": "Advarsel",
     "info": "Info"
   },
   "confirmations": {
-    "yes": "Yes",
-    "no": "No",
+    "yes": "Ja",
+    "no": "Nej",
     "ok": "OK",
-    "cancel": "Cancel"
+    "cancel": "Annuller"
   },
   "feedback": {
-    "saved": "Saved",
-    "loading-ellipsis": "Loading...",
-    "saving-ellipsis": "Saving..."
+    "saved": "Gemt",
+    "loading-ellipsis": "Indlæser...",
+    "saving-ellipsis": "Gemmer..."
   },
   "classes": {
-    "classes": "Classes",
-    "lessons": "Lessons",
-    "classSaveSuccess": "Class saved successfully!",
-    "classSaveFailed": "Failed to save class. Please try again.",
-    "resetAllClasses": "Reset All Classes",
-    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
-    "classEmptyError": "Class name cannot be empty.",
-    "classSameNameError": "Class with same name already exists."
+    "classes": "Klasser",
+    "lessons": "Lektioner",
+    "classSaveSuccess": "Klasse gemt med succes!",
+    "classSaveFailed": "Fejl ved lagring af klasse. Prøv venligst igen.",
+    "resetAllClasses": "Nulstil Alle Klasser",
+    "resetAllClassesConfirm": "Er du sikker på, at du vil nulstille alle klasser?",
+    "classEmptyError": "Klassenavn må ikke være tomt.",
+    "classSameNameError": "Klasse med samme navn findes allerede."
   },
   "lessons": {
-    "saveALesson": "Save a Lesson",
-    "saveLesson": "Save Lesson",
-    "lessonSameNameError": "Lesson with same name already exists in this class.",
-    "editLessonLog": "Edit Lesson Log",
-    "updateLessonLog": "Update Lesson Log"
+    "saveALesson": "Gem en Lektion",
+    "saveLesson": "Gem Lektion",
+    "lessonSameNameError": "Lektion med samme navn findes allerede i denne klasse.",
+    "editLessonLog": "Rediger Lektions Log",
+    "updateLessonLog": "Opdater Lektions Log"
   },
   "stats": {
-    "xpToNextLevel": "XP to next level",
-    "level": "Level",
+    "xpToNextLevel": "XP til næste niveau",
+    "level": "Niveau",
     "xp": "XP",
-    "yourStats": "Your Stats",
-    "totalXp": "Total XP",
-    "totalClasses": "Total Classes",
-    "totalLessons": "Total Lessons",
-    "totalXpRequired": "Total XP Required",
-    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
+    "yourStats": "Dine Stats",
+    "totalXp": "Samlet XP",
+    "totalClasses": "Samlet antal klasser",
+    "totalLessons": "Samlet antal lektioner",
+    "totalXpRequired": "Samlet XP Krævet",
+    "totalXpRequiredToNextLevel": "Samlet XP Krævet til Næste Niveau"
   },
   "progress": {
-    "unlocked": "Unlocked",
-    "locked": "Locked"
+    "unlocked": "Låst op",
+    "locked": "Låst"
   },
   "settings": {
-    "tools": "Tools",
-    "settings": "Settings",
-    "logout": "Logout",
-    "changePassword": "Change Password",
-    "changeLanguage": "Change Language",
-    "changeTheme": "Change Theme",
-    "changeFontSize": "Change Font Size",
-    "changeFont": "Change Font",
-    "changeFontColor": "Change Font Color",
-    "changeBackgroundColor": "Change Background Color",
-    "changeBackgroundImage": "Change Background Image",
-    "changeBackgroundBlur": "Change Background Blur"
+    "tools": "Værktøjer",
+    "settings": "Indstillinger",
+    "logout": "Log ud",
+    "changePassword": "Skift Adgangskode",
+    "changeLanguage": "Skift Sprog",
+    "changeTheme": "Skift Tema",
+    "changeFontSize": "Skift Fontstørrelse",
+    "changeFont": "Skift Skrifttype",
+    "changeFontColor": "Skift Skriftfarve",
+    "changeBackgroundColor": "Skift Baggrundsfarve",
+    "changeBackgroundImage": "Skift Baggrundsbillede",
+    "changeBackgroundBlur": "Skift Baggrundssløring"
   }
 }
