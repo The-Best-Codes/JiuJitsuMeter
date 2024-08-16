@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "close": "Close"
+    "back": "Tillbaka",
+    "backToHome": "Tillbaka till Hem",
+    "close": "Stäng"
   },
   "actions": {
-    "add": "Add",
-    "edit": "Edit",
-    "delete": "Delete",
-    "save": "Save",
-    "change": "Change",
-    "refresh": "Refresh",
-    "clear": "Clear"
+    "add": "Lägg till",
+    "edit": "Redigera",
+    "delete": "Radera",
+    "save": "Spara",
+    "change": "Ändra",
+    "refresh": "Uppdatera",
+    "clear": "Rensa"
   },
   "status": {
-    "success": "Success",
-    "error": "Error",
-    "warning": "Warning",
+    "success": "Lyckad",
+    "error": "Fel",
+    "warning": "Varning",
     "info": "Info"
   },
   "confirmations": {
-    "yes": "Yes",
-    "no": "No",
+    "yes": "Ja",
+    "no": "Nej",
     "ok": "OK",
-    "cancel": "Cancel"
+    "cancel": "Avbryt"
   },
   "feedback": {
-    "saved": "Saved",
-    "loading-ellipsis": "Loading...",
-    "saving-ellipsis": "Saving..."
+    "saved": "Sparad",
+    "loading-ellipsis": "Laddar...",
+    "saving-ellipsis": "Sparar..."
   },
   "classes": {
-    "classes": "Classes",
-    "lessons": "Lessons",
-    "classSaveSuccess": "Class saved successfully!",
-    "classSaveFailed": "Failed to save class. Please try again.",
-    "resetAllClasses": "Reset All Classes",
-    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
-    "classEmptyError": "Class name cannot be empty.",
-    "classSameNameError": "Class with same name already exists."
+    "classes": "Klasser",
+    "lessons": "Lektioner",
+    "classSaveSuccess": "Klass sparad framgångsrikt!",
+    "classSaveFailed": "Misslyckades att spara klass. Vänligen försök igen.",
+    "resetAllClasses": "Återställ Alla Klasser",
+    "resetAllClassesConfirm": "Är du säker på att du vill återställa alla klasser?",
+    "classEmptyError": "Klassnamn kan inte vara tomt.",
+    "classSameNameError": "Klass med samma namn finns redan."
   },
   "lessons": {
-    "saveALesson": "Save a Lesson",
-    "saveLesson": "Save Lesson",
-    "lessonSameNameError": "Lesson with same name already exists in this class.",
-    "editLessonLog": "Edit Lesson Log",
-    "updateLessonLog": "Update Lesson Log"
+    "saveALesson": "Spara en Lektion",
+    "saveLesson": "Spara Lektion",
+    "lessonSameNameError": "Lektion med samma namn finns redan i denna klass.",
+    "editLessonLog": "Redigera Lektionslogg",
+    "updateLessonLog": "Uppdatera Lektionslogg"
   },
   "stats": {
-    "xpToNextLevel": "XP to next level",
-    "level": "Level",
+    "xpToNextLevel": "XP till nästa nivå",
+    "level": "Nivå",
     "xp": "XP",
-    "yourStats": "Your Stats",
+    "yourStats": "Dina Statistik",
     "totalXp": "Total XP",
-    "totalClasses": "Total Classes",
-    "totalLessons": "Total Lessons",
-    "totalXpRequired": "Total XP Required",
-    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
+    "totalClasses": "Totalt Antal Klasser",
+    "totalLessons": "Totalt Antal Lektioner",
+    "totalXpRequired": "Total XP Krävs",
+    "totalXpRequiredToNextLevel": "Total XP Krävs till Nästa Nivå"
   },
   "progress": {
-    "unlocked": "Unlocked",
-    "locked": "Locked"
+    "unlocked": "Upplåst",
+    "locked": "Låst"
   },
   "settings": {
-    "tools": "Tools",
-    "settings": "Settings",
-    "logout": "Logout",
-    "changePassword": "Change Password",
-    "changeLanguage": "Change Language",
-    "changeTheme": "Change Theme",
-    "changeFontSize": "Change Font Size",
-    "changeFont": "Change Font",
-    "changeFontColor": "Change Font Color",
-    "changeBackgroundColor": "Change Background Color",
-    "changeBackgroundImage": "Change Background Image",
-    "changeBackgroundBlur": "Change Background Blur"
+    "tools": "Verktyg",
+    "settings": "Inställningar",
+    "logout": "Logga Ut",
+    "changePassword": "Byt Lösenord",
+    "changeLanguage": "Byt Språk",
+    "changeTheme": "Byt Tema",
+    "changeFontSize": "Byt Teckenstorlek",
+    "changeFont": "Byt Teckensnitt",
+    "changeFontColor": "Byt Teckenfärg",
+    "changeBackgroundColor": "Byt Bakgrundsfärg",
+    "changeBackgroundImage": "Byt Bakgrundsbild",
+    "changeBackgroundBlur": "Byt Bakgrundsludd"
   }
 }
