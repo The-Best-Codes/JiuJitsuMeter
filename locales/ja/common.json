@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "close": "Close"
+    "back": "戻る",
+    "backToHome": "ホームに戻る",
+    "close": "閉じる"
   },
   "actions": {
-    "add": "Add",
-    "edit": "Edit",
-    "delete": "Delete",
-    "save": "Save",
-    "change": "Change",
-    "refresh": "Refresh",
-    "clear": "Clear"
+    "add": "追加",
+    "edit": "編集",
+    "delete": "削除",
+    "save": "保存",
+    "change": "変更",
+    "refresh": "更新",
+    "clear": "クリア"
   },
   "status": {
-    "success": "Success",
-    "error": "Error",
-    "warning": "Warning",
-    "info": "Info"
+    "success": "成功",
+    "error": "エラー",
+    "warning": "警告",
+    "info": "情報"
   },
   "confirmations": {
-    "yes": "Yes",
-    "no": "No",
+    "yes": "はい",
+    "no": "いいえ",
     "ok": "OK",
-    "cancel": "Cancel"
+    "cancel": "キャンセル"
   },
   "feedback": {
-    "saved": "Saved",
-    "loading-ellipsis": "Loading...",
-    "saving-ellipsis": "Saving..."
+    "saved": "保存済み",
+    "loading-ellipsis": "読み込み中...",
+    "saving-ellipsis": "保存中..."
   },
   "classes": {
-    "classes": "Classes",
-    "lessons": "Lessons",
-    "classSaveSuccess": "Class saved successfully!",
-    "classSaveFailed": "Failed to save class. Please try again.",
-    "resetAllClasses": "Reset All Classes",
-    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
-    "classEmptyError": "Class name cannot be empty.",
-    "classSameNameError": "Class with same name already exists."
+    "classes": "クラス",
+    "lessons": "レッスン",
+    "classSaveSuccess": "クラスが正常に保存されました！",
+    "classSaveFailed": "クラスの保存に失敗しました。もう一度やり直してください。",
+    "resetAllClasses": "すべてのクラスをリセット",
+    "resetAllClassesConfirm": "すべてのクラスをリセットしますか？",
+    "classEmptyError": "クラス名は空にできません。",
+    "classSameNameError": "同じ名前のクラスがすでに存在します。"
   },
   "lessons": {
-    "saveALesson": "Save a Lesson",
-    "saveLesson": "Save Lesson",
-    "lessonSameNameError": "Lesson with same name already exists in this class.",
-    "editLessonLog": "Edit Lesson Log",
-    "updateLessonLog": "Update Lesson Log"
+    "saveALesson": "レッスンを保存",
+    "saveLesson": "レッスンを保存",
+    "lessonSameNameError": "同じ名前のレッスンがこのクラスにすでに存在します。",
+    "editLessonLog": "レッスンログを編集",
+    "updateLessonLog": "レッスンログを更新"
   },
   "stats": {
-    "xpToNextLevel": "XP to next level",
-    "level": "Level",
+    "xpToNextLevel": "次のレベルまでのXP",
+    "level": "レベル",
     "xp": "XP",
-    "yourStats": "Your Stats",
-    "totalXp": "Total XP",
-    "totalClasses": "Total Classes",
-    "totalLessons": "Total Lessons",
-    "totalXpRequired": "Total XP Required",
-    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
+    "yourStats": "あなたの統計",
+    "totalXp": "総XP",
+    "totalClasses": "総クラス数",
+    "totalLessons": "総レッスン数",
+    "totalXpRequired": "総XP必要数",
+    "totalXpRequiredToNextLevel": "次のレベルに必要な総XP"
   },
   "progress": {
-    "unlocked": "Unlocked",
-    "locked": "Locked"
+    "unlocked": "解除済み",
+    "locked": "ロックされています"
   },
   "settings": {
-    "tools": "Tools",
-    "settings": "Settings",
-    "logout": "Logout",
-    "changePassword": "Change Password",
-    "changeLanguage": "Change Language",
-    "changeTheme": "Change Theme",
-    "changeFontSize": "Change Font Size",
-    "changeFont": "Change Font",
-    "changeFontColor": "Change Font Color",
-    "changeBackgroundColor": "Change Background Color",
-    "changeBackgroundImage": "Change Background Image",
-    "changeBackgroundBlur": "Change Background Blur"
+    "tools": "ツール",
+    "settings": "設定",
+    "logout": "ログアウト",
+    "changePassword": "パスワード変更",
+    "changeLanguage": "言語変更",
+    "changeTheme": "テーマ変更",
+    "changeFontSize": "フォントサイズ変更",
+    "changeFont": "フォント変更",
+    "changeFontColor": "フォントカラー変更",
+    "changeBackgroundColor": "背景色変更",
+    "changeBackgroundImage": "背景画像変更",
+    "changeBackgroundBlur": "背景ぼかし変更"
   }
 }
