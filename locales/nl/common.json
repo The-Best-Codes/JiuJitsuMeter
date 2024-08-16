@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Terug",
-    "backToHome": "Terug naar Huis",
-    "close": "Afsluiten"
+    "back": "Back",
+    "backToHome": "Back to Home",
+    "close": "Close"
   },
   "actions": {
-    "add": "Toevoegen",
-    "edit": "Bewerken",
-    "delete": "Verwijderen",
-    "save": "Opslaan",
-    "change": "Veranderen",
-    "refresh": "Vernieuwen",
-    "clear": "Wissen"
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "change": "Change",
+    "refresh": "Refresh",
+    "clear": "Clear"
   },
   "status": {
-    "success": "Succes",
-    "error": "Foutmelding",
-    "warning": "Waarschuwing",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
     "info": "Info"
   },
   "confirmations": {
-    "yes": "Ja",
-    "no": "Nee",
+    "yes": "Yes",
+    "no": "No",
     "ok": "OK",
-    "cancel": "Annuleren"
+    "cancel": "Cancel"
   },
   "feedback": {
-    "saved": "Opgeslagen",
-    "loading-ellipsis": "Bezig met laden...",
-    "saving-ellipsis": "Opslaan..."
+    "saved": "Saved",
+    "loading-ellipsis": "Loading...",
+    "saving-ellipsis": "Saving..."
   },
   "classes": {
-    "classes": "Lessen",
-    "lessons": "Lessen",
-    "classSaveSuccess": "Klasse succesvol opgeslagen!",
-    "classSaveFailed": "Mislukt om klasse op te slaan. Probeer opnieuw.",
-    "resetAllClasses": "Reset Alle Klassen",
-    "resetAllClassesConfirm": "Weet u zeker dat u alle klassen wilt resetten?",
-    "classEmptyError": "Klasse naam kan niet leeg zijn.",
-    "classSameNameError": "Klasse met dezelfde naam bestaat al."
+    "classes": "Classes",
+    "lessons": "Lessons",
+    "classSaveSuccess": "Class saved successfully!",
+    "classSaveFailed": "Failed to save class. Please try again.",
+    "resetAllClasses": "Reset All Classes",
+    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
+    "classEmptyError": "Class name cannot be empty.",
+    "classSameNameError": "Class with same name already exists."
   },
   "lessons": {
-    "saveALesson": "Les Opslaan",
-    "saveLesson": "Les Opslaan",
-    "lessonSameNameError": "Les met dezelfde naam bestaat al in deze klas.",
-    "editLessonLog": "Bewerk Les Logboek",
-    "updateLessonLog": "Update Les Logboek"
+    "saveALesson": "Save a Lesson",
+    "saveLesson": "Save Lesson",
+    "lessonSameNameError": "Lesson with same name already exists in this class.",
+    "editLessonLog": "Edit Lesson Log",
+    "updateLessonLog": "Update Lesson Log"
   },
   "stats": {
-    "xpToNextLevel": "XP tot volgend niveau",
-    "level": "Niveau",
+    "xpToNextLevel": "XP to next level",
+    "level": "Level",
     "xp": "XP",
-    "yourStats": "Uw Statistieken",
-    "totalXp": "Totaal XP",
-    "totalClasses": "Totaal Klassen",
-    "totalLessons": "Totaal Lessen",
-    "totalXpRequired": "Totaal XP Vereist",
-    "totalXpRequiredToNextLevel": "Totaal XP Vereist voor het Volgende Niveau"
+    "yourStats": "Your Stats",
+    "totalXp": "Total XP",
+    "totalClasses": "Total Classes",
+    "totalLessons": "Total Lessons",
+    "totalXpRequired": "Total XP Required",
+    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
   },
   "progress": {
-    "unlocked": "Ontgrendeld",
-    "locked": "Vergrendeld"
+    "unlocked": "Unlocked",
+    "locked": "Locked"
   },
   "settings": {
-    "tools": "Gereedschappen",
-    "settings": "Instellingen",
-    "logout": "Uitloggen",
-    "changePassword": "Wachtwoord Wijzigen",
-    "changeLanguage": "Taal Wijzigen",
-    "changeTheme": "Thema Wijzigen",
-    "changeFontSize": "Lettergrootte Wijzigen",
-    "changeFont": "Lettertype Wijzigen",
-    "changeFontColor": "Lettertype Kleur Wijzigen",
-    "changeBackgroundColor": "Achtergrondkleur Wijzigen",
-    "changeBackgroundImage": "Achtergrondafbeelding Wijzigen",
-    "changeBackgroundBlur": "Achtergrondvervaging Wijzigen"
+    "tools": "Tools",
+    "settings": "Settings",
+    "logout": "Logout",
+    "changePassword": "Change Password",
+    "changeLanguage": "Change Language",
+    "changeTheme": "Change Theme",
+    "changeFontSize": "Change Font Size",
+    "changeFont": "Change Font",
+    "changeFontColor": "Change Font Color",
+    "changeBackgroundColor": "Change Background Color",
+    "changeBackgroundImage": "Change Background Image",
+    "changeBackgroundBlur": "Change Background Blur"
   }
 }
