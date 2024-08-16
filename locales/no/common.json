@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "close": "Close"
+    "back": "Tilbake",
+    "backToHome": "Tilbake til hjemmet",
+    "close": "Lukk"
   },
   "actions": {
-    "add": "Add",
-    "edit": "Edit",
-    "delete": "Delete",
-    "save": "Save",
-    "change": "Change",
-    "refresh": "Refresh",
-    "clear": "Clear"
+    "add": "Legg til",
+    "edit": "Rediger",
+    "delete": "Slett",
+    "save": "Lagre",
+    "change": "Endre",
+    "refresh": "Oppdater",
+    "clear": "Tøm"
   },
   "status": {
-    "success": "Success",
-    "error": "Error",
-    "warning": "Warning",
+    "success": "Suksess",
+    "error": "Feil",
+    "warning": "Advarsel",
     "info": "Info"
   },
   "confirmations": {
-    "yes": "Yes",
-    "no": "No",
+    "yes": "Ja",
+    "no": "Nei",
     "ok": "OK",
-    "cancel": "Cancel"
+    "cancel": "Avbryt"
   },
   "feedback": {
-    "saved": "Saved",
-    "loading-ellipsis": "Loading...",
-    "saving-ellipsis": "Saving..."
+    "saved": "Lagret",
+    "loading-ellipsis": "Laster...",
+    "saving-ellipsis": "Lagrer..."
   },
   "classes": {
-    "classes": "Classes",
-    "lessons": "Lessons",
-    "classSaveSuccess": "Class saved successfully!",
-    "classSaveFailed": "Failed to save class. Please try again.",
-    "resetAllClasses": "Reset All Classes",
-    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
-    "classEmptyError": "Class name cannot be empty.",
-    "classSameNameError": "Class with same name already exists."
+    "classes": "Klasser",
+    "lessons": "Leksjoner",
+    "classSaveSuccess": "Klassen ble lagret vellykket!",
+    "classSaveFailed": "Klasse kunne ikke lagres. Vennligst prøv igjen.",
+    "resetAllClasses": "Tilbakestill alle klasser",
+    "resetAllClassesConfirm": "Er du sikker på at du vil tilbakestille alle klasser?",
+    "classEmptyError": "Klassenavn kan ikke være tomt.",
+    "classSameNameError": "Klasse med samme navn eksisterer allerede."
   },
   "lessons": {
-    "saveALesson": "Save a Lesson",
-    "saveLesson": "Save Lesson",
-    "lessonSameNameError": "Lesson with same name already exists in this class.",
-    "editLessonLog": "Edit Lesson Log",
-    "updateLessonLog": "Update Lesson Log"
+    "saveALesson": "Lagre en leksjon",
+    "saveLesson": "Lagre leksjon",
+    "lessonSameNameError": "Leksjon med samme navn eksisterer allerede i denne klassen.",
+    "editLessonLog": "Rediger leksjonslogg",
+    "updateLessonLog": "Oppdater leksjonslogg"
   },
   "stats": {
-    "xpToNextLevel": "XP to next level",
-    "level": "Level",
+    "xpToNextLevel": "XP til neste nivå",
+    "level": "Nivå",
     "xp": "XP",
-    "yourStats": "Your Stats",
-    "totalXp": "Total XP",
-    "totalClasses": "Total Classes",
-    "totalLessons": "Total Lessons",
-    "totalXpRequired": "Total XP Required",
-    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
+    "yourStats": "Dine statistikker",
+    "totalXp": "Totalt XP",
+    "totalClasses": "Totalt antall klasser",
+    "totalLessons": "Totalt antall leksjoner",
+    "totalXpRequired": "Totalt XP påkrevet",
+    "totalXpRequiredToNextLevel": "Totalt XP påkrevet til neste nivå"
   },
   "progress": {
-    "unlocked": "Unlocked",
-    "locked": "Locked"
+    "unlocked": "Ulåst",
+    "locked": "Låst"
   },
   "settings": {
-    "tools": "Tools",
-    "settings": "Settings",
-    "logout": "Logout",
-    "changePassword": "Change Password",
-    "changeLanguage": "Change Language",
-    "changeTheme": "Change Theme",
-    "changeFontSize": "Change Font Size",
-    "changeFont": "Change Font",
-    "changeFontColor": "Change Font Color",
-    "changeBackgroundColor": "Change Background Color",
-    "changeBackgroundImage": "Change Background Image",
-    "changeBackgroundBlur": "Change Background Blur"
+    "tools": "Verktøy",
+    "settings": "Innstillinger",
+    "logout": "Logg ut",
+    "changePassword": "Endre passord",
+    "changeLanguage": "Endre språk",
+    "changeTheme": "Endre tema",
+    "changeFontSize": "Endre skriftstørrelse",
+    "changeFont": "Endre skrifttype",
+    "changeFontColor": "Endre skriftfarge",
+    "changeBackgroundColor": "Endre bakgrunnsfarge",
+    "changeBackgroundImage": "Endre bakgrunnsbilde",
+    "changeBackgroundBlur": "Endre bakgrunnsuskarphet"
   }
 }
