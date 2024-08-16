@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "close": "Close"
+    "back": "Terug",
+    "backToHome": "Terug na Tuis",
+    "close": "Sluit"
   },
   "actions": {
-    "add": "Add",
-    "edit": "Edit",
-    "delete": "Delete",
-    "save": "Save",
-    "change": "Change",
-    "refresh": "Refresh",
-    "clear": "Clear"
+    "add": "Voeg By",
+    "edit": "Wysig",
+    "delete": "Verwyder",
+    "save": "Bewaar",
+    "change": "Verander",
+    "refresh": "Herlaai",
+    "clear": "Maak Skoon"
   },
   "status": {
-    "success": "Success",
-    "error": "Error",
-    "warning": "Warning",
-    "info": "Info"
+    "success": "Sukses",
+    "error": "Fout",
+    "warning": "Waarskuwing",
+    "info": "Inligting"
   },
   "confirmations": {
-    "yes": "Yes",
-    "no": "No",
+    "yes": "Ja",
+    "no": "Nee",
     "ok": "OK",
-    "cancel": "Cancel"
+    "cancel": "Kanselleer"
   },
   "feedback": {
-    "saved": "Saved",
-    "loading-ellipsis": "Loading...",
-    "saving-ellipsis": "Saving..."
+    "saved": "Bewaar",
+    "loading-ellipsis": "Laai...",
+    "saving-ellipsis": "Bewaar..."
   },
   "classes": {
-    "classes": "Classes",
-    "lessons": "Lessons",
-    "classSaveSuccess": "Class saved successfully!",
-    "classSaveFailed": "Failed to save class. Please try again.",
-    "resetAllClasses": "Reset All Classes",
-    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
-    "classEmptyError": "Class name cannot be empty.",
-    "classSameNameError": "Class with same name already exists."
+    "classes": "Klasse",
+    "lessons": "Lesse",
+    "classSaveSuccess": "Klas suksesvol gestoor!",
+    "classSaveFailed": "Kon nie klas stoor nie. Probeer asseblief weer.",
+    "resetAllClasses": "Herstel Alle Klasse",
+    "resetAllClassesConfirm": "Is jy seker jy wil alle klasse herstel?",
+    "classEmptyError": "Klasnaam kan nie leeg wees nie.",
+    "classSameNameError": "Klas met dieselfde naam bestaan reeds."
   },
   "lessons": {
-    "saveALesson": "Save a Lesson",
-    "saveLesson": "Save Lesson",
-    "lessonSameNameError": "Lesson with same name already exists in this class.",
-    "editLessonLog": "Edit Lesson Log",
-    "updateLessonLog": "Update Lesson Log"
+    "saveALesson": "Bewaar 'n Les",
+    "saveLesson": "Bewaar Les",
+    "lessonSameNameError": "'n Les met dieselfde naam bestaan reeds in hierdie klas.",
+    "editLessonLog": "Wysig Lesingjoernaal",
+    "updateLessonLog": "Opdateer Lesingjoernaal"
   },
   "stats": {
-    "xpToNextLevel": "XP to next level",
-    "level": "Level",
-    "xp": "XP",
-    "yourStats": "Your Stats",
-    "totalXp": "Total XP",
-    "totalClasses": "Total Classes",
-    "totalLessons": "Total Lessons",
-    "totalXpRequired": "Total XP Required",
-    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
+    "xpToNextLevel": "Punte na volgende vlak",
+    "level": "Vlak",
+    "xp": "Punte",
+    "yourStats": "Jou Statistieke",
+    "totalXp": "Totale Punte",
+    "totalClasses": "Totale Klasse",
+    "totalLessons": "Totale Lesse",
+    "totalXpRequired": "Totale XP Benodig",
+    "totalXpRequiredToNextLevel": "Totale XP Benodig tot Volgende Vlak"
   },
   "progress": {
-    "unlocked": "Unlocked",
-    "locked": "Locked"
+    "unlocked": "Ontgrendel",
+    "locked": "Gesluit"
   },
   "settings": {
-    "tools": "Tools",
-    "settings": "Settings",
-    "logout": "Logout",
-    "changePassword": "Change Password",
-    "changeLanguage": "Change Language",
-    "changeTheme": "Change Theme",
-    "changeFontSize": "Change Font Size",
-    "changeFont": "Change Font",
-    "changeFontColor": "Change Font Color",
-    "changeBackgroundColor": "Change Background Color",
-    "changeBackgroundImage": "Change Background Image",
-    "changeBackgroundBlur": "Change Background Blur"
+    "tools": "Gereedskap",
+    "settings": "Instellings",
+    "logout": "Teken Uit",
+    "changePassword": "Verander Wagwoord",
+    "changeLanguage": "Verander Taal",
+    "changeTheme": "Verander Tema",
+    "changeFontSize": "Verander Font Grootte",
+    "changeFont": "Verander Font",
+    "changeFontColor": "Verander Font Kleur",
+    "changeBackgroundColor": "Verander Agtergrond Kleur",
+    "changeBackgroundImage": "Verander Agtergrond Prent",
+    "changeBackgroundBlur": "Verander Agtergrond Wazig"
   }
 }
