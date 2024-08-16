@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "חזור",
-    "backToHome": "חזור לדף הבית",
-    "close": "סגור"
+    "back": "Back",
+    "backToHome": "Back to Home",
+    "close": "Close"
   },
   "actions": {
-    "add": "הוסף",
-    "edit": "עריכה",
-    "delete": "מחק",
-    "save": "שמור",
-    "change": "שנה",
-    "refresh": "רענן",
-    "clear": "נקה"
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "change": "Change",
+    "refresh": "Refresh",
+    "clear": "Clear"
   },
   "status": {
-    "success": "הצלחה",
-    "error": "שגיאה",
-    "warning": "אזהרה",
-    "info": "מידע"
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info"
   },
   "confirmations": {
-    "yes": "כן",
-    "no": "לא",
-    "ok": "אישור",
-    "cancel": "ביטול"
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "cancel": "Cancel"
   },
   "feedback": {
-    "saved": "נשמר",
-    "loading-ellipsis": "טוען...",
-    "saving-ellipsis": "שומר..."
+    "saved": "Saved",
+    "loading-ellipsis": "Loading...",
+    "saving-ellipsis": "Saving..."
   },
   "classes": {
-    "classes": "מחלקות",
-    "lessons": "שיעורים",
-    "classSaveSuccess": "מחלקה נשמרה בהצלחה!",
-    "classSaveFailed": "נכשל בשמירת המחלקה. נא לנסות שוב.",
-    "resetAllClasses": "אפס את כל המחלקות",
-    "resetAllClassesConfirm": "האם אתה בטוח שברצונך לאפס את כל המחלקות?",
-    "classEmptyError": "שם המחלקה לא יכול להיות ריק.",
-    "classSameNameError": "כבר קיימת מחלקה עם אותו שם."
+    "classes": "Classes",
+    "lessons": "Lessons",
+    "classSaveSuccess": "Class saved successfully!",
+    "classSaveFailed": "Failed to save class. Please try again.",
+    "resetAllClasses": "Reset All Classes",
+    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
+    "classEmptyError": "Class name cannot be empty.",
+    "classSameNameError": "Class with same name already exists."
   },
   "lessons": {
-    "saveALesson": "שמור שיעור",
-    "saveLesson": "שמור שיעור",
-    "lessonSameNameError": "שם השיעור כבר קיים במחלקה זו.",
-    "editLessonLog": "ערוך כניסת שיעור",
-    "updateLessonLog": "עדכן כניסת שיעור"
+    "saveALesson": "Save a Lesson",
+    "saveLesson": "Save Lesson",
+    "lessonSameNameError": "Lesson with same name already exists in this class.",
+    "editLessonLog": "Edit Lesson Log",
+    "updateLessonLog": "Update Lesson Log"
   },
   "stats": {
-    "xpToNextLevel": "נקודות ניסיון עד לרמה הבאה",
-    "level": "רמה",
-    "xp": "נקודות ניסיון",
-    "yourStats": "הנתונים שלך",
-    "totalXp": "סך כל הנקודות ניסיון",
-    "totalClasses": "סך כל המחלקות",
-    "totalLessons": "סך כל השיעורים",
-    "totalXpRequired": "סך כל הנקודות ניסיון הנדרשות",
-    "totalXpRequiredToNextLevel": "סך כל הנקודות ניסיון הנדרשות עד לרמה הבאה"
+    "xpToNextLevel": "XP to next level",
+    "level": "Level",
+    "xp": "XP",
+    "yourStats": "Your Stats",
+    "totalXp": "Total XP",
+    "totalClasses": "Total Classes",
+    "totalLessons": "Total Lessons",
+    "totalXpRequired": "Total XP Required",
+    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
   },
   "progress": {
-    "unlocked": "נפתח",
-    "locked": "נעול"
+    "unlocked": "Unlocked",
+    "locked": "Locked"
   },
   "settings": {
-    "tools": "כלים",
-    "settings": "הגדרות",
-    "logout": "התנתקות",
-    "changePassword": "שנה סיסמה",
-    "changeLanguage": "שנה שפה",
-    "changeTheme": "שנה ערכת צבע",
-    "changeFontSize": "שנה גודל פונט",
-    "changeFont": "שנה פונט",
-    "changeFontColor": "שנה צבע פונט",
-    "changeBackgroundColor": "שנה צבע רקע",
-    "changeBackgroundImage": "שנה תמונת רקע",
-    "changeBackgroundBlur": "שנה טשטוש רקע"
+    "tools": "Tools",
+    "settings": "Settings",
+    "logout": "Logout",
+    "changePassword": "Change Password",
+    "changeLanguage": "Change Language",
+    "changeTheme": "Change Theme",
+    "changeFontSize": "Change Font Size",
+    "changeFont": "Change Font",
+    "changeFontColor": "Change Font Color",
+    "changeBackgroundColor": "Change Background Color",
+    "changeBackgroundImage": "Change Background Image",
+    "changeBackgroundBlur": "Change Background Blur"
   }
 }
