@@ -77,7 +77,7 @@ const EditClass: React.FC = () => {
     const className =
       classes.find((c) => c.id === classLog.classId)?.class || "Unknown";
     navigation.setOptions({
-      title: `Edit ${className} Class`,
+      title: `Edit ${className} Lesson`,
     });
   }, [navigation, classLog.classId, classes]);
 
@@ -133,7 +133,7 @@ const EditClass: React.FC = () => {
               textAlign: "center",
             }}
           >
-            Edit Class Log
+            Edit Lesson Log
           </Text>
           <ClassPicker
             classes={classes}
@@ -164,7 +164,7 @@ const EditClass: React.FC = () => {
             onPress={handleSave}
             disabled={!isFormValid || isSaving}
           >
-            {isSaving ? "Saving..." : "Update Class Log"}
+            {isSaving ? "Saving..." : "Update Lesson Log"}
           </Button>
         </View>
       </View>
