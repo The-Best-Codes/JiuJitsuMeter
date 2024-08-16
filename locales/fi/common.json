@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "close": "Close"
+    "back": "Takaisin",
+    "backToHome": "Takaisin kotiin",
+    "close": "Sulje"
   },
   "actions": {
-    "add": "Add",
-    "edit": "Edit",
-    "delete": "Delete",
-    "save": "Save",
-    "change": "Change",
-    "refresh": "Refresh",
-    "clear": "Clear"
+    "add": "Lisää",
+    "edit": "Muokkaa",
+    "delete": "Poista",
+    "save": "Tallenna",
+    "change": "Muuta",
+    "refresh": "Päivitä",
+    "clear": "Tyhjennä"
   },
   "status": {
-    "success": "Success",
-    "error": "Error",
-    "warning": "Warning",
-    "info": "Info"
+    "success": "Onnistunut",
+    "error": "Virhe",
+    "warning": "Varoitus",
+    "info": "Tiedot"
   },
   "confirmations": {
-    "yes": "Yes",
-    "no": "No",
+    "yes": "Kyllä",
+    "no": "Ei",
     "ok": "OK",
-    "cancel": "Cancel"
+    "cancel": "Peruuta"
   },
   "feedback": {
-    "saved": "Saved",
-    "loading-ellipsis": "Loading...",
-    "saving-ellipsis": "Saving..."
+    "saved": "Tallennettu",
+    "loading-ellipsis": "Ladataan...",
+    "saving-ellipsis": "Tallennetaan..."
   },
   "classes": {
-    "classes": "Classes",
-    "lessons": "Lessons",
-    "classSaveSuccess": "Class saved successfully!",
-    "classSaveFailed": "Failed to save class. Please try again.",
-    "resetAllClasses": "Reset All Classes",
-    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
-    "classEmptyError": "Class name cannot be empty.",
-    "classSameNameError": "Class with same name already exists."
+    "classes": "Luokat",
+    "lessons": "Tunnit",
+    "classSaveSuccess": "Luokka tallennettu onnistuneesti!",
+    "classSaveFailed": "Luokan tallennus epäonnistui. Yritä uudelleen.",
+    "resetAllClasses": "Nollaa kaikki luokat",
+    "resetAllClassesConfirm": "Haluatko varmasti nollata kaikki luokat?",
+    "classEmptyError": "Luokan nimi ei voi olla tyhjä.",
+    "classSameNameError": "Samaa nimeä kantava luokka on jo olemassa."
   },
   "lessons": {
-    "saveALesson": "Save a Lesson",
-    "saveLesson": "Save Lesson",
-    "lessonSameNameError": "Lesson with same name already exists in this class.",
-    "editLessonLog": "Edit Lesson Log",
-    "updateLessonLog": "Update Lesson Log"
+    "saveALesson": "Tallenna tunti",
+    "saveLesson": "Tallenna tunti",
+    "lessonSameNameError": "Tunti samalla nimellä on jo olemassa tässä luokassa.",
+    "editLessonLog": "Muokkaa tuntia",
+    "updateLessonLog": "Päivitä tuntia"
   },
   "stats": {
-    "xpToNextLevel": "XP to next level",
-    "level": "Level",
+    "xpToNextLevel": "XP seuraavalle tasolle",
+    "level": "Taso",
     "xp": "XP",
-    "yourStats": "Your Stats",
-    "totalXp": "Total XP",
-    "totalClasses": "Total Classes",
-    "totalLessons": "Total Lessons",
-    "totalXpRequired": "Total XP Required",
-    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
+    "yourStats": "Sinun tilastosi",
+    "totalXp": "Yhteensä XP",
+    "totalClasses": "Yhteensä luokat",
+    "totalLessons": "Yhteensä tunnit",
+    "totalXpRequired": "Yhteensä tarvittava XP",
+    "totalXpRequiredToNextLevel": "Yhteensä tarvittava XP seuraavalle tasolle"
   },
   "progress": {
-    "unlocked": "Unlocked",
-    "locked": "Locked"
+    "unlocked": "Avattu",
+    "locked": "Lukittu"
   },
   "settings": {
-    "tools": "Tools",
-    "settings": "Settings",
-    "logout": "Logout",
-    "changePassword": "Change Password",
-    "changeLanguage": "Change Language",
-    "changeTheme": "Change Theme",
-    "changeFontSize": "Change Font Size",
-    "changeFont": "Change Font",
-    "changeFontColor": "Change Font Color",
-    "changeBackgroundColor": "Change Background Color",
-    "changeBackgroundImage": "Change Background Image",
-    "changeBackgroundBlur": "Change Background Blur"
+    "tools": "Työkalut",
+    "settings": "Asetukset",
+    "logout": "Kirjaudu ulos",
+    "changePassword": "Vaihda salasana",
+    "changeLanguage": "Vaihda kieli",
+    "changeTheme": "Vaihda teema",
+    "changeFontSize": "Vaihda fonttikoko",
+    "changeFont": "Vaihda fontti",
+    "changeFontColor": "Vaihda fontin väri",
+    "changeBackgroundColor": "Vaihda taustavärinen",
+    "changeBackgroundImage": "Vaihda taustakuvaa",
+    "changeBackgroundBlur": "Vaihda taustan sumennusta"
   }
 }
