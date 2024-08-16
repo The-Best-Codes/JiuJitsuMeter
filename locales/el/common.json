@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "close": "Close"
+    "back": "Πίσω",
+    "backToHome": "Πίσω στην Αρχική",
+    "close": "Κλείσιμο"
   },
   "actions": {
-    "add": "Add",
-    "edit": "Edit",
-    "delete": "Delete",
-    "save": "Save",
-    "change": "Change",
-    "refresh": "Refresh",
-    "clear": "Clear"
+    "add": "Προσθήκη",
+    "edit": "Επεξεργασία",
+    "delete": "Διαγραφή",
+    "save": "Αποθήκευση",
+    "change": "Αλλαγή",
+    "refresh": "Ανανέωση",
+    "clear": "Καθαρισμός"
   },
   "status": {
-    "success": "Success",
-    "error": "Error",
-    "warning": "Warning",
-    "info": "Info"
+    "success": "Επιτυχία",
+    "error": "Σφάλμα",
+    "warning": "Προειδοποίηση",
+    "info": "Πληροφορίες"
   },
   "confirmations": {
-    "yes": "Yes",
-    "no": "No",
-    "ok": "OK",
-    "cancel": "Cancel"
+    "yes": "Ναι",
+    "no": "Όχι",
+    "ok": "Εντάξει",
+    "cancel": "Ακύρωση"
   },
   "feedback": {
-    "saved": "Saved",
-    "loading-ellipsis": "Loading...",
-    "saving-ellipsis": "Saving..."
+    "saved": "Αποθηκεύτηκε",
+    "loading-ellipsis": "Φόρτωση...",
+    "saving-ellipsis": "Αποθηκεύεται..."
   },
   "classes": {
-    "classes": "Classes",
-    "lessons": "Lessons",
-    "classSaveSuccess": "Class saved successfully!",
-    "classSaveFailed": "Failed to save class. Please try again.",
-    "resetAllClasses": "Reset All Classes",
-    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
-    "classEmptyError": "Class name cannot be empty.",
-    "classSameNameError": "Class with same name already exists."
+    "classes": "Τάξεις",
+    "lessons": "Μαθήματα",
+    "classSaveSuccess": "Η τάξη αποθηκεύτηκε με επιτυχία!",
+    "classSaveFailed": "Απέτυχε η αποθήκευση της τάξης. Παρακαλώ δοκιμάστε ξανά.",
+    "resetAllClasses": "Επαναφορά Όλων των Τάξεων",
+    "resetAllClassesConfirm": "Είστε σίγουροι ότι θέλετε να επαναφέρετε όλες τις τάξεις;",
+    "classEmptyError": "Το όνομα της τάξης δεν μπορεί να είναι κενό.",
+    "classSameNameError": "Υπάρχει ήδη τάξη με το ίδιο όνομα."
   },
   "lessons": {
-    "saveALesson": "Save a Lesson",
-    "saveLesson": "Save Lesson",
-    "lessonSameNameError": "Lesson with same name already exists in this class.",
-    "editLessonLog": "Edit Lesson Log",
-    "updateLessonLog": "Update Lesson Log"
+    "saveALesson": "Αποθήκευση Μαθήματος",
+    "saveLesson": "Αποθήκευση Μαθήματος",
+    "lessonSameNameError": "Το μάθημα με το ίδιο όνομα υπάρχει ήδη σε αυτή την τάξη.",
+    "editLessonLog": "Επεξεργασία Αρχείου Μαθήματος",
+    "updateLessonLog": "Ενημέρωση Αρχείου Μαθήματος"
   },
   "stats": {
-    "xpToNextLevel": "XP to next level",
-    "level": "Level",
-    "xp": "XP",
-    "yourStats": "Your Stats",
-    "totalXp": "Total XP",
-    "totalClasses": "Total Classes",
-    "totalLessons": "Total Lessons",
-    "totalXpRequired": "Total XP Required",
-    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
+    "xpToNextLevel": "Πόντοι εμπειρίας για τον επόμενο επίπεδο",
+    "level": "Επίπεδο",
+    "xp": "Πόντοι Εμπειρίας",
+    "yourStats": "Οι Στατιστικές Σου",
+    "totalXp": "Συνολικοί Πόντοι Εμπειρίας",
+    "totalClasses": "Σύνολο Τάξεων",
+    "totalLessons": "Σύνολο Μαθημάτων",
+    "totalXpRequired": "Συνολικοί Απαιτούμενοι Πόντοι Εμπειρίας",
+    "totalXpRequiredToNextLevel": "Συνολικοί Απαιτούμενοι Πόντοι Εμπειρίας για το Επόμενο Επίπεδο"
   },
   "progress": {
-    "unlocked": "Unlocked",
-    "locked": "Locked"
+    "unlocked": "Ξεκλείδωτο",
+    "locked": "Κλειδωμένο"
   },
   "settings": {
-    "tools": "Tools",
-    "settings": "Settings",
-    "logout": "Logout",
-    "changePassword": "Change Password",
-    "changeLanguage": "Change Language",
-    "changeTheme": "Change Theme",
-    "changeFontSize": "Change Font Size",
-    "changeFont": "Change Font",
-    "changeFontColor": "Change Font Color",
-    "changeBackgroundColor": "Change Background Color",
-    "changeBackgroundImage": "Change Background Image",
-    "changeBackgroundBlur": "Change Background Blur"
+    "tools": "Εργαλεία",
+    "settings": "Ρυθμίσεις",
+    "logout": "Αποσύνδεση",
+    "changePassword": "Αλλαγή Κωδικού",
+    "changeLanguage": "Αλλαγή Γλώσσας",
+    "changeTheme": "Αλλαγή Θέματος",
+    "changeFontSize": "Αλλαγή Μεγέθους Γραμματοσειράς",
+    "changeFont": "Αλλαγή Γραμματοσειράς",
+    "changeFontColor": "Αλλαγή Χρώματος Γραμματοσειράς",
+    "changeBackgroundColor": "Αλλαγή Χρώματος Φόντου",
+    "changeBackgroundImage": "Αλλαγή Εικόνας Φόντου",
+    "changeBackgroundBlur": "Αλλαγή Θολού Φόντου"
   }
 }
