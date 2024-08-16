@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "close": "Close"
+    "back": "Enrere",
+    "backToHome": "Enrere a Inici",
+    "close": "Tancar"
   },
   "actions": {
-    "add": "Add",
-    "edit": "Edit",
-    "delete": "Delete",
-    "save": "Save",
-    "change": "Change",
-    "refresh": "Refresh",
-    "clear": "Clear"
+    "add": "Afegir",
+    "edit": "Editar",
+    "delete": "Esborrar",
+    "save": "Guardar",
+    "change": "Canviar",
+    "refresh": "Actualitzar",
+    "clear": "Netejar"
   },
   "status": {
-    "success": "Success",
+    "success": "Èxit",
     "error": "Error",
-    "warning": "Warning",
-    "info": "Info"
+    "warning": "Advertencia",
+    "info": "Informació"
   },
   "confirmations": {
-    "yes": "Yes",
+    "yes": "Sí",
     "no": "No",
-    "ok": "OK",
-    "cancel": "Cancel"
+    "ok": "D'acord",
+    "cancel": "Cancel·lar"
   },
   "feedback": {
-    "saved": "Saved",
-    "loading-ellipsis": "Loading...",
-    "saving-ellipsis": "Saving..."
+    "saved": "Guardat",
+    "loading-ellipsis": "Carregant...",
+    "saving-ellipsis": "Guardant..."
   },
   "classes": {
     "classes": "Classes",
-    "lessons": "Lessons",
-    "classSaveSuccess": "Class saved successfully!",
-    "classSaveFailed": "Failed to save class. Please try again.",
-    "resetAllClasses": "Reset All Classes",
-    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
-    "classEmptyError": "Class name cannot be empty.",
-    "classSameNameError": "Class with same name already exists."
+    "lessons": "Lliçons",
+    "classSaveSuccess": "Classe guardada amb èxit!",
+    "classSaveFailed": "No s'ha pogut guardar la classe. Si us plau, intenta-ho de nou.",
+    "resetAllClasses": "Restablir Totes les Classes",
+    "resetAllClassesConfirm": "Esteu segur que voleu restablir totes les classes?",
+    "classEmptyError": "El nom de la classe no pot estar buit.",
+    "classSameNameError": "Ja existeix una classe amb el mateix nom."
   },
   "lessons": {
-    "saveALesson": "Save a Lesson",
-    "saveLesson": "Save Lesson",
-    "lessonSameNameError": "Lesson with same name already exists in this class.",
-    "editLessonLog": "Edit Lesson Log",
-    "updateLessonLog": "Update Lesson Log"
+    "saveALesson": "Guardar una Lliçó",
+    "saveLesson": "Guardar Lliçó",
+    "lessonSameNameError": "Ja existeix una lliçó amb el mateix nom en aquesta classe.",
+    "editLessonLog": "Editar Registre de Lliçó",
+    "updateLessonLog": "Actualitzar Registre de Lliçó"
   },
   "stats": {
-    "xpToNextLevel": "XP to next level",
-    "level": "Level",
+    "xpToNextLevel": "XP fins al proper nivell",
+    "level": "Nivell",
     "xp": "XP",
-    "yourStats": "Your Stats",
-    "totalXp": "Total XP",
-    "totalClasses": "Total Classes",
-    "totalLessons": "Total Lessons",
-    "totalXpRequired": "Total XP Required",
-    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
+    "yourStats": "Les teves Estadístiques",
+    "totalXp": "XP Total",
+    "totalClasses": "Classes Totals",
+    "totalLessons": "Lliçons Totals",
+    "totalXpRequired": "XP Total Requerida",
+    "totalXpRequiredToNextLevel": "XP Total Requerida fins al Pròxim Nivell"
   },
   "progress": {
-    "unlocked": "Unlocked",
-    "locked": "Locked"
+    "unlocked": "Desbloquejat",
+    "locked": "Bloquejat"
   },
   "settings": {
-    "tools": "Tools",
-    "settings": "Settings",
-    "logout": "Logout",
-    "changePassword": "Change Password",
-    "changeLanguage": "Change Language",
-    "changeTheme": "Change Theme",
-    "changeFontSize": "Change Font Size",
-    "changeFont": "Change Font",
-    "changeFontColor": "Change Font Color",
-    "changeBackgroundColor": "Change Background Color",
-    "changeBackgroundImage": "Change Background Image",
-    "changeBackgroundBlur": "Change Background Blur"
+    "tools": "Eines",
+    "settings": "Configuració",
+    "logout": "Sortir",
+    "changePassword": "Canviar Contrasenya",
+    "changeLanguage": "Canviar Idioma",
+    "changeTheme": "Canviar Tema",
+    "changeFontSize": "Canviar Mida de la Lletra",
+    "changeFont": "Canviar Tipus de Lletra",
+    "changeFontColor": "Canviar Color de la Lletra",
+    "changeBackgroundColor": "Canviar Color de Fons",
+    "changeBackgroundImage": "Canviar Imatge de Fons",
+    "changeBackgroundBlur": "Canviar Desenfocament de Fons"
   }
 }
