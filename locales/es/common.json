@@ -1,73 +1,73 @@
 {
   "navigation": {
-    "back": "Atrás",
-    "backToHome": "Atrás a Inicio",
-    "close": "Cerrar"
+    "back": "Back",
+    "backToHome": "Back to Home",
+    "close": "Close"
   },
   "actions": {
-    "add": "Añadir",
-    "edit": "Editar",
-    "delete": "Eliminar",
-    "save": "Guardar",
-    "change": "Cambiar",
-    "refresh": "Refrescar",
-    "clear": "Limpiar"
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "change": "Change",
+    "refresh": "Refresh",
+    "clear": "Clear"
   },
   "status": {
-    "success": "Éxito",
+    "success": "Success",
     "error": "Error",
-    "warning": "Advertencia",
-    "info": "Información"
+    "warning": "Warning",
+    "info": "Info"
   },
   "confirmations": {
-    "yes": "Sí",
+    "yes": "Yes",
     "no": "No",
     "ok": "OK",
-    "cancel": "Cancelar"
+    "cancel": "Cancel"
   },
   "feedback": {
-    "saved": "Guardado",
-    "loading-ellipsis": "Cargando...",
-    "saving-ellipsis": "Guardando..."
+    "saved": "Saved",
+    "loading-ellipsis": "Loading...",
+    "saving-ellipsis": "Saving..."
   },
   "classes": {
-    "classes": "Clases",
-    "lessons": "Lecciones",
-    "classSaveSuccess": "¡Clase guardada correctamente!",
-    "classSaveFailed": "Error al guardar la clase. Por favor, inténtalo de nuevo.",
-    "resetAllClasses": "Restablecer Todas las Clases",
-    "resetAllClassesConfirm": "¿Estás seguro de que quieres restablecer todas las clases?",
-    "classEmptyError": "El nombre de la clase no puede estar vacío.",
-    "classSameNameError": "Ya existe una clase con el mismo nombre."
+    "classes": "Classes",
+    "lessons": "Lessons",
+    "classSaveSuccess": "Class saved successfully!",
+    "classSaveFailed": "Failed to save class. Please try again.",
+    "resetAllClasses": "Reset All Classes",
+    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
+    "classEmptyError": "Class name cannot be empty.",
+    "classSameNameError": "Class with same name already exists."
   },
   "lessons": {
-    "saveALesson": "Guardar una Lección",
-    "saveLesson": "Guardar Lección",
-    "lessonSameNameError": "Ya existe una lección con el mismo nombre en esta clase.",
-    "editLessonLog": "Editar Registro de Lección",
-    "updateLessonLog": "Actualizar Registro de Lección"
+    "saveALesson": "Save a Lesson",
+    "saveLesson": "Save Lesson",
+    "lessonSameNameError": "Lesson with same name already exists in this class.",
+    "editLessonLog": "Edit Lesson Log",
+    "updateLessonLog": "Update Lesson Log"
   },
   "stats": {
-    "xpToNextLevel": "XP para el próximo nivel",
-    "level": "Nivel",
+    "xpToNextLevel": "XP to next level",
+    "level": "Level",
     "xp": "XP",
-    "yourStats": "Tus Estadísticas",
-    "totalXp": "XP Total",
-    "totalClasses": "Clases Totales",
-    "totalLessons": "Lecciones Totales",
-    "totalXpRequired": "XP Total Requerida",
-    "totalXpRequiredToNextLevel": "XP Total Requerida para el Próximo Nivel"
+    "yourStats": "Your Stats",
+    "totalXp": "Total XP",
+    "totalClasses": "Total Classes",
+    "totalLessons": "Total Lessons",
+    "totalXpRequired": "Total XP Required",
+    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
   },
   "progress": {
-    "unlocked": "Desbloqueado",
-    "locked": "Bloqueado"
+    "unlocked": "Unlocked",
+    "locked": "Locked"
   },
   "settings": {
-    "tools": "Herramientas",
-    "settings": "Ajustes",
-    "logout": "Cerrar Sesión",
-    "changePassword": "Cambiar Contraseña",
-    "changeLanguage": "Cambiar Idioma",
+    "tools": "Tools",
+    "settings": "Settings",
+    "logout": "Logout",
+    "changePassword": "Change Password",
+    "changeLanguage": "Change Language",
     "changeTheme": "Change Theme",
     "changeFontSize": "Change Font Size",
     "changeFont": "Change Font",
