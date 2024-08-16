@@ -1,79 +1,79 @@
 {
   "navigation": {
     "back": "返回",
-    "backToHome": "返回首页",
-    "close": "关闭"
+    "backToHome": "返回首頁",
+    "close": "關閉"
   },
   "actions": {
-    "add": "添加",
-    "edit": "编辑",
-    "delete": "删除",
-    "save": "保存",
+    "add": "新增",
+    "edit": "編輯",
+    "delete": "刪除",
+    "save": "儲存",
     "change": "更改",
-    "refresh": "刷新",
+    "refresh": "重新整理",
     "clear": "清除"
   },
   "status": {
     "success": "成功",
-    "error": "错误",
+    "error": "錯誤",
     "warning": "警告",
-    "info": "信息"
+    "info": "資訊"
   },
   "confirmations": {
     "yes": "是",
-    "no": "没有",
-    "ok": "确定",
+    "no": "否",
+    "ok": "確定",
     "cancel": "取消"
   },
   "feedback": {
-    "saved": "已保存",
-    "loading-ellipsis": "加载中...",
-    "saving-ellipsis": "保存中..."
+    "saved": "已儲存",
+    "loading-ellipsis": "載入中...",
+    "saving-ellipsis": "儲存中..."
   },
   "classes": {
-    "classes": "班级",
-    "lessons": "课程",
-    "classSaveSuccess": "班级保存成功！",
-    "classSaveFailed": "无法保存班级，请重试。",
-    "resetAllClasses": "重置所有班级",
-    "resetAllClassesConfirm": "您确定要重置所有班级吗？",
-    "classEmptyError": "班级名称不能为空。",
-    "classSameNameError": "相同名称的班级已存在。"
+    "classes": "類別",
+    "lessons": "課程",
+    "classSaveSuccess": "類別儲存成功！",
+    "classSaveFailed": "儲存類別失敗。請再試一次。",
+    "resetAllClasses": "重設所有類別",
+    "resetAllClassesConfirm": "您確定要重設所有類別嗎？",
+    "classEmptyError": "類別名稱不能為空。",
+    "classSameNameError": "已存在同名類別。"
   },
   "lessons": {
-    "saveALesson": "保存课程",
-    "saveLesson": "保存课程",
-    "lessonSameNameError": "此班级中已存在同名课程。",
-    "editLessonLog": "编辑课堂日志",
-    "updateLessonLog": "更新课堂日志"
+    "saveALesson": "儲存一堂課程",
+    "saveLesson": "儲存課程",
+    "lessonSameNameError": "該類別中已存在相同名稱的課程。",
+    "editLessonLog": "編輯課程日誌",
+    "updateLessonLog": "更新課程日誌"
   },
   "stats": {
-    "xpToNextLevel": "下一级所需经验值",
-    "level": "等级",
-    "xp": "经验值",
-    "yourStats": "您的统计数据",
-    "totalXp": "总经验值",
-    "totalClasses": "总班级数",
-    "totalLessons": "总课程数",
-    "totalXpRequired": "所需总经验值",
-    "totalXpRequiredToNextLevel": "距下一等级所需总经验值"
+    "xpToNextLevel": "到下一級所需的經驗值",
+    "level": "等級",
+    "xp": "經驗值",
+    "yourStats": "您的統計資料",
+    "totalXp": "總經驗值",
+    "totalClasses": "總類別數",
+    "totalLessons": "總課程數",
+    "totalXpRequired": "所需的總經驗值",
+    "totalXpRequiredToNextLevel": "升級所需的總經驗值"
   },
   "progress": {
-    "unlocked": "已解锁",
-    "locked": "已锁定"
+    "unlocked": "已解鎖",
+    "locked": "已鎖定"
   },
   "settings": {
     "tools": "工具",
-    "settings": "设置",
+    "settings": "設定",
     "logout": "登出",
-    "changePassword": "修改密码",
-    "changeLanguage": "更改语言",
-    "changeTheme": "更改主题",
-    "changeFontSize": "更改字号",
-    "changeFont": "更改字体",
-    "changeFontColor": "更改字体颜色",
-    "changeBackgroundColor": "更改背景颜色",
-    "changeBackgroundImage": "更改背景图片",
-    "changeBackgroundBlur": "更改背景模糊"
+    "changePassword": "修改密碼",
+    "changeLanguage": "更改語言",
+    "changeTheme": "更改主題",
+    "changeFontSize": "更改字型大小",
+    "changeFont": "更改字型",
+    "changeFontColor": "更改字型顏色",
+    "changeBackgroundColor": "更改背景顏色",
+    "changeBackgroundImage": "更改背景圖片",
+    "changeBackgroundBlur": "更改背景模糊度"
   }
 }
