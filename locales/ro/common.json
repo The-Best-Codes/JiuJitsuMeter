@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Înapoi",
-    "backToHome": "Înapoi la Pagina Principala",
-    "close": "Închide"
+    "back": "Back",
+    "backToHome": "Back to Home",
+    "close": "Close"
   },
   "actions": {
-    "add": "Adaugă",
-    "edit": "Editare",
-    "delete": "Ștergere",
-    "save": "Salvează",
-    "change": "Schimbă",
-    "refresh": "Reîmprospătează",
-    "clear": "Curăță"
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "change": "Change",
+    "refresh": "Refresh",
+    "clear": "Clear"
   },
   "status": {
-    "success": "Succes",
-    "error": "Eroare",
-    "warning": "Avertisment",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
     "info": "Info"
   },
   "confirmations": {
-    "yes": "Da",
-    "no": "Nu",
+    "yes": "Yes",
+    "no": "No",
     "ok": "OK",
-    "cancel": "Anulează"
+    "cancel": "Cancel"
   },
   "feedback": {
-    "saved": "Salvat",
-    "loading-ellipsis": "Se încarcă...",
-    "saving-ellipsis": "Salvare..."
+    "saved": "Saved",
+    "loading-ellipsis": "Loading...",
+    "saving-ellipsis": "Saving..."
   },
   "classes": {
-    "classes": "Clase",
-    "lessons": "Lecții",
-    "classSaveSuccess": "Clasă salvată cu succes!",
-    "classSaveFailed": "Nu s-a putut salva clasa. Vă rugăm să încercați din nou.",
-    "resetAllClasses": "Resetează Toate Clasele",
-    "resetAllClassesConfirm": "Sunteți sigur că doriți să resetați toate clasele?",
-    "classEmptyError": "Numele clasei nu poate fi gol.",
-    "classSameNameError": "Clasa cu același nume există deja."
+    "classes": "Classes",
+    "lessons": "Lessons",
+    "classSaveSuccess": "Class saved successfully!",
+    "classSaveFailed": "Failed to save class. Please try again.",
+    "resetAllClasses": "Reset All Classes",
+    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
+    "classEmptyError": "Class name cannot be empty.",
+    "classSameNameError": "Class with same name already exists."
   },
   "lessons": {
-    "saveALesson": "Salvează o Lecție",
-    "saveLesson": "Salvează Lecția",
-    "lessonSameNameError": "Lecția cu același nume există deja în această clasă.",
-    "editLessonLog": "Editează Jurnal Lecție",
-    "updateLessonLog": "Actualizează Jurnal Lecție"
+    "saveALesson": "Save a Lesson",
+    "saveLesson": "Save Lesson",
+    "lessonSameNameError": "Lesson with same name already exists in this class.",
+    "editLessonLog": "Edit Lesson Log",
+    "updateLessonLog": "Update Lesson Log"
   },
   "stats": {
-    "xpToNextLevel": "XP până la nivelul următor",
-    "level": "Nivel",
+    "xpToNextLevel": "XP to next level",
+    "level": "Level",
     "xp": "XP",
-    "yourStats": "Statisticile Tale",
-    "totalXp": "XP Total",
-    "totalClasses": "Total Clase",
-    "totalLessons": "Total Lecții",
-    "totalXpRequired": "XP Total Necesar",
-    "totalXpRequiredToNextLevel": "XP Total Necesar până la următorul nivel"
+    "yourStats": "Your Stats",
+    "totalXp": "Total XP",
+    "totalClasses": "Total Classes",
+    "totalLessons": "Total Lessons",
+    "totalXpRequired": "Total XP Required",
+    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
   },
   "progress": {
-    "unlocked": "Deblocat",
-    "locked": "Blocat"
+    "unlocked": "Unlocked",
+    "locked": "Locked"
   },
   "settings": {
-    "tools": "Unelte",
-    "settings": "Setări",
-    "logout": "Deconectare",
-    "changePassword": "Schimbare Parolă",
-    "changeLanguage": "Schimbare Limbă",
-    "changeTheme": "Schimbare Temă",
-    "changeFontSize": "Schimbare Dimensiune Font",
-    "changeFont": "Schimbare Font",
-    "changeFontColor": "Schimbare Culoare Font",
-    "changeBackgroundColor": "Schimbare Culoare Fundal",
-    "changeBackgroundImage": "Schimbare Imagine Fundal",
-    "changeBackgroundBlur": "Schimbare Estompare Fundal"
+    "tools": "Tools",
+    "settings": "Settings",
+    "logout": "Logout",
+    "changePassword": "Change Password",
+    "changeLanguage": "Change Language",
+    "changeTheme": "Change Theme",
+    "changeFontSize": "Change Font Size",
+    "changeFont": "Change Font",
+    "changeFontColor": "Change Font Color",
+    "changeBackgroundColor": "Change Background Color",
+    "changeBackgroundImage": "Change Background Image",
+    "changeBackgroundBlur": "Change Background Blur"
   }
 }
