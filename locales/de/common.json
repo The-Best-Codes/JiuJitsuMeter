@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "close": "Close"
+    "back": "Zurück",
+    "backToHome": "Zurück zur Startseite",
+    "close": "Schließen"
   },
   "actions": {
-    "add": "Add",
-    "edit": "Edit",
-    "delete": "Delete",
-    "save": "Save",
-    "change": "Change",
-    "refresh": "Refresh",
-    "clear": "Clear"
+    "add": "Hinzufügen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "save": "Speichern",
+    "change": "Ändern",
+    "refresh": "Aktualisieren",
+    "clear": "Löschen"
   },
   "status": {
-    "success": "Success",
-    "error": "Error",
-    "warning": "Warning",
+    "success": "Erfolg",
+    "error": "Fehler",
+    "warning": "Warnung",
     "info": "Info"
   },
   "confirmations": {
-    "yes": "Yes",
-    "no": "No",
+    "yes": "Ja",
+    "no": "Nein",
     "ok": "OK",
-    "cancel": "Cancel"
+    "cancel": "Abbrechen"
   },
   "feedback": {
-    "saved": "Saved",
-    "loading-ellipsis": "Loading...",
-    "saving-ellipsis": "Saving..."
+    "saved": "Gespeichert",
+    "loading-ellipsis": "Wird geladen...",
+    "saving-ellipsis": "Speichern..."
   },
   "classes": {
-    "classes": "Classes",
-    "lessons": "Lessons",
-    "classSaveSuccess": "Class saved successfully!",
-    "classSaveFailed": "Failed to save class. Please try again.",
-    "resetAllClasses": "Reset All Classes",
-    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
-    "classEmptyError": "Class name cannot be empty.",
-    "classSameNameError": "Class with same name already exists."
+    "classes": "Klassen",
+    "lessons": "Unterrichtsstunden",
+    "classSaveSuccess": "Klasse erfolgreich gespeichert!",
+    "classSaveFailed": "Fehler beim Speichern der Klasse. Bitte versuchen Sie es erneut.",
+    "resetAllClasses": "Alle Klassen zurücksetzen",
+    "resetAllClassesConfirm": "Sind Sie sicher, dass Sie alle Klassen zurücksetzen möchten?",
+    "classEmptyError": "Klassenname darf nicht leer sein.",
+    "classSameNameError": "Klasse mit gleichem Namen existiert bereits."
   },
   "lessons": {
-    "saveALesson": "Save a Lesson",
-    "saveLesson": "Save Lesson",
-    "lessonSameNameError": "Lesson with same name already exists in this class.",
-    "editLessonLog": "Edit Lesson Log",
-    "updateLessonLog": "Update Lesson Log"
+    "saveALesson": "Unterricht speichern",
+    "saveLesson": "Unterricht speichern",
+    "lessonSameNameError": "Unterricht mit gleichem Namen existiert bereits in dieser Klasse.",
+    "editLessonLog": "Unterrichtsprotokoll bearbeiten",
+    "updateLessonLog": "Unterrichtsprotokoll aktualisieren"
   },
   "stats": {
-    "xpToNextLevel": "XP to next level",
+    "xpToNextLevel": "XP zum nächsten Level",
     "level": "Level",
     "xp": "XP",
-    "yourStats": "Your Stats",
-    "totalXp": "Total XP",
-    "totalClasses": "Total Classes",
-    "totalLessons": "Total Lessons",
-    "totalXpRequired": "Total XP Required",
-    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
+    "yourStats": "Ihre Statistik",
+    "totalXp": "Gesamte XP",
+    "totalClasses": "Gesamtzahl der Klassen",
+    "totalLessons": "Gesamtzahl der Unterrichtsstunden",
+    "totalXpRequired": "Gesamte erforderliche XP",
+    "totalXpRequiredToNextLevel": "Gesamte erforderliche XP für das nächste Level"
   },
   "progress": {
-    "unlocked": "Unlocked",
-    "locked": "Locked"
+    "unlocked": "Freigeschaltet",
+    "locked": "Gesperrt"
   },
   "settings": {
-    "tools": "Tools",
-    "settings": "Settings",
-    "logout": "Logout",
-    "changePassword": "Change Password",
-    "changeLanguage": "Change Language",
-    "changeTheme": "Change Theme",
-    "changeFontSize": "Change Font Size",
-    "changeFont": "Change Font",
-    "changeFontColor": "Change Font Color",
-    "changeBackgroundColor": "Change Background Color",
-    "changeBackgroundImage": "Change Background Image",
-    "changeBackgroundBlur": "Change Background Blur"
+    "tools": "Werkzeuge",
+    "settings": "Einstellungen",
+    "logout": "Ausloggen",
+    "changePassword": "Passwort ändern",
+    "changeLanguage": "Sprache ändern",
+    "changeTheme": "Design ändern",
+    "changeFontSize": "Schriftgröße ändern",
+    "changeFont": "Schriftart ändern",
+    "changeFontColor": "Schriftfarbe ändern",
+    "changeBackgroundColor": "Hintergrundfarbe ändern",
+    "changeBackgroundImage": "Hintergrundbild ändern",
+    "changeBackgroundBlur": "Hintergrundunschärfe ändern"
   }
 }
