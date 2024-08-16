@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Wróć",
-    "backToHome": "Wróć do Strony Głównej",
-    "close": "Zamknij"
+    "back": "Back",
+    "backToHome": "Back to Home",
+    "close": "Close"
   },
   "actions": {
-    "add": "Dodaj",
-    "edit": "Edytuj",
-    "delete": "Usuń",
-    "save": "Zapisz",
-    "change": "Zmień",
-    "refresh": "Odśwież",
-    "clear": "Wyczyść"
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "change": "Change",
+    "refresh": "Refresh",
+    "clear": "Clear"
   },
   "status": {
-    "success": "Sukces",
-    "error": "Błąd",
-    "warning": "Ostrzeżenie",
-    "info": "Informacja"
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info"
   },
   "confirmations": {
-    "yes": "Tak",
-    "no": "Nie",
+    "yes": "Yes",
+    "no": "No",
     "ok": "OK",
-    "cancel": "Anuluj"
+    "cancel": "Cancel"
   },
   "feedback": {
-    "saved": "Zapisano",
-    "loading-ellipsis": "Ładowanie...",
-    "saving-ellipsis": "Zapisywanie..."
+    "saved": "Saved",
+    "loading-ellipsis": "Loading...",
+    "saving-ellipsis": "Saving..."
   },
   "classes": {
-    "classes": "Klasy",
-    "lessons": "Lekcje",
-    "classSaveSuccess": "Klasa została zapisana pomyślnie!",
-    "classSaveFailed": "Nie udało się zapisać klasy. Spróbuj ponownie.",
-    "resetAllClasses": "Resetuj Wszystkie Klasy",
-    "resetAllClassesConfirm": "Czy na pewno chcesz zresetować wszystkie klasy?",
-    "classEmptyError": "Nazwa klasy nie może być pusta.",
-    "classSameNameError": "Klasa o takiej samej nazwie już istnieje."
+    "classes": "Classes",
+    "lessons": "Lessons",
+    "classSaveSuccess": "Class saved successfully!",
+    "classSaveFailed": "Failed to save class. Please try again.",
+    "resetAllClasses": "Reset All Classes",
+    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
+    "classEmptyError": "Class name cannot be empty.",
+    "classSameNameError": "Class with same name already exists."
   },
   "lessons": {
-    "saveALesson": "Zapisz Lekcję",
-    "saveLesson": "Zapisz Lekcję",
-    "lessonSameNameError": "Lekcja o takiej samej nazwie już istnieje w tej klasie.",
-    "editLessonLog": "Edytuj Dziennik Lekcyjny",
-    "updateLessonLog": "Zaktualizuj Dziennik Lekcyjny"
+    "saveALesson": "Save a Lesson",
+    "saveLesson": "Save Lesson",
+    "lessonSameNameError": "Lesson with same name already exists in this class.",
+    "editLessonLog": "Edit Lesson Log",
+    "updateLessonLog": "Update Lesson Log"
   },
   "stats": {
-    "xpToNextLevel": "XP do następnego poziomu",
-    "level": "Poziom",
+    "xpToNextLevel": "XP to next level",
+    "level": "Level",
     "xp": "XP",
-    "yourStats": "Twoje Statystyki",
-    "totalXp": "Łączne XP",
-    "totalClasses": "Łączne Klasy",
-    "totalLessons": "Łączne Lekcje",
-    "totalXpRequired": "Łączne XP Wymagane",
-    "totalXpRequiredToNextLevel": "Łączne XP Wymagane do Następnego Poziomu"
+    "yourStats": "Your Stats",
+    "totalXp": "Total XP",
+    "totalClasses": "Total Classes",
+    "totalLessons": "Total Lessons",
+    "totalXpRequired": "Total XP Required",
+    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
   },
   "progress": {
-    "unlocked": "Odblokowane",
-    "locked": "Zablokowane"
+    "unlocked": "Unlocked",
+    "locked": "Locked"
   },
   "settings": {
-    "tools": "Narzędzia",
-    "settings": "Ustawienia",
-    "logout": "Wyloguj",
-    "changePassword": "Zmień Hasło",
-    "changeLanguage": "Zmień Język",
-    "changeTheme": "Zmień Motyw",
-    "changeFontSize": "Zmień Rozmiar Czcionki",
-    "changeFont": "Zmień Czcionkę",
-    "changeFontColor": "Zmień Kolor Czcionki",
-    "changeBackgroundColor": "Zmień Kolor Tła",
-    "changeBackgroundImage": "Zmień Obraz Tła",
-    "changeBackgroundBlur": "Zmień Rozmycie Tła"
+    "tools": "Tools",
+    "settings": "Settings",
+    "logout": "Logout",
+    "changePassword": "Change Password",
+    "changeLanguage": "Change Language",
+    "changeTheme": "Change Theme",
+    "changeFontSize": "Change Font Size",
+    "changeFont": "Change Font",
+    "changeFontColor": "Change Font Color",
+    "changeBackgroundColor": "Change Background Color",
+    "changeBackgroundImage": "Change Background Image",
+    "changeBackgroundBlur": "Change Background Blur"
   }
 }
