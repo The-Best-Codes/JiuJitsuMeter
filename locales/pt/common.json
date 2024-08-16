@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "close": "Close"
+    "back": "Voltar",
+    "backToHome": "Voltar para a Página Inicial",
+    "close": "Fechar"
   },
   "actions": {
-    "add": "Add",
-    "edit": "Edit",
-    "delete": "Delete",
-    "save": "Save",
+    "add": "Adicionar",
+    "edit": "Alterar",
+    "delete": "Excluir",
+    "save": "Guardar",
     "change": "Change",
     "refresh": "Refresh",
     "clear": "Clear"
   },
   "status": {
-    "success": "Success",
-    "error": "Error",
-    "warning": "Warning",
-    "info": "Info"
+    "success": "Sucesso",
+    "error": "Erro",
+    "warning": "Alerta",
+    "info": "Informação"
   },
   "confirmations": {
-    "yes": "Yes",
-    "no": "No",
+    "yes": "Sim",
+    "no": "Não",
     "ok": "OK",
-    "cancel": "Cancel"
+    "cancel": "Cancelar"
   },
   "feedback": {
-    "saved": "Saved",
-    "loading-ellipsis": "Loading...",
-    "saving-ellipsis": "Saving..."
+    "saved": "Salvo",
+    "loading-ellipsis": "Carregando...",
+    "saving-ellipsis": "Salvando..."
   },
   "classes": {
     "classes": "Classes",
-    "lessons": "Lessons",
-    "classSaveSuccess": "Class saved successfully!",
-    "classSaveFailed": "Failed to save class. Please try again.",
-    "resetAllClasses": "Reset All Classes",
-    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
-    "classEmptyError": "Class name cannot be empty.",
-    "classSameNameError": "Class with same name already exists."
+    "lessons": "Aulas",
+    "classSaveSuccess": "Classe salva com sucesso!",
+    "classSaveFailed": "Falha ao salvar classe. Por favor, tente novamente.",
+    "resetAllClasses": "Redefinir Todas as Classes",
+    "resetAllClassesConfirm": "Tem certeza que deseja redefinir todas as classes?",
+    "classEmptyError": "O nome da classe não pode estar vazio.",
+    "classSameNameError": "Classe com mesmo nome já existe."
   },
   "lessons": {
-    "saveALesson": "Save a Lesson",
-    "saveLesson": "Save Lesson",
-    "lessonSameNameError": "Lesson with same name already exists in this class.",
-    "editLessonLog": "Edit Lesson Log",
-    "updateLessonLog": "Update Lesson Log"
+    "saveALesson": "Salvar uma Aula",
+    "saveLesson": "Salvar Aula",
+    "lessonSameNameError": "Aula com mesmo nome já existe nesta classe.",
+    "editLessonLog": "Editar Registro da Aula",
+    "updateLessonLog": "Atualizar Registro da Aula"
   },
   "stats": {
-    "xpToNextLevel": "XP to next level",
-    "level": "Level",
+    "xpToNextLevel": "XP para próximo nível",
+    "level": "Nível",
     "xp": "XP",
-    "yourStats": "Your Stats",
-    "totalXp": "Total XP",
-    "totalClasses": "Total Classes",
-    "totalLessons": "Total Lessons",
-    "totalXpRequired": "Total XP Required",
-    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
+    "yourStats": "Suas Estatísticas",
+    "totalXp": "XP Total",
+    "totalClasses": "Total de Classes",
+    "totalLessons": "Total de Aulas",
+    "totalXpRequired": "XP Total Necessária",
+    "totalXpRequiredToNextLevel": "XP Total Necessária para Próximo Nível"
   },
   "progress": {
-    "unlocked": "Unlocked",
-    "locked": "Locked"
+    "unlocked": "Desbloqueado",
+    "locked": "Bloqueado"
   },
   "settings": {
-    "tools": "Tools",
-    "settings": "Settings",
-    "logout": "Logout",
-    "changePassword": "Change Password",
-    "changeLanguage": "Change Language",
-    "changeTheme": "Change Theme",
-    "changeFontSize": "Change Font Size",
-    "changeFont": "Change Font",
-    "changeFontColor": "Change Font Color",
-    "changeBackgroundColor": "Change Background Color",
-    "changeBackgroundImage": "Change Background Image",
-    "changeBackgroundBlur": "Change Background Blur"
+    "tools": "Ferramentas",
+    "settings": "Configurações",
+    "logout": "Sair",
+    "changePassword": "Alterar Senha",
+    "changeLanguage": "Alterar Idioma",
+    "changeTheme": "Alterar Tema",
+    "changeFontSize": "Alterar Tamanho da Fonte",
+    "changeFont": "Alterar Fonte",
+    "changeFontColor": "Alterar Cor da Fonte",
+    "changeBackgroundColor": "Alterar Cor de Fundo",
+    "changeBackgroundImage": "Alterar Imagem de Fundo",
+    "changeBackgroundBlur": "Alterar Desfoque de Fundo"
   }
 }
