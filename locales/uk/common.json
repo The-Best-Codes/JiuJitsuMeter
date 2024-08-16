@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Назад",
-    "backToHome": "Назад до дому",
-    "close": "Закрити"
+    "back": "Back",
+    "backToHome": "Back to Home",
+    "close": "Close"
   },
   "actions": {
-    "add": "Додати",
-    "edit": "Редагувати",
-    "delete": "Видалити",
-    "save": "Зберегти",
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
     "change": "Change",
-    "refresh": "Оновити",
-    "clear": "Очистити"
+    "refresh": "Refresh",
+    "clear": "Clear"
   },
   "status": {
-    "success": "Збережено",
-    "error": "Помилка",
-    "warning": "Увага",
-    "info": "Інформація"
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info"
   },
   "confirmations": {
-    "yes": "Так",
+    "yes": "Yes",
     "no": "No",
     "ok": "OK",
-    "cancel": "Відмінити"
+    "cancel": "Cancel"
   },
   "feedback": {
-    "saved": "Збережено",
-    "loading-ellipsis": "Завантаження...",
-    "saving-ellipsis": "Збереження..."
+    "saved": "Saved",
+    "loading-ellipsis": "Loading...",
+    "saving-ellipsis": "Saving..."
   },
   "classes": {
     "classes": "Classes",
     "lessons": "Lessons",
-    "classSaveSuccess": "Успішно збережено клас!",
-    "classSaveFailed": "Не вдалося зберегти клас. Будь ласка, спробуйте ще раз.",
-    "resetAllClasses": "Скинути всі класи",
-    "resetAllClassesConfirm": "Ви впевнені, що хочете скинути всі класи?",
-    "classEmptyError": "Назва класу не може бути порожньою.",
-    "classSameNameError": "Клас з такою назвою вже існує."
+    "classSaveSuccess": "Class saved successfully!",
+    "classSaveFailed": "Failed to save class. Please try again.",
+    "resetAllClasses": "Reset All Classes",
+    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
+    "classEmptyError": "Class name cannot be empty.",
+    "classSameNameError": "Class with same name already exists."
   },
   "lessons": {
-    "saveALesson": "Зберегти урок",
-    "saveLesson": "Зберегти урок",
-    "lessonSameNameError": "Урок з такою назвою вже існує у цьому класі.",
-    "editLessonLog": "Редагувати журнал уроку",
-    "updateLessonLog": "Оновити журнал уроку"
+    "saveALesson": "Save a Lesson",
+    "saveLesson": "Save Lesson",
+    "lessonSameNameError": "Lesson with same name already exists in this class.",
+    "editLessonLog": "Edit Lesson Log",
+    "updateLessonLog": "Update Lesson Log"
   },
   "stats": {
-    "xpToNextLevel": "XP до наступного рівня",
-    "level": "Рівень",
+    "xpToNextLevel": "XP to next level",
+    "level": "Level",
     "xp": "XP",
-    "yourStats": "Ваші статистичні дані",
-    "totalXp": "Загальний XP",
-    "totalClasses": "Загальна кількість класів",
-    "totalLessons": "Загальна кількість уроків",
-    "totalXpRequired": "Загальний XP для досягнення",
-    "totalXpRequiredToNextLevel": "Загальний XP, необхідний для наступного рівня"
+    "yourStats": "Your Stats",
+    "totalXp": "Total XP",
+    "totalClasses": "Total Classes",
+    "totalLessons": "Total Lessons",
+    "totalXpRequired": "Total XP Required",
+    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
   },
   "progress": {
-    "unlocked": "Розблокований",
-    "locked": "Заблокований"
+    "unlocked": "Unlocked",
+    "locked": "Locked"
   },
   "settings": {
-    "tools": "Інструменти",
-    "settings": "Налаштування",
-    "logout": "Вийти",
-    "changePassword": "Змінити пароль",
-    "changeLanguage": "Змінити мову",
-    "changeTheme": "Змінити тему",
-    "changeFontSize": "Змінити розмір шрифту",
-    "changeFont": "Змінити шрифт",
-    "changeFontColor": "Змінити колір шрифту",
-    "changeBackgroundColor": "Змінити колір фону",
-    "changeBackgroundImage": "Змінити зображення фону",
-    "changeBackgroundBlur": "Змінити розмиття фону"
+    "tools": "Tools",
+    "settings": "Settings",
+    "logout": "Logout",
+    "changePassword": "Change Password",
+    "changeLanguage": "Change Language",
+    "changeTheme": "Change Theme",
+    "changeFontSize": "Change Font Size",
+    "changeFont": "Change Font",
+    "changeFontColor": "Change Font Color",
+    "changeBackgroundColor": "Change Background Color",
+    "changeBackgroundImage": "Change Background Image",
+    "changeBackgroundBlur": "Change Background Blur"
   }
 }
