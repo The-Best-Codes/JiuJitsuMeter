@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Retour",
-    "backToHome": "Retour à l'accueil",
-    "close": "Fermer"
+    "back": "Back",
+    "backToHome": "Back to Home",
+    "close": "Close"
   },
   "actions": {
-    "add": "Ajouter",
-    "edit": "Modifier",
-    "delete": "Supprimer",
-    "save": "Sauvegarder",
-    "change": "Changer",
-    "refresh": "Actualiser",
-    "clear": "Effacer"
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "change": "Change",
+    "refresh": "Refresh",
+    "clear": "Clear"
   },
   "status": {
-    "success": "Succès",
-    "error": "Erreur",
-    "warning": "Avertissement",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
     "info": "Info"
   },
   "confirmations": {
-    "yes": "Oui",
-    "no": "Non",
+    "yes": "Yes",
+    "no": "No",
     "ok": "OK",
-    "cancel": "Annuler"
+    "cancel": "Cancel"
   },
   "feedback": {
-    "saved": "Enregistré",
-    "loading-ellipsis": "Chargement...",
-    "saving-ellipsis": "Enregistrement..."
+    "saved": "Saved",
+    "loading-ellipsis": "Loading...",
+    "saving-ellipsis": "Saving..."
   },
   "classes": {
     "classes": "Classes",
-    "lessons": "Leçons",
-    "classSaveSuccess": "Classe enregistrée avec succès!",
-    "classSaveFailed": "Échec de l'enregistrement de la classe. Veuillez réessayer.",
-    "resetAllClasses": "Réinitialiser toutes les classes",
-    "resetAllClassesConfirm": "Êtes-vous sûr de vouloir réinitialiser toutes les classes?",
-    "classEmptyError": "Le nom de la classe ne peut pas être vide.",
-    "classSameNameError": "Une classe avec le même nom existe déjà."
+    "lessons": "Lessons",
+    "classSaveSuccess": "Class saved successfully!",
+    "classSaveFailed": "Failed to save class. Please try again.",
+    "resetAllClasses": "Reset All Classes",
+    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
+    "classEmptyError": "Class name cannot be empty.",
+    "classSameNameError": "Class with same name already exists."
   },
   "lessons": {
-    "saveALesson": "Enregistrer une leçon",
-    "saveLesson": "Enregistrer la leçon",
-    "lessonSameNameError": "Une leçon avec le même nom existe déjà dans cette classe.",
-    "editLessonLog": "Modifier le journal de la leçon",
-    "updateLessonLog": "Mettre à jour le journal de la leçon"
+    "saveALesson": "Save a Lesson",
+    "saveLesson": "Save Lesson",
+    "lessonSameNameError": "Lesson with same name already exists in this class.",
+    "editLessonLog": "Edit Lesson Log",
+    "updateLessonLog": "Update Lesson Log"
   },
   "stats": {
-    "xpToNextLevel": "XP jusqu'au prochain niveau",
-    "level": "Niveau",
+    "xpToNextLevel": "XP to next level",
+    "level": "Level",
     "xp": "XP",
-    "yourStats": "Vos statistiques",
-    "totalXp": "XP Totale",
-    "totalClasses": "Classes Totales",
-    "totalLessons": "Leçons Totales",
-    "totalXpRequired": "XP Totale Requise",
-    "totalXpRequiredToNextLevel": "XP Totale Requise pour le Prochain Niveau"
+    "yourStats": "Your Stats",
+    "totalXp": "Total XP",
+    "totalClasses": "Total Classes",
+    "totalLessons": "Total Lessons",
+    "totalXpRequired": "Total XP Required",
+    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
   },
   "progress": {
-    "unlocked": "Débloqué",
-    "locked": "Verrouillé"
+    "unlocked": "Unlocked",
+    "locked": "Locked"
   },
   "settings": {
-    "tools": "Outils",
-    "settings": "Paramètres",
-    "logout": "Déconnexion",
-    "changePassword": "Changer le mot de passe",
-    "changeLanguage": "Changer de langue",
-    "changeTheme": "Changer de thème",
-    "changeFontSize": "Changer la taille de la police",
-    "changeFont": "Changer la police",
-    "changeFontColor": "Changer la couleur de la police",
-    "changeBackgroundColor": "Changer la couleur de fond",
-    "changeBackgroundImage": "Changer l'image de fond",
-    "changeBackgroundBlur": "Changer le flou de l'arrière-plan"
+    "tools": "Tools",
+    "settings": "Settings",
+    "logout": "Logout",
+    "changePassword": "Change Password",
+    "changeLanguage": "Change Language",
+    "changeTheme": "Change Theme",
+    "changeFontSize": "Change Font Size",
+    "changeFont": "Change Font",
+    "changeFontColor": "Change Font Color",
+    "changeBackgroundColor": "Change Background Color",
+    "changeBackgroundImage": "Change Background Image",
+    "changeBackgroundBlur": "Change Background Blur"
   }
 }
