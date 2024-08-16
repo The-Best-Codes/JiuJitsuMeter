@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "뒤로",
-    "backToHome": "홈으로 돌아가기",
-    "close": "닫기"
+    "back": "Back",
+    "backToHome": "Back to Home",
+    "close": "Close"
   },
   "actions": {
-    "add": "추가",
-    "edit": "편집",
-    "delete": "삭제",
-    "save": "저장",
-    "change": "변경",
-    "refresh": "새로고침",
-    "clear": "지우기"
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "change": "Change",
+    "refresh": "Refresh",
+    "clear": "Clear"
   },
   "status": {
-    "success": "성공",
-    "error": "오류",
-    "warning": "경고",
-    "info": "정보"
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info"
   },
   "confirmations": {
-    "yes": "예",
-    "no": "아니요",
-    "ok": "확인",
-    "cancel": "취소"
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "cancel": "Cancel"
   },
   "feedback": {
-    "saved": "저장됨",
-    "loading-ellipsis": "로드 중...",
-    "saving-ellipsis": "저장 중..."
+    "saved": "Saved",
+    "loading-ellipsis": "Loading...",
+    "saving-ellipsis": "Saving..."
   },
   "classes": {
-    "classes": "수업",
-    "lessons": "수업",
-    "classSaveSuccess": "클래스가 성공적으로 저장되었습니다!",
-    "classSaveFailed": "클래스 저장에 실패했습니다. 다시 시도하세요.",
-    "resetAllClasses": "모든 수업 초기화",
-    "resetAllClassesConfirm": "모든 수업을 초기화 하시겠습니까?",
-    "classEmptyError": "수업 이름은 비워 둘 수 없습니다.",
-    "classSameNameError": "동일한 이름의 수업이 이미 존재합니다."
+    "classes": "Classes",
+    "lessons": "Lessons",
+    "classSaveSuccess": "Class saved successfully!",
+    "classSaveFailed": "Failed to save class. Please try again.",
+    "resetAllClasses": "Reset All Classes",
+    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
+    "classEmptyError": "Class name cannot be empty.",
+    "classSameNameError": "Class with same name already exists."
   },
   "lessons": {
-    "saveALesson": "수업 저장",
-    "saveLesson": "수업 저장",
-    "lessonSameNameError": "동일한 이름의 수업이 이미 이 클래스에 존재합니다.",
-    "editLessonLog": "수업 로그 편집",
-    "updateLessonLog": "수업 로그 업데이트"
+    "saveALesson": "Save a Lesson",
+    "saveLesson": "Save Lesson",
+    "lessonSameNameError": "Lesson with same name already exists in this class.",
+    "editLessonLog": "Edit Lesson Log",
+    "updateLessonLog": "Update Lesson Log"
   },
   "stats": {
-    "xpToNextLevel": "다음 레벨까지 필요한 경험치",
-    "level": "레벨",
-    "xp": "경험치",
-    "yourStats": "내 스탯",
-    "totalXp": "총 경험치",
-    "totalClasses": "총 수업",
-    "totalLessons": "총 수업",
-    "totalXpRequired": "필요한 총 경험치",
-    "totalXpRequiredToNextLevel": "다음 레벨까지 필요한 총 경험치"
+    "xpToNextLevel": "XP to next level",
+    "level": "Level",
+    "xp": "XP",
+    "yourStats": "Your Stats",
+    "totalXp": "Total XP",
+    "totalClasses": "Total Classes",
+    "totalLessons": "Total Lessons",
+    "totalXpRequired": "Total XP Required",
+    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
   },
   "progress": {
-    "unlocked": "언락됨",
-    "locked": "잠김"
+    "unlocked": "Unlocked",
+    "locked": "Locked"
   },
   "settings": {
-    "tools": "도구",
-    "settings": "설정",
-    "logout": "로그아웃",
-    "changePassword": "비밀번호 변경",
-    "changeLanguage": "언어 변경",
-    "changeTheme": "테마 변경",
-    "changeFontSize": "글꼴 크기 변경",
-    "changeFont": "글꼴 변경",
-    "changeFontColor": "글꼴 색상 변경",
-    "changeBackgroundColor": "배경색 변경",
-    "changeBackgroundImage": "배경 이미지 변경",
-    "changeBackgroundBlur": "배경 블러 변경"
+    "tools": "Tools",
+    "settings": "Settings",
+    "logout": "Logout",
+    "changePassword": "Change Password",
+    "changeLanguage": "Change Language",
+    "changeTheme": "Change Theme",
+    "changeFontSize": "Change Font Size",
+    "changeFont": "Change Font",
+    "changeFontColor": "Change Font Color",
+    "changeBackgroundColor": "Change Background Color",
+    "changeBackgroundImage": "Change Background Image",
+    "changeBackgroundBlur": "Change Background Blur"
   }
 }
