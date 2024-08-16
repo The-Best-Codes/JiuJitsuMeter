@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "close": "Close"
+    "back": "Geri",
+    "backToHome": "Anasayfaya Git",
+    "close": "Kapat"
   },
   "actions": {
-    "add": "Add",
-    "edit": "Edit",
-    "delete": "Delete",
-    "save": "Save",
-    "change": "Change",
-    "refresh": "Refresh",
-    "clear": "Clear"
+    "add": "Ekle",
+    "edit": "Düzenle",
+    "delete": "Sil",
+    "save": "Kaydet",
+    "change": "Değiştir",
+    "refresh": "Yenile",
+    "clear": "Temizle"
   },
   "status": {
-    "success": "Success",
-    "error": "Error",
-    "warning": "Warning",
-    "info": "Info"
+    "success": "Başarılı",
+    "error": "Hata",
+    "warning": "Uyarı",
+    "info": "Bilgi"
   },
   "confirmations": {
-    "yes": "Yes",
-    "no": "No",
-    "ok": "OK",
-    "cancel": "Cancel"
+    "yes": "Evet",
+    "no": "Hayır",
+    "ok": "Tamam",
+    "cancel": "İptal"
   },
   "feedback": {
-    "saved": "Saved",
-    "loading-ellipsis": "Loading...",
-    "saving-ellipsis": "Saving..."
+    "saved": "Kaydedildi",
+    "loading-ellipsis": "Yükleniyor...",
+    "saving-ellipsis": "Kaydediliyor..."
   },
   "classes": {
-    "classes": "Classes",
-    "lessons": "Lessons",
-    "classSaveSuccess": "Class saved successfully!",
-    "classSaveFailed": "Failed to save class. Please try again.",
-    "resetAllClasses": "Reset All Classes",
-    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
-    "classEmptyError": "Class name cannot be empty.",
-    "classSameNameError": "Class with same name already exists."
+    "classes": "Sınıflar",
+    "lessons": "Dersler",
+    "classSaveSuccess": "Sınıf başarıyla kaydedildi!",
+    "classSaveFailed": "Sınıf kaydedilemedi. Lütfen tekrar deneyin.",
+    "resetAllClasses": "Tüm Sınıfları Sıfırla",
+    "resetAllClassesConfirm": "Tüm sınıfları sıfırlamak istediğinize emin misiniz?",
+    "classEmptyError": "Sınıf adı boş olamaz.",
+    "classSameNameError": "Aynı isme sahip sınıf zaten mevcut."
   },
   "lessons": {
-    "saveALesson": "Save a Lesson",
-    "saveLesson": "Save Lesson",
-    "lessonSameNameError": "Lesson with same name already exists in this class.",
-    "editLessonLog": "Edit Lesson Log",
-    "updateLessonLog": "Update Lesson Log"
+    "saveALesson": "Ders Kaydet",
+    "saveLesson": "Ders Kaydet",
+    "lessonSameNameError": "Bu sınıfta zaten aynı ada sahip bir ders mevcut.",
+    "editLessonLog": "Ders Günlüğünü Düzenle",
+    "updateLessonLog": "Ders Günlüğünü Güncelle"
   },
   "stats": {
-    "xpToNextLevel": "XP to next level",
-    "level": "Level",
+    "xpToNextLevel": "Sonraki seviyeye giden XP",
+    "level": "Seviye",
     "xp": "XP",
-    "yourStats": "Your Stats",
-    "totalXp": "Total XP",
-    "totalClasses": "Total Classes",
-    "totalLessons": "Total Lessons",
-    "totalXpRequired": "Total XP Required",
-    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
+    "yourStats": "İstatistikleriniz",
+    "totalXp": "Toplam XP",
+    "totalClasses": "Toplam Sınıflar",
+    "totalLessons": "Toplam Dersler",
+    "totalXpRequired": "Toplam Gerekli XP",
+    "totalXpRequiredToNextLevel": "Sonraki Seviyeye Gereken Toplam XP"
   },
   "progress": {
-    "unlocked": "Unlocked",
-    "locked": "Locked"
+    "unlocked": "Kilidi Açıldı",
+    "locked": "Kilitli"
   },
   "settings": {
-    "tools": "Tools",
-    "settings": "Settings",
-    "logout": "Logout",
-    "changePassword": "Change Password",
-    "changeLanguage": "Change Language",
-    "changeTheme": "Change Theme",
-    "changeFontSize": "Change Font Size",
-    "changeFont": "Change Font",
-    "changeFontColor": "Change Font Color",
-    "changeBackgroundColor": "Change Background Color",
-    "changeBackgroundImage": "Change Background Image",
-    "changeBackgroundBlur": "Change Background Blur"
+    "tools": "Araçlar",
+    "settings": "Ayarlar",
+    "logout": "Çıkış Yap",
+    "changePassword": "Şifre Değiştir",
+    "changeLanguage": "Dil Değiştir",
+    "changeTheme": "Tema Değiştir",
+    "changeFontSize": "Yazı Tipi Boyutu Değiştir",
+    "changeFont": "Yazı Tipi Değiştir",
+    "changeFontColor": "Yazı Tipi Rengi Değiştir",
+    "changeBackgroundColor": "Arka Plan Rengi Değiştir",
+    "changeBackgroundImage": "Arka Plan Resmi Değiştir",
+    "changeBackgroundBlur": "Arka Plan Bulanıklık Değiştir"
   }
 }
