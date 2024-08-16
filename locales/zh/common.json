@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "close": "Close"
+    "back": "返回",
+    "backToHome": "返回首页",
+    "close": "关闭"
   },
   "actions": {
-    "add": "Add",
-    "edit": "Edit",
-    "delete": "Delete",
-    "save": "Save",
-    "change": "Change",
-    "refresh": "Refresh",
-    "clear": "Clear"
+    "add": "添加",
+    "edit": "编辑",
+    "delete": "删除",
+    "save": "保存",
+    "change": "更改",
+    "refresh": "刷新",
+    "clear": "清除"
   },
   "status": {
-    "success": "Success",
-    "error": "Error",
-    "warning": "Warning",
-    "info": "Info"
+    "success": "成功",
+    "error": "错误",
+    "warning": "警告",
+    "info": "信息"
   },
   "confirmations": {
-    "yes": "Yes",
-    "no": "No",
-    "ok": "OK",
-    "cancel": "Cancel"
+    "yes": "是",
+    "no": "没有",
+    "ok": "确定",
+    "cancel": "取消"
   },
   "feedback": {
-    "saved": "Saved",
-    "loading-ellipsis": "Loading...",
-    "saving-ellipsis": "Saving..."
+    "saved": "已保存",
+    "loading-ellipsis": "加载中...",
+    "saving-ellipsis": "保存中..."
   },
   "classes": {
-    "classes": "Classes",
-    "lessons": "Lessons",
-    "classSaveSuccess": "Class saved successfully!",
-    "classSaveFailed": "Failed to save class. Please try again.",
-    "resetAllClasses": "Reset All Classes",
-    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
-    "classEmptyError": "Class name cannot be empty.",
-    "classSameNameError": "Class with same name already exists."
+    "classes": "班级",
+    "lessons": "课程",
+    "classSaveSuccess": "班级保存成功！",
+    "classSaveFailed": "无法保存班级，请重试。",
+    "resetAllClasses": "重置所有班级",
+    "resetAllClassesConfirm": "您确定要重置所有班级吗？",
+    "classEmptyError": "班级名称不能为空。",
+    "classSameNameError": "相同名称的班级已存在。"
   },
   "lessons": {
-    "saveALesson": "Save a Lesson",
-    "saveLesson": "Save Lesson",
-    "lessonSameNameError": "Lesson with same name already exists in this class.",
-    "editLessonLog": "Edit Lesson Log",
-    "updateLessonLog": "Update Lesson Log"
+    "saveALesson": "保存课程",
+    "saveLesson": "保存课程",
+    "lessonSameNameError": "此班级中已存在同名课程。",
+    "editLessonLog": "编辑课堂日志",
+    "updateLessonLog": "更新课堂日志"
   },
   "stats": {
-    "xpToNextLevel": "XP to next level",
-    "level": "Level",
-    "xp": "XP",
-    "yourStats": "Your Stats",
-    "totalXp": "Total XP",
-    "totalClasses": "Total Classes",
-    "totalLessons": "Total Lessons",
-    "totalXpRequired": "Total XP Required",
-    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
+    "xpToNextLevel": "下一级所需经验值",
+    "level": "等级",
+    "xp": "经验值",
+    "yourStats": "您的统计数据",
+    "totalXp": "总经验值",
+    "totalClasses": "总班级数",
+    "totalLessons": "总课程数",
+    "totalXpRequired": "所需总经验值",
+    "totalXpRequiredToNextLevel": "距下一等级所需总经验值"
   },
   "progress": {
-    "unlocked": "Unlocked",
-    "locked": "Locked"
+    "unlocked": "已解锁",
+    "locked": "已锁定"
   },
   "settings": {
-    "tools": "Tools",
-    "settings": "Settings",
-    "logout": "Logout",
-    "changePassword": "Change Password",
-    "changeLanguage": "Change Language",
-    "changeTheme": "Change Theme",
-    "changeFontSize": "Change Font Size",
-    "changeFont": "Change Font",
-    "changeFontColor": "Change Font Color",
-    "changeBackgroundColor": "Change Background Color",
-    "changeBackgroundImage": "Change Background Image",
-    "changeBackgroundBlur": "Change Background Blur"
+    "tools": "工具",
+    "settings": "设置",
+    "logout": "登出",
+    "changePassword": "修改密码",
+    "changeLanguage": "更改语言",
+    "changeTheme": "更改主题",
+    "changeFontSize": "更改字号",
+    "changeFont": "更改字体",
+    "changeFontColor": "更改字体颜色",
+    "changeBackgroundColor": "更改背景颜色",
+    "changeBackgroundImage": "更改背景图片",
+    "changeBackgroundBlur": "更改背景模糊"
   }
 }
