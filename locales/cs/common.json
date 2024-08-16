@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "close": "Close"
+    "back": "Zpět",
+    "backToHome": "Zpět na Domov",
+    "close": "Zavřít"
   },
   "actions": {
-    "add": "Add",
-    "edit": "Edit",
-    "delete": "Delete",
-    "save": "Save",
+    "add": "Přidat",
+    "edit": "Upravit",
+    "delete": "Vymazat",
+    "save": "Uložit",
     "change": "Change",
-    "refresh": "Refresh",
-    "clear": "Clear"
+    "refresh": "Obnovit",
+    "clear": "Vymazat"
   },
   "status": {
-    "success": "Success",
-    "error": "Error",
-    "warning": "Warning",
+    "success": "Úspěch",
+    "error": "Chyba",
+    "warning": "Varování",
     "info": "Info"
   },
   "confirmations": {
-    "yes": "Yes",
-    "no": "No",
+    "yes": "Ano",
+    "no": "Ne",
     "ok": "OK",
-    "cancel": "Cancel"
+    "cancel": "Zrušit"
   },
   "feedback": {
-    "saved": "Saved",
-    "loading-ellipsis": "Loading...",
-    "saving-ellipsis": "Saving..."
+    "saved": "Uloženo",
+    "loading-ellipsis": "Načítání...",
+    "saving-ellipsis": "Ukládání..."
   },
   "classes": {
-    "classes": "Classes",
-    "lessons": "Lessons",
-    "classSaveSuccess": "Class saved successfully!",
-    "classSaveFailed": "Failed to save class. Please try again.",
-    "resetAllClasses": "Reset All Classes",
-    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
-    "classEmptyError": "Class name cannot be empty.",
-    "classSameNameError": "Class with same name already exists."
+    "classes": "Třídy",
+    "lessons": "Lekce",
+    "classSaveSuccess": "Třída úspěšně uložena!",
+    "classSaveFailed": "Nepodařilo se uložit třídu. Zkuste to prosím znovu.",
+    "resetAllClasses": "Obnovit všechny třídy",
+    "resetAllClassesConfirm": "Jste si jisti, že chcete obnovit všechny třídy?",
+    "classEmptyError": "Název třídy nemůže být prázdný.",
+    "classSameNameError": "Třída se stejným názvem již existuje."
   },
   "lessons": {
-    "saveALesson": "Save a Lesson",
-    "saveLesson": "Save Lesson",
-    "lessonSameNameError": "Lesson with same name already exists in this class.",
-    "editLessonLog": "Edit Lesson Log",
-    "updateLessonLog": "Update Lesson Log"
+    "saveALesson": "Uložit lekci",
+    "saveLesson": "Uložit lekci",
+    "lessonSameNameError": "Lekce se stejným názvem již existuje v této třídě.",
+    "editLessonLog": "Upravit záznam o lekci",
+    "updateLessonLog": "Aktualizovat záznam o lekci"
   },
   "stats": {
-    "xpToNextLevel": "XP to next level",
-    "level": "Level",
+    "xpToNextLevel": "XP do další úrovně",
+    "level": "Úroveň",
     "xp": "XP",
-    "yourStats": "Your Stats",
-    "totalXp": "Total XP",
-    "totalClasses": "Total Classes",
-    "totalLessons": "Total Lessons",
-    "totalXpRequired": "Total XP Required",
-    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
+    "yourStats": "Vaše statistiky",
+    "totalXp": "Celkové XP",
+    "totalClasses": "Celkové třídy",
+    "totalLessons": "Celkové lekce",
+    "totalXpRequired": "Celkové požadované XP",
+    "totalXpRequiredToNextLevel": "Celkové požadované XP do další úrovně"
   },
   "progress": {
-    "unlocked": "Unlocked",
-    "locked": "Locked"
+    "unlocked": "Odemčeno",
+    "locked": "Uzamčeno"
   },
   "settings": {
-    "tools": "Tools",
-    "settings": "Settings",
-    "logout": "Logout",
-    "changePassword": "Change Password",
-    "changeLanguage": "Change Language",
-    "changeTheme": "Change Theme",
-    "changeFontSize": "Change Font Size",
-    "changeFont": "Change Font",
-    "changeFontColor": "Change Font Color",
-    "changeBackgroundColor": "Change Background Color",
-    "changeBackgroundImage": "Change Background Image",
-    "changeBackgroundBlur": "Change Background Blur"
+    "tools": "Nástroje",
+    "settings": "Nastavení",
+    "logout": "Odhlásit se",
+    "changePassword": "Změnit heslo",
+    "changeLanguage": "Změnit jazyk",
+    "changeTheme": "Změnit motiv",
+    "changeFontSize": "Změnit velikost písma",
+    "changeFont": "Změnit písmo",
+    "changeFontColor": "Změnit barvu písma",
+    "changeBackgroundColor": "Změnit barvu pozadí",
+    "changeBackgroundImage": "Změnit obrázek pozadí",
+    "changeBackgroundBlur": "Změnit mlhovinu pozadí"
   }
 }
