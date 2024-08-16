@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Quay lại",
-    "backToHome": "Quay lại Trang chủ",
-    "close": "Đóng"
+    "back": "Back",
+    "backToHome": "Back to Home",
+    "close": "Close"
   },
   "actions": {
-    "add": "Thêm",
-    "edit": "Chỉnh sửa",
-    "delete": "Xóa",
-    "save": "Lưu",
-    "change": "Thay đổi",
-    "refresh": "Làm mới",
-    "clear": "Xóa"
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "change": "Change",
+    "refresh": "Refresh",
+    "clear": "Clear"
   },
   "status": {
-    "success": "Thành công",
-    "error": "Lỗi",
-    "warning": "Cảnh báo",
-    "info": "Thông tin"
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info"
   },
   "confirmations": {
-    "yes": "Có",
-    "no": "Không",
+    "yes": "Yes",
+    "no": "No",
     "ok": "OK",
-    "cancel": "Hủy"
+    "cancel": "Cancel"
   },
   "feedback": {
-    "saved": "Đã lưu",
-    "loading-ellipsis": "Đang tải...",
-    "saving-ellipsis": "Đang lưu..."
+    "saved": "Saved",
+    "loading-ellipsis": "Loading...",
+    "saving-ellipsis": "Saving..."
   },
   "classes": {
-    "classes": "Các lớp",
-    "lessons": "Bài học",
-    "classSaveSuccess": "Lớp đã được lưu thành công!",
-    "classSaveFailed": "Lưu lớp không thành công. Vui lòng thử lại.",
-    "resetAllClasses": "Đặt lại tất cả các lớp",
-    "resetAllClassesConfirm": "Bạn có chắc chắn muốn đặt lại tất cả các lớp không?",
-    "classEmptyError": "Tên lớp không được để trống.",
-    "classSameNameError": "Lớp với cùng tên đã tồn tại."
+    "classes": "Classes",
+    "lessons": "Lessons",
+    "classSaveSuccess": "Class saved successfully!",
+    "classSaveFailed": "Failed to save class. Please try again.",
+    "resetAllClasses": "Reset All Classes",
+    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
+    "classEmptyError": "Class name cannot be empty.",
+    "classSameNameError": "Class with same name already exists."
   },
   "lessons": {
-    "saveALesson": "Lưu một bài học",
-    "saveLesson": "Lưu bài học",
-    "lessonSameNameError": "Bài học với cùng tên đã tồn tại trong lớp này.",
-    "editLessonLog": "Chỉnh sửa nhật ký bài học",
-    "updateLessonLog": "Cập nhật nhật ký bài học"
+    "saveALesson": "Save a Lesson",
+    "saveLesson": "Save Lesson",
+    "lessonSameNameError": "Lesson with same name already exists in this class.",
+    "editLessonLog": "Edit Lesson Log",
+    "updateLessonLog": "Update Lesson Log"
   },
   "stats": {
-    "xpToNextLevel": "Kinh nghiệm tới cấp độ tiếp theo",
-    "level": "Cấp độ",
-    "xp": "Kinh nghiệm",
-    "yourStats": "Thống kê của bạn",
-    "totalXp": "Tổng kinh nghiệm",
-    "totalClasses": "Tổng số lớp",
-    "totalLessons": "Tổng số bài học",
-    "totalXpRequired": "Tổng kinh nghiệm cần",
-    "totalXpRequiredToNextLevel": "Tổng kinh nghiệm cần tới cấp độ tiếp theo"
+    "xpToNextLevel": "XP to next level",
+    "level": "Level",
+    "xp": "XP",
+    "yourStats": "Your Stats",
+    "totalXp": "Total XP",
+    "totalClasses": "Total Classes",
+    "totalLessons": "Total Lessons",
+    "totalXpRequired": "Total XP Required",
+    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
   },
   "progress": {
-    "unlocked": "Đã mở",
-    "locked": "Đã khóa"
+    "unlocked": "Unlocked",
+    "locked": "Locked"
   },
   "settings": {
-    "tools": "Công cụ",
-    "settings": "Cài đặt",
-    "logout": "Đăng xuất",
-    "changePassword": "Đổi mật khẩu",
-    "changeLanguage": "Đổi ngôn ngữ",
-    "changeTheme": "Đổi chủ đề",
-    "changeFontSize": "Đổi kích cỡ phông chữ",
-    "changeFont": "Đổi phông chữ",
-    "changeFontColor": "Thay đổi màu phông chữ",
-    "changeBackgroundColor": "Thay đổi màu nền",
-    "changeBackgroundImage": "Thay đổi hình nền",
-    "changeBackgroundBlur": "Thay đổi độ mờ nền"
+    "tools": "Tools",
+    "settings": "Settings",
+    "logout": "Logout",
+    "changePassword": "Change Password",
+    "changeLanguage": "Change Language",
+    "changeTheme": "Change Theme",
+    "changeFontSize": "Change Font Size",
+    "changeFont": "Change Font",
+    "changeFontColor": "Change Font Color",
+    "changeBackgroundColor": "Change Background Color",
+    "changeBackgroundImage": "Change Background Image",
+    "changeBackgroundBlur": "Change Background Blur"
   }
 }
