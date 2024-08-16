@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Tilbage",
-    "backToHome": "Tilbage til Start",
-    "close": "Luk"
+    "back": "Back",
+    "backToHome": "Back to Home",
+    "close": "Close"
   },
   "actions": {
-    "add": "Tilføj",
-    "edit": "Rediger",
-    "delete": "Slet",
-    "save": "Gem",
-    "change": "Ændre",
-    "refresh": "Opdater",
-    "clear": "Ryd"
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "change": "Change",
+    "refresh": "Refresh",
+    "clear": "Clear"
   },
   "status": {
     "success": "Success",
-    "error": "Fejl",
-    "warning": "Advarsel",
+    "error": "Error",
+    "warning": "Warning",
     "info": "Info"
   },
   "confirmations": {
-    "yes": "Ja",
-    "no": "Nej",
+    "yes": "Yes",
+    "no": "No",
     "ok": "OK",
-    "cancel": "Annuller"
+    "cancel": "Cancel"
   },
   "feedback": {
-    "saved": "Gemt",
-    "loading-ellipsis": "Indlæser...",
-    "saving-ellipsis": "Gemmer..."
+    "saved": "Saved",
+    "loading-ellipsis": "Loading...",
+    "saving-ellipsis": "Saving..."
   },
   "classes": {
-    "classes": "Klasser",
-    "lessons": "Lektioner",
-    "classSaveSuccess": "Klasse gemt med succes!",
-    "classSaveFailed": "Fejl ved lagring af klasse. Prøv venligst igen.",
-    "resetAllClasses": "Nulstil Alle Klasser",
-    "resetAllClassesConfirm": "Er du sikker på, at du vil nulstille alle klasser?",
-    "classEmptyError": "Klassenavn må ikke være tomt.",
-    "classSameNameError": "Klasse med samme navn findes allerede."
+    "classes": "Classes",
+    "lessons": "Lessons",
+    "classSaveSuccess": "Class saved successfully!",
+    "classSaveFailed": "Failed to save class. Please try again.",
+    "resetAllClasses": "Reset All Classes",
+    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
+    "classEmptyError": "Class name cannot be empty.",
+    "classSameNameError": "Class with same name already exists."
   },
   "lessons": {
-    "saveALesson": "Gem en Lektion",
-    "saveLesson": "Gem Lektion",
-    "lessonSameNameError": "Lektion med samme navn findes allerede i denne klasse.",
-    "editLessonLog": "Rediger Lektions Log",
-    "updateLessonLog": "Opdater Lektions Log"
+    "saveALesson": "Save a Lesson",
+    "saveLesson": "Save Lesson",
+    "lessonSameNameError": "Lesson with same name already exists in this class.",
+    "editLessonLog": "Edit Lesson Log",
+    "updateLessonLog": "Update Lesson Log"
   },
   "stats": {
-    "xpToNextLevel": "XP til næste niveau",
-    "level": "Niveau",
+    "xpToNextLevel": "XP to next level",
+    "level": "Level",
     "xp": "XP",
-    "yourStats": "Dine Stats",
-    "totalXp": "Samlet XP",
-    "totalClasses": "Samlet antal klasser",
-    "totalLessons": "Samlet antal lektioner",
-    "totalXpRequired": "Samlet XP Krævet",
-    "totalXpRequiredToNextLevel": "Samlet XP Krævet til Næste Niveau"
+    "yourStats": "Your Stats",
+    "totalXp": "Total XP",
+    "totalClasses": "Total Classes",
+    "totalLessons": "Total Lessons",
+    "totalXpRequired": "Total XP Required",
+    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
   },
   "progress": {
-    "unlocked": "Låst op",
-    "locked": "Låst"
+    "unlocked": "Unlocked",
+    "locked": "Locked"
   },
   "settings": {
-    "tools": "Værktøjer",
-    "settings": "Indstillinger",
-    "logout": "Log ud",
-    "changePassword": "Skift Adgangskode",
-    "changeLanguage": "Skift Sprog",
-    "changeTheme": "Skift Tema",
-    "changeFontSize": "Skift Fontstørrelse",
-    "changeFont": "Skift Skrifttype",
-    "changeFontColor": "Skift Skriftfarve",
-    "changeBackgroundColor": "Skift Baggrundsfarve",
-    "changeBackgroundImage": "Skift Baggrundsbillede",
-    "changeBackgroundBlur": "Skift Baggrundssløring"
+    "tools": "Tools",
+    "settings": "Settings",
+    "logout": "Logout",
+    "changePassword": "Change Password",
+    "changeLanguage": "Change Language",
+    "changeTheme": "Change Theme",
+    "changeFontSize": "Change Font Size",
+    "changeFont": "Change Font",
+    "changeFontColor": "Change Font Color",
+    "changeBackgroundColor": "Change Background Color",
+    "changeBackgroundImage": "Change Background Image",
+    "changeBackgroundBlur": "Change Background Blur"
   }
 }
