@@ -1,79 +1,79 @@
 {
   "navigation": {
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "close": "Close"
+    "back": "Vissza",
+    "backToHome": "Vissza a Főoldalra",
+    "close": "Bezárás"
   },
   "actions": {
-    "add": "Add",
-    "edit": "Edit",
-    "delete": "Delete",
-    "save": "Save",
-    "change": "Change",
-    "refresh": "Refresh",
-    "clear": "Clear"
+    "add": "Hozzáadás",
+    "edit": "Szerkesztés",
+    "delete": "Törlés",
+    "save": "Mentés",
+    "change": "Változtatás",
+    "refresh": "Frissítés",
+    "clear": "Törlés"
   },
   "status": {
-    "success": "Success",
-    "error": "Error",
-    "warning": "Warning",
-    "info": "Info"
+    "success": "Siker",
+    "error": "Hiba",
+    "warning": "Figyelmeztetés",
+    "info": "Információ"
   },
   "confirmations": {
-    "yes": "Yes",
-    "no": "No",
+    "yes": "Igen",
+    "no": "Nem",
     "ok": "OK",
-    "cancel": "Cancel"
+    "cancel": "Mégse"
   },
   "feedback": {
-    "saved": "Saved",
-    "loading-ellipsis": "Loading...",
-    "saving-ellipsis": "Saving..."
+    "saved": "Mentve",
+    "loading-ellipsis": "Betöltés...",
+    "saving-ellipsis": "Mentés..."
   },
   "classes": {
-    "classes": "Classes",
-    "lessons": "Lessons",
-    "classSaveSuccess": "Class saved successfully!",
-    "classSaveFailed": "Failed to save class. Please try again.",
-    "resetAllClasses": "Reset All Classes",
-    "resetAllClassesConfirm": "Are you sure you want to reset all classes?",
-    "classEmptyError": "Class name cannot be empty.",
-    "classSameNameError": "Class with same name already exists."
+    "classes": "Órák",
+    "lessons": "Leckék",
+    "classSaveSuccess": "Az óra sikeresen mentve!",
+    "classSaveFailed": "Az óra mentése sikertelen. Kérjük, próbálja újra.",
+    "resetAllClasses": "Az összes óra visszaállítása",
+    "resetAllClassesConfirm": "Biztosan vissza szeretné állítani az összes órát?",
+    "classEmptyError": "Az óra neve nem lehet üres.",
+    "classSameNameError": "Azonos nevű óra már létezik."
   },
   "lessons": {
-    "saveALesson": "Save a Lesson",
-    "saveLesson": "Save Lesson",
-    "lessonSameNameError": "Lesson with same name already exists in this class.",
-    "editLessonLog": "Edit Lesson Log",
-    "updateLessonLog": "Update Lesson Log"
+    "saveALesson": "Lecke mentése",
+    "saveLesson": "Lecke mentése",
+    "lessonSameNameError": "Az órában már létezik azonos nevű lecke.",
+    "editLessonLog": "Lecke napló szerkesztése",
+    "updateLessonLog": "Lecke napló frissítése"
   },
   "stats": {
-    "xpToNextLevel": "XP to next level",
-    "level": "Level",
+    "xpToNextLevel": "XP a következő szinthez",
+    "level": "Szint",
     "xp": "XP",
-    "yourStats": "Your Stats",
-    "totalXp": "Total XP",
-    "totalClasses": "Total Classes",
-    "totalLessons": "Total Lessons",
-    "totalXpRequired": "Total XP Required",
-    "totalXpRequiredToNextLevel": "Total XP Required to Next Level"
+    "yourStats": "Statisztikáid",
+    "totalXp": "Összes XP",
+    "totalClasses": "Összes óra",
+    "totalLessons": "Összes lecke",
+    "totalXpRequired": "Összes XP szükséges",
+    "totalXpRequiredToNextLevel": "Az új szinthez szükséges összes XP"
   },
   "progress": {
-    "unlocked": "Unlocked",
-    "locked": "Locked"
+    "unlocked": "Feloldva",
+    "locked": "Zárolva"
   },
   "settings": {
-    "tools": "Tools",
-    "settings": "Settings",
-    "logout": "Logout",
-    "changePassword": "Change Password",
-    "changeLanguage": "Change Language",
-    "changeTheme": "Change Theme",
-    "changeFontSize": "Change Font Size",
-    "changeFont": "Change Font",
-    "changeFontColor": "Change Font Color",
-    "changeBackgroundColor": "Change Background Color",
-    "changeBackgroundImage": "Change Background Image",
-    "changeBackgroundBlur": "Change Background Blur"
+    "tools": "Eszközök",
+    "settings": "Beállítások",
+    "logout": "Kijelentkezés",
+    "changePassword": "Jelszó megváltoztatása",
+    "changeLanguage": "Nyelv megváltoztatása",
+    "changeTheme": "Téma megváltoztatása",
+    "changeFontSize": "Betűméret megváltoztatása",
+    "changeFont": "Betűtípus megváltoztatása",
+    "changeFontColor": "Betűszín megváltoztatása",
+    "changeBackgroundColor": "Háttérszín megváltoztatása",
+    "changeBackgroundImage": "Háttérkép megváltoztatása",
+    "changeBackgroundBlur": "Háttér elmosása megváltoztatása"
   }
 }
