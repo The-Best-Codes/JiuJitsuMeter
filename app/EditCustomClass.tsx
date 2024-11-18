@@ -4,7 +4,7 @@ import {
   ScrollView,
   RefreshControl,
   StyleSheet,
-  Alert,
+  // Alert,
 } from "react-native";
 import {
   List,
@@ -28,7 +28,7 @@ import {
   addCustomLesson,
   editCustomLesson,
   deleteCustomLesson,
-  resetClasses,
+  //resetClasses,
 } from "@/utils/storage";
 import { Class, Lesson } from "@/types";
 import { initialClasses } from "@/utils/constants";
@@ -120,7 +120,7 @@ const ClassesScreen = () => {
     return true;
   };
 
-  const confirmResetAllClasses = () => {
+  /* const confirmResetAllClasses = () => {
     Alert.alert(
       i18n.t("classes.resetAllClasses"),
       i18n.t("classes.resetAllClassesConfirm"),
@@ -139,7 +139,7 @@ const ClassesScreen = () => {
         },
       ]
     );
-  };
+  }; */
 
   const handleAddClass = async () => {
     if (!newClassName.trim()) {

@@ -243,6 +243,7 @@ const LevelsScreen = () => {
         classLogs
       );
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     refreshing,
     totalCustomClasses,

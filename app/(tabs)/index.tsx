@@ -9,7 +9,7 @@ import DateTimePicker from "@/components/DateTimePicker";
 import NoteInput from "@/components/NoteInput";
 import { useTheme } from "@/styles/theme";
 import { initialClasses } from "@/utils/constants";
-import { Class, Lesson } from "@/types";
+import { Class } from "@/types";
 import { loadCustomClasses, saveClassLog } from "@/utils/storage";
 import i18n from "@/i18n";
 
